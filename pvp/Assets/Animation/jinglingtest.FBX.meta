@@ -1,0 +1,271 @@
+fileFormatVersion: 2
+guid: 52cb04d03f16c224cbbbaefb62596fd1
+timeCreated: 1543785955
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: armor shoulder left
+    100002: armor shoulder right
+    100004: armor thigh left
+    100006: armor thigh right
+    100008: bow
+    100010: breast left
+    100012: breast right
+    100014: cape 1
+    100016: cape 2
+    100018: cape 3
+    100020: cape 4
+    100022: Elf04_Bip
+    100024: Elf04_Bip Footsteps
+    100026: Elf04_Bip Head
+    100028: Elf04_Bip HeadNub
+    100030: Elf04_Bip L Calf
+    100032: Elf04_Bip L Clavicle
+    100034: Elf04_Bip L Finger0
+    100036: Elf04_Bip L Finger01
+    100038: Elf04_Bip L Finger0Nub
+    100040: Elf04_Bip L Finger1
+    100042: Elf04_Bip L Finger11
+    100044: Elf04_Bip L Finger1Nub
+    100046: Elf04_Bip L Foot
+    100048: Elf04_Bip L Forearm
+    100050: Elf04_Bip L Hand
+    100052: Elf04_Bip L Thigh
+    100054: Elf04_Bip L Toe0
+    100056: Elf04_Bip L Toe0Nub
+    100058: Elf04_Bip L UpperArm
+    100060: Elf04_Bip Neck
+    100062: Elf04_Bip Pelvis
+    100064: Elf04_Bip Ponytail1
+    100066: Elf04_Bip Ponytail11
+    100068: Elf04_Bip Ponytail1Nub
+    100070: Elf04_Bip Prop1
+    100072: Elf04_Bip R Calf
+    100074: Elf04_Bip R Clavicle
+    100076: Elf04_Bip R Finger0
+    100078: Elf04_Bip R Finger01
+    100080: Elf04_Bip R Finger0Nub
+    100082: Elf04_Bip R Finger1
+    100084: Elf04_Bip R Finger11
+    100086: Elf04_Bip R Finger1Nub
+    100088: Elf04_Bip R Foot
+    100090: Elf04_Bip R Forearm
+    100092: Elf04_Bip R Hand
+    100094: Elf04_Bip R Thigh
+    100096: Elf04_Bip R Toe0
+    100098: Elf04_Bip R Toe0Nub
+    100100: Elf04_Bip R UpperArm
+    100102: Elf04_Bip Spine
+    100104: Elf04_Bip Spine1
+    100106: head eyeball left
+    100108: head eyeball right
+    100110: head eyeblow left
+    100112: head eyeblow right
+    100114: head eyelid lower
+    100116: head eyelid upper
+    100118: head jaw
+    100120: head lip left
+    100122: head lip right
+    100124: //RootNode
+    100126: Object001
+    100128: skirt back left 1
+    100130: skirt back left 2
+    100132: skirt back left 3
+    100134: skirt back left 4
+    100136: skirt back middle 1
+    100138: skirt back middle 2
+    100140: skirt back middle 3
+    100142: skirt back right 1
+    100144: skirt back right 2
+    100146: skirt back right 3
+    100148: skirt back right 4
+    100150: skirt front left 1
+    100152: skirt front left 2
+    100154: skirt front middle 1
+    100156: skirt front middle 2
+    100158: skirt front middle 3
+    100160: skirt front right 1
+    100162: skirt front right 2
+    100164: skirt left 1
+    100166: skirt left 2
+    100168: skirt right 1
+    100170: skirt right 2
+    400000: armor shoulder left
+    400002: armor shoulder right
+    400004: armor thigh left
+    400006: armor thigh right
+    400008: bow
+    400010: breast left
+    400012: breast right
+    400014: cape 1
+    400016: cape 2
+    400018: cape 3
+    400020: cape 4
+    400022: Elf04_Bip
+    400024: Elf04_Bip Footsteps
+    400026: Elf04_Bip Head
+    400028: Elf04_Bip HeadNub
+    400030: Elf04_Bip L Calf
+    400032: Elf04_Bip L Clavicle
+    400034: Elf04_Bip L Finger0
+    400036: Elf04_Bip L Finger01
+    400038: Elf04_Bip L Finger0Nub
+    400040: Elf04_Bip L Finger1
+    400042: Elf04_Bip L Finger11
+    400044: Elf04_Bip L Finger1Nub
+    400046: Elf04_Bip L Foot
+    400048: Elf04_Bip L Forearm
+    400050: Elf04_Bip L Hand
+    400052: Elf04_Bip L Thigh
+    400054: Elf04_Bip L Toe0
+    400056: Elf04_Bip L Toe0Nub
+    400058: Elf04_Bip L UpperArm
+    400060: Elf04_Bip Neck
+    400062: Elf04_Bip Pelvis
+    400064: Elf04_Bip Ponytail1
+    400066: Elf04_Bip Ponytail11
+    400068: Elf04_Bip Ponytail1Nub
+    400070: Elf04_Bip Prop1
+    400072: Elf04_Bip R Calf
+    400074: Elf04_Bip R Clavicle
+    400076: Elf04_Bip R Finger0
+    400078: Elf04_Bip R Finger01
+    400080: Elf04_Bip R Finger0Nub
+    400082: Elf04_Bip R Finger1
+    400084: Elf04_Bip R Finger11
+    400086: Elf04_Bip R Finger1Nub
+    400088: Elf04_Bip R Foot
+    400090: Elf04_Bip R Forearm
+    400092: Elf04_Bip R Hand
+    400094: Elf04_Bip R Thigh
+    400096: Elf04_Bip R Toe0
+    400098: Elf04_Bip R Toe0Nub
+    400100: Elf04_Bip R UpperArm
+    400102: Elf04_Bip Spine
+    400104: Elf04_Bip Spine1
+    400106: head eyeball left
+    400108: head eyeball right
+    400110: head eyeblow left
+    400112: head eyeblow right
+    400114: head eyelid lower
+    400116: head eyelid upper
+    400118: head jaw
+    400120: head lip left
+    400122: head lip right
+    400124: //RootNode
+    400126: Object001
+    400128: skirt back left 1
+    400130: skirt back left 2
+    400132: skirt back left 3
+    400134: skirt back left 4
+    400136: skirt back middle 1
+    400138: skirt back middle 2
+    400140: skirt back middle 3
+    400142: skirt back right 1
+    400144: skirt back right 2
+    400146: skirt back right 3
+    400148: skirt back right 4
+    400150: skirt front left 1
+    400152: skirt front left 2
+    400154: skirt front middle 1
+    400156: skirt front middle 2
+    400158: skirt front middle 3
+    400160: skirt front right 1
+    400162: skirt front right 2
+    400164: skirt left 1
+    400166: skirt left 2
+    400168: skirt right 1
+    400170: skirt right 2
+    2100000: 'Material #26'
+    2100002: 'Material #27'
+    2100004: 'Material #28'
+    2100006: 'Material #29'
+    2100008: 'Material #30'
+    2100010: 'Material #25'
+    4300000: Object001
+    4300002: bow
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: bow
+    13700002: Object001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

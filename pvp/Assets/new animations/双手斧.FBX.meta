@@ -1,0 +1,331 @@
+fileFormatVersion: 2
+guid: 08a4f3a0020a1e041b4f66f585ce0fd9
+timeCreated: 1532863432
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arbiter
+    100002: Bip01
+    100004: Bip01 Footsteps
+    100006: Bip01 Head
+    100008: Bip01 HeadNub
+    100010: Bip01 L Calf
+    100012: Bip01 L Clavicle
+    100014: Bip01 L Finger0
+    100016: Bip01 L Finger01
+    100018: Bip01 L Finger02
+    100020: Bip01 L Finger0Nub
+    100022: Bip01 L Finger1
+    100024: Bip01 L Finger11
+    100026: Bip01 L Finger12
+    100028: Bip01 L Finger1Nub
+    100030: Bip01 L Finger2
+    100032: Bip01 L Finger21
+    100034: Bip01 L Finger22
+    100036: Bip01 L Finger2Nub
+    100038: Bip01 L Finger3
+    100040: Bip01 L Finger31
+    100042: Bip01 L Finger32
+    100044: Bip01 L Finger3Nub
+    100046: Bip01 L Finger4
+    100048: Bip01 L Finger41
+    100050: Bip01 L Finger42
+    100052: Bip01 L Finger4Nub
+    100054: Bip01 L Foot
+    100056: Bip01 L Forearm
+    100058: Bip01 L Hand
+    100060: Bip01 L Thigh
+    100062: Bip01 L Toe0
+    100064: Bip01 L Toe0Nub
+    100066: Bip01 L UpperArm
+    100068: Bip01 Neck
+    100070: Bip01 Pelvis
+    100072: Bip01 R Calf
+    100074: Bip01 R Clavicle
+    100076: Bip01 R Finger0
+    100078: Bip01 R Finger01
+    100080: Bip01 R Finger02
+    100082: Bip01 R Finger0Nub
+    100084: Bip01 R Finger1
+    100086: Bip01 R Finger11
+    100088: Bip01 R Finger12
+    100090: Bip01 R Finger1Nub
+    100092: Bip01 R Finger2
+    100094: Bip01 R Finger21
+    100096: Bip01 R Finger22
+    100098: Bip01 R Finger2Nub
+    100100: Bip01 R Finger3
+    100102: Bip01 R Finger31
+    100104: Bip01 R Finger32
+    100106: Bip01 R Finger3Nub
+    100108: Bip01 R Finger4
+    100110: Bip01 R Finger41
+    100112: Bip01 R Finger42
+    100114: Bip01 R Finger4Nub
+    100116: Bip01 R Foot
+    100118: Bip01 R Forearm
+    100120: Bip01 R Hand
+    100122: Bip01 R Thigh
+    100124: Bip01 R Toe0
+    100126: Bip01 R Toe0Nub
+    100128: Bip01 R UpperArm
+    100130: Bip01 Spine
+    100132: Bip01 Spine1
+    100134: Bip01 Spine2
+    100136: Bone01
+    100138: Bone02
+    100140: Bone03
+    100142: Bone04
+    100144: Dummy01
+    100146: Object23
+    100148: Object24
+    100150: Object25
+    100152: Object26
+    100154: Object27
+    100156: Object28
+    100158: Object29
+    100160: Object30
+    100162: Object31
+    100164: Object32
+    100166: Object33
+    100168: Plane01
+    100170: Plane02
+    100172: Rebellion
+    100174: s_danteDark_ingame
+    100176: Sky01
+    100178: Slider01
+    100180: SuperSpray01
+    100182: //RootNode
+    400000: Arbiter
+    400002: Bip01
+    400004: Bip01 Footsteps
+    400006: Bip01 Head
+    400008: Bip01 HeadNub
+    400010: Bip01 L Calf
+    400012: Bip01 L Clavicle
+    400014: Bip01 L Finger0
+    400016: Bip01 L Finger01
+    400018: Bip01 L Finger02
+    400020: Bip01 L Finger0Nub
+    400022: Bip01 L Finger1
+    400024: Bip01 L Finger11
+    400026: Bip01 L Finger12
+    400028: Bip01 L Finger1Nub
+    400030: Bip01 L Finger2
+    400032: Bip01 L Finger21
+    400034: Bip01 L Finger22
+    400036: Bip01 L Finger2Nub
+    400038: Bip01 L Finger3
+    400040: Bip01 L Finger31
+    400042: Bip01 L Finger32
+    400044: Bip01 L Finger3Nub
+    400046: Bip01 L Finger4
+    400048: Bip01 L Finger41
+    400050: Bip01 L Finger42
+    400052: Bip01 L Finger4Nub
+    400054: Bip01 L Foot
+    400056: Bip01 L Forearm
+    400058: Bip01 L Hand
+    400060: Bip01 L Thigh
+    400062: Bip01 L Toe0
+    400064: Bip01 L Toe0Nub
+    400066: Bip01 L UpperArm
+    400068: Bip01 Neck
+    400070: Bip01 Pelvis
+    400072: Bip01 R Calf
+    400074: Bip01 R Clavicle
+    400076: Bip01 R Finger0
+    400078: Bip01 R Finger01
+    400080: Bip01 R Finger02
+    400082: Bip01 R Finger0Nub
+    400084: Bip01 R Finger1
+    400086: Bip01 R Finger11
+    400088: Bip01 R Finger12
+    400090: Bip01 R Finger1Nub
+    400092: Bip01 R Finger2
+    400094: Bip01 R Finger21
+    400096: Bip01 R Finger22
+    400098: Bip01 R Finger2Nub
+    400100: Bip01 R Finger3
+    400102: Bip01 R Finger31
+    400104: Bip01 R Finger32
+    400106: Bip01 R Finger3Nub
+    400108: Bip01 R Finger4
+    400110: Bip01 R Finger41
+    400112: Bip01 R Finger42
+    400114: Bip01 R Finger4Nub
+    400116: Bip01 R Foot
+    400118: Bip01 R Forearm
+    400120: Bip01 R Hand
+    400122: Bip01 R Thigh
+    400124: Bip01 R Toe0
+    400126: Bip01 R Toe0Nub
+    400128: Bip01 R UpperArm
+    400130: Bip01 Spine
+    400132: Bip01 Spine1
+    400134: Bip01 Spine2
+    400136: Bone01
+    400138: Bone02
+    400140: Bone03
+    400142: Bone04
+    400144: Dummy01
+    400146: Object23
+    400148: Object24
+    400150: Object25
+    400152: Object26
+    400154: Object27
+    400156: Object28
+    400158: Object29
+    400160: Object30
+    400162: Object31
+    400164: Object32
+    400166: Object33
+    400168: Plane01
+    400170: Plane02
+    400172: Rebellion
+    400174: s_danteDark_ingame
+    400176: Sky01
+    400178: Slider01
+    400180: SuperSpray01
+    400182: //RootNode
+    2100000: mi_danteDark_vest
+    2100002: mi_danteDark_naked_upperbody
+    2100004: mi_danteDark_head
+    2100006: mi_danteDark_eyeLashes
+    2100008: mi_danteDark_eye
+    2100010: mi_danteDark_inGameHair_masked
+    2100012: mi_danteDark_lowerBody
+    2100014: 'Material #18'
+    2100016: No Name
+    2100018: 'Material #19'
+    2100020: Default Standard
+    2100022: Default Standfdard
+    2300000: Object23
+    2300002: Object24
+    2300004: Object25
+    2300006: Object26
+    2300008: Object27
+    2300010: Object28
+    2300012: Object29
+    2300014: Object30
+    2300016: Object31
+    2300018: Object32
+    2300020: Object33
+    2300022: Plane01
+    2300024: Plane02
+    3300000: Object23
+    3300002: Object24
+    3300004: Object25
+    3300006: Object26
+    3300008: Object27
+    3300010: Object28
+    3300012: Object29
+    3300014: Object30
+    3300016: Object31
+    3300018: Object32
+    3300020: Object33
+    3300022: Plane01
+    3300024: Plane02
+    4300000: s_danteDark_ingame
+    4300002: Rebellion
+    4300004: Plane01
+    4300006: Arbiter
+    4300008: Plane02
+    4300010: Object23
+    4300012: Object24
+    4300014: Object25
+    4300016: Object26
+    4300018: Object27
+    4300020: Object28
+    4300022: Object29
+    4300024: Object30
+    4300026: Object31
+    4300028: Object32
+    4300030: Object33
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Sky01
+    13700000: Arbiter
+    13700002: Rebellion
+    13700004: s_danteDark_ingame
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

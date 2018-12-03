@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: aadd4c687fa4a574c83db6b0d1087d04
+timeCreated: 1543786109
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: "??\xD7y\xD7?"
+    100002: Bip01
+    100004: Bip01 Footsteps
+    100006: Bip01 Head
+    100008: Bip01 HeadNub
+    100010: Bip01 L Calf
+    100012: Bip01 L Clavicle
+    100014: Bip01 L Finger0
+    100016: Bip01 L Finger0Nub
+    100018: Bip01 L Finger1
+    100020: Bip01 L Finger1Nub
+    100022: Bip01 L Foot
+    100024: Bip01 L Forearm
+    100026: Bip01 L Hand
+    100028: Bip01 L Thigh
+    100030: Bip01 L Toe0
+    100032: Bip01 L Toe0Nub
+    100034: Bip01 L UpperArm
+    100036: Bip01 Neck
+    100038: Bip01 Pelvis
+    100040: Bip01 R Calf
+    100042: Bip01 R Clavicle
+    100044: Bip01 R Finger0
+    100046: Bip01 R Finger0Nub
+    100048: Bip01 R Finger1
+    100050: Bip01 R Finger1Nub
+    100052: Bip01 R Foot
+    100054: Bip01 R Forearm
+    100056: Bip01 R Hand
+    100058: Bip01 R Thigh
+    100060: Bip01 R Toe0
+    100062: Bip01 R Toe0Nub
+    100064: Bip01 R UpperArm
+    100066: Bip01 Spine
+    100068: Bip01 Spine1
+    100070: Bip01 Spine2
+    100072: Bone01
+    100074: Bone01(mirrored)
+    100076: Bone02
+    100078: Bone02(mirrored)
+    100080: Bone03
+    100082: Bone03(mirrored)
+    100084: Bone04
+    100086: Bone04(mirrored)
+    100088: Bone05
+    100090: Bone05(mirrored)
+    100092: Bone06
+    100094: Bone06(mirrored)
+    100096: Bone07
+    100098: Bone07(mirrored)
+    100100: Bone08
+    100102: Bone09
+    100104: Bone10
+    100106: Bone11
+    100108: Bone12
+    100110: Bone12(mirrored)
+    100112: Bone13
+    100114: Bone14
+    100116: Bone15
+    100118: Bone16
+    100120: Bone17
+    100122: Bone18
+    100124: Bone19
+    100126: Bone20
+    100128: Bone21
+    100130: Camera001
+    100132: Camera001.Target
+    100134: //RootNode
+    100136: Mon_Maoyou
+    100138: Mon_Maoyou_Weapon
+    100140: Plane001
+    100142: Spot001
+    100144: Spot001.Target
+    100146: Spot002
+    100148: Spot002.Target
+    100150: Spot003
+    100152: Spot003.Target
+    100154: "\xD7t\xD7\xFC"
+    100156: "\u62E8\u7247"
+    400000: "??\xD7y\xD7?"
+    400002: Bip01
+    400004: Bip01 Footsteps
+    400006: Bip01 Head
+    400008: Bip01 HeadNub
+    400010: Bip01 L Calf
+    400012: Bip01 L Clavicle
+    400014: Bip01 L Finger0
+    400016: Bip01 L Finger0Nub
+    400018: Bip01 L Finger1
+    400020: Bip01 L Finger1Nub
+    400022: Bip01 L Foot
+    400024: Bip01 L Forearm
+    400026: Bip01 L Hand
+    400028: Bip01 L Thigh
+    400030: Bip01 L Toe0
+    400032: Bip01 L Toe0Nub
+    400034: Bip01 L UpperArm
+    400036: Bip01 Neck
+    400038: Bip01 Pelvis
+    400040: Bip01 R Calf
+    400042: Bip01 R Clavicle
+    400044: Bip01 R Finger0
+    400046: Bip01 R Finger0Nub
+    400048: Bip01 R Finger1
+    400050: Bip01 R Finger1Nub
+    400052: Bip01 R Foot
+    400054: Bip01 R Forearm
+    400056: Bip01 R Hand
+    400058: Bip01 R Thigh
+    400060: Bip01 R Toe0
+    400062: Bip01 R Toe0Nub
+    400064: Bip01 R UpperArm
+    400066: Bip01 Spine
+    400068: Bip01 Spine1
+    400070: Bip01 Spine2
+    400072: Bone01
+    400074: Bone01(mirrored)
+    400076: Bone02
+    400078: Bone02(mirrored)
+    400080: Bone03
+    400082: Bone03(mirrored)
+    400084: Bone04
+    400086: Bone04(mirrored)
+    400088: Bone05
+    400090: Bone05(mirrored)
+    400092: Bone06
+    400094: Bone06(mirrored)
+    400096: Bone07
+    400098: Bone07(mirrored)
+    400100: Bone08
+    400102: Bone09
+    400104: Bone10
+    400106: Bone11
+    400108: Bone12
+    400110: Bone12(mirrored)
+    400112: Bone13
+    400114: Bone14
+    400116: Bone15
+    400118: Bone16
+    400120: Bone17
+    400122: Bone18
+    400124: Bone19
+    400126: Bone20
+    400128: Bone21
+    400130: Camera001
+    400132: Camera001.Target
+    400134: //RootNode
+    400136: Mon_Maoyou
+    400138: Mon_Maoyou_Weapon
+    400140: Plane001
+    400142: Spot001
+    400144: Spot001.Target
+    400146: Spot002
+    400148: Spot002.Target
+    400150: Spot003
+    400152: Spot003.Target
+    400154: "\xD7t\xD7\xFC"
+    400156: "\u62E8\u7247"
+    2000000: Camera001
+    2100000: Mon_Maoyou_Weapon
+    2100002: Mon_Maoyou
+    2100004: No Name
+    2300000: Plane001
+    3300000: Plane001
+    4300000: Mon_Maoyou_Weapon
+    4300002: Mon_Maoyou
+    4300004: "\u62E8\u7247"
+    4300006: Plane001
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Spot001
+    10800002: Spot002
+    10800004: Spot003
+    13700000: Mon_Maoyou
+    13700002: Mon_Maoyou_Weapon
+    13700004: "\u62E8\u7247"
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

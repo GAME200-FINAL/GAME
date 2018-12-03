@@ -1,0 +1,961 @@
+fileFormatVersion: 2
+guid: 9774cce9b6681fa46a771234ad077e59
+timeCreated: 1540182230
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: armor shoulder left
+    100002: armor shoulder right
+    100004: armor thigh left
+    100006: armor thigh right
+    100008: bow
+    100010: breast left
+    100012: breast right
+    100014: cape 1
+    100016: cape 2
+    100018: cape 3
+    100020: cape 4
+    100022: Elf04_Bip
+    100024: Elf04_Bip Footsteps
+    100026: Elf04_Bip Head
+    100028: Elf04_Bip HeadNub
+    100030: Elf04_Bip L Calf
+    100032: Elf04_Bip L Clavicle
+    100034: Elf04_Bip L Finger0
+    100036: Elf04_Bip L Finger01
+    100038: Elf04_Bip L Finger0Nub
+    100040: Elf04_Bip L Finger1
+    100042: Elf04_Bip L Finger11
+    100044: Elf04_Bip L Finger1Nub
+    100046: Elf04_Bip L Foot
+    100048: Elf04_Bip L Forearm
+    100050: Elf04_Bip L Hand
+    100052: Elf04_Bip L Thigh
+    100054: Elf04_Bip L Toe0
+    100056: Elf04_Bip L Toe0Nub
+    100058: Elf04_Bip L UpperArm
+    100060: Elf04_Bip Neck
+    100062: Elf04_Bip Pelvis
+    100064: Elf04_Bip Ponytail1
+    100066: Elf04_Bip Ponytail11
+    100068: Elf04_Bip Ponytail1Nub
+    100070: Elf04_Bip Prop1
+    100072: Elf04_Bip R Calf
+    100074: Elf04_Bip R Clavicle
+    100076: Elf04_Bip R Finger0
+    100078: Elf04_Bip R Finger01
+    100080: Elf04_Bip R Finger0Nub
+    100082: Elf04_Bip R Finger1
+    100084: Elf04_Bip R Finger11
+    100086: Elf04_Bip R Finger1Nub
+    100088: Elf04_Bip R Foot
+    100090: Elf04_Bip R Forearm
+    100092: Elf04_Bip R Hand
+    100094: Elf04_Bip R Thigh
+    100096: Elf04_Bip R Toe0
+    100098: Elf04_Bip R Toe0Nub
+    100100: Elf04_Bip R UpperArm
+    100102: Elf04_Bip Spine
+    100104: Elf04_Bip Spine1
+    100106: head eyeball left
+    100108: head eyeball right
+    100110: head eyeblow left
+    100112: head eyeblow right
+    100114: head eyelid lower
+    100116: head eyelid upper
+    100118: head jaw
+    100120: head lip left
+    100122: head lip right
+    100124: Object001
+    100126: skirt back left 1
+    100128: skirt back left 2
+    100130: skirt back left 3
+    100132: skirt back left 4
+    100134: skirt back middle 1
+    100136: skirt back middle 2
+    100138: skirt back middle 3
+    100140: skirt back right 1
+    100142: skirt back right 2
+    100144: skirt back right 3
+    100146: skirt back right 4
+    100148: skirt front left 1
+    100150: skirt front left 2
+    100152: skirt front middle 1
+    100154: skirt front middle 2
+    100156: skirt front middle 3
+    100158: skirt front right 1
+    100160: skirt front right 2
+    100162: skirt left 1
+    100164: skirt left 2
+    100166: skirt right 1
+    100168: skirt right 2
+    100170: //RootNode
+    400000: armor shoulder left
+    400002: armor shoulder right
+    400004: armor thigh left
+    400006: armor thigh right
+    400008: bow
+    400010: breast left
+    400012: breast right
+    400014: cape 1
+    400016: cape 2
+    400018: cape 3
+    400020: cape 4
+    400022: Elf04_Bip
+    400024: Elf04_Bip Footsteps
+    400026: Elf04_Bip Head
+    400028: Elf04_Bip HeadNub
+    400030: Elf04_Bip L Calf
+    400032: Elf04_Bip L Clavicle
+    400034: Elf04_Bip L Finger0
+    400036: Elf04_Bip L Finger01
+    400038: Elf04_Bip L Finger0Nub
+    400040: Elf04_Bip L Finger1
+    400042: Elf04_Bip L Finger11
+    400044: Elf04_Bip L Finger1Nub
+    400046: Elf04_Bip L Foot
+    400048: Elf04_Bip L Forearm
+    400050: Elf04_Bip L Hand
+    400052: Elf04_Bip L Thigh
+    400054: Elf04_Bip L Toe0
+    400056: Elf04_Bip L Toe0Nub
+    400058: Elf04_Bip L UpperArm
+    400060: Elf04_Bip Neck
+    400062: Elf04_Bip Pelvis
+    400064: Elf04_Bip Ponytail1
+    400066: Elf04_Bip Ponytail11
+    400068: Elf04_Bip Ponytail1Nub
+    400070: Elf04_Bip Prop1
+    400072: Elf04_Bip R Calf
+    400074: Elf04_Bip R Clavicle
+    400076: Elf04_Bip R Finger0
+    400078: Elf04_Bip R Finger01
+    400080: Elf04_Bip R Finger0Nub
+    400082: Elf04_Bip R Finger1
+    400084: Elf04_Bip R Finger11
+    400086: Elf04_Bip R Finger1Nub
+    400088: Elf04_Bip R Foot
+    400090: Elf04_Bip R Forearm
+    400092: Elf04_Bip R Hand
+    400094: Elf04_Bip R Thigh
+    400096: Elf04_Bip R Toe0
+    400098: Elf04_Bip R Toe0Nub
+    400100: Elf04_Bip R UpperArm
+    400102: Elf04_Bip Spine
+    400104: Elf04_Bip Spine1
+    400106: head eyeball left
+    400108: head eyeball right
+    400110: head eyeblow left
+    400112: head eyeblow right
+    400114: head eyelid lower
+    400116: head eyelid upper
+    400118: head jaw
+    400120: head lip left
+    400122: head lip right
+    400124: Object001
+    400126: skirt back left 1
+    400128: skirt back left 2
+    400130: skirt back left 3
+    400132: skirt back left 4
+    400134: skirt back middle 1
+    400136: skirt back middle 2
+    400138: skirt back middle 3
+    400140: skirt back right 1
+    400142: skirt back right 2
+    400144: skirt back right 3
+    400146: skirt back right 4
+    400148: skirt front left 1
+    400150: skirt front left 2
+    400152: skirt front middle 1
+    400154: skirt front middle 2
+    400156: skirt front middle 3
+    400158: skirt front right 1
+    400160: skirt front right 2
+    400162: skirt left 1
+    400164: skirt left 2
+    400166: skirt right 1
+    400168: skirt right 2
+    400170: //RootNode
+    2100000: 'Material #26'
+    2100002: 'Material #27'
+    2100004: 'Material #28'
+    2100006: 'Material #29'
+    2100008: 'Material #30'
+    2100010: 'Material #25'
+    4300000: Object001
+    4300002: bow
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: bow
+    13700002: Object001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0.1
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Elf04_Bip Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip L Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elf04_Bip R Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: "\u65CB\u98CEnew(Clone)"
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -0.10186504, y: 0.3045427, z: 0.06333172, w: 0.94491607}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bow
+      parentName: "\u65CB\u98CEnew(Clone)"
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Elf04_Bip
+      parentName: "\u65CB\u98CEnew(Clone)"
+      position: {x: 0.30769658, y: 0.9214844, z: -0.10207938}
+      rotation: {x: -0.54831094, y: 0.33461872, z: 0.35403195, w: 0.67974025}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Elf04_Bip Footsteps
+      parentName: Elf04_Bip
+      position: {x: -0.10497562, y: -0.13589813, z: -0.901822}
+      rotation: {x: -0.09293459, y: 0.013727218, z: -0.48694956, w: 0.8683633}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Elf04_Bip Pelvis
+      parentName: Elf04_Bip
+      position: {x: -0.4297888, y: 0.02527595, z: 0.20833096}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: armor thigh left
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.10583172, y: 0.0026480458, z: 0.16375075}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1.0000001}
+    - name: armor thigh right
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.10583317, y: 0.002647949, z: -0.1637507}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: skirt back middle 1
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.09841085, y: -0.08494331, z: 0.0000003633499}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: skirt back middle 2
+      parentName: skirt back middle 1
+      position: {x: -0.29197025, y: -0.00000010900497, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: skirt back middle 3
+      parentName: skirt back middle 2
+      position: {x: -0.35317773, y: -0.000000042390823, z: -0.00000009689331}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: Elf04_Bip Spine
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.09325729, y: 0.009364544, z: 0.0027825215}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000007}
+    - name: Elf04_Bip Spine1
+      parentName: Elf04_Bip Spine
+      position: {x: -0.16251817, y: -0.00016275654, z: 0.000040356063}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000006}
+    - name: cape 1
+      parentName: Elf04_Bip Spine1
+      position: {x: -0.23995212, y: -0.09404256, z: -0.00000038757324}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: cape 2
+      parentName: cape 1
+      position: {x: -0.28907493, y: 0.0000055713654, z: 0.0000021316528}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: cape 3
+      parentName: cape 2
+      position: {x: -0.27243495, y: 0.00006588745, z: 0.000030036927}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999998}
+    - name: cape 4
+      parentName: cape 3
+      position: {x: -0.33418465, y: 0.00004985161, z: -0.00013196869}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: Elf04_Bip Neck
+      parentName: Elf04_Bip Spine1
+      position: {x: -0.23626019, y: 0.0016950031, z: 0.00000029067994}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.000001, z: 1.0000001}
+    - name: Elf04_Bip Head
+      parentName: Elf04_Bip Neck
+      position: {x: -0.093218826, y: 0.000012789917, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000006}
+    - name: Elf04_Bip HeadNub
+      parentName: Elf04_Bip Head
+      position: {x: -0.2743659, y: 0, z: -0.000000024223327}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head jaw
+      parentName: Elf04_Bip Head
+      position: {x: -0.009934858, y: 0.008841611, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000011, y: 1.0000006, z: 1}
+    - name: head lip left
+      parentName: Elf04_Bip Head
+      position: {x: 0.002768048, y: 0.03502756, z: 0.008890736}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.000001, y: 1.0000015, z: 1.000001}
+    - name: head lip right
+      parentName: Elf04_Bip Head
+      position: {x: 0.0027679512, y: 0.035027705, z: -0.0088903485}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 0.99999994, z: 0.9999998}
+    - name: head eyelid upper
+      parentName: Elf04_Bip Head
+      position: {x: -0.051130794, y: 0.06292455, z: 0.00000038757324}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000011, y: 1.0000004, z: 1.0000011}
+    - name: head eyelid lower
+      parentName: Elf04_Bip Head
+      position: {x: -0.051130794, y: 0.06292455, z: 0.00000038757324}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000006}
+    - name: head eyeblow left
+      parentName: Elf04_Bip Head
+      position: {x: -0.075625904, y: 0.015143842, z: 0.0010003265}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000014}
+    - name: head eyeball left
+      parentName: Elf04_Bip Head
+      position: {x: -0.051130503, y: 0.06292445, z: 0.02900036}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000013, y: 1.0000007, z: 1.000001}
+    - name: head eyeblow right
+      parentName: Elf04_Bip Head
+      position: {x: -0.07562561, y: 0.015143649, z: -0.0009997452}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000013}
+    - name: head eyeball right
+      parentName: Elf04_Bip Head
+      position: {x: -0.0511306, y: 0.06286879, z: -0.02899978}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000012, y: 1.0000012, z: 1.0000011}
+    - name: Elf04_Bip Ponytail1
+      parentName: Elf04_Bip Head
+      position: {x: 0.035570018, y: -0.0887367, z: -0.000011239624}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000005}
+    - name: Elf04_Bip Ponytail11
+      parentName: Elf04_Bip Ponytail1
+      position: {x: -0.18411453, y: -0.00013952637, z: -0.000022237014}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1}
+    - name: Elf04_Bip Ponytail1Nub
+      parentName: Elf04_Bip Ponytail11
+      position: {x: -0.18408164, y: 0, z: 0.000000024223327}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
+    - name: Elf04_Bip L Clavicle
+      parentName: Elf04_Bip Neck
+      position: {x: 0.033642422, y: -0.0026112746, z: 0.02073701}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
+    - name: armor shoulder left
+      parentName: Elf04_Bip L Clavicle
+      position: {x: -0.044861313, y: -0.013393223, z: 0.05133204}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Elf04_Bip L UpperArm
+      parentName: Elf04_Bip L Clavicle
+      position: {x: -0.107812025, y: 0, z: -0.00000009689331}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 0.9999998, z: 1.0000006}
+    - name: Elf04_Bip L Forearm
+      parentName: Elf04_Bip L UpperArm
+      position: {x: -0.2279588, y: 0, z: 0.00000009689331}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000006, z: 1.0000004}
+    - name: Elf04_Bip L Hand
+      parentName: Elf04_Bip L Forearm
+      position: {x: -0.23612347, y: 0.000000036334992, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000015}
+    - name: Elf04_Bip L Finger1
+      parentName: Elf04_Bip L Hand
+      position: {x: -0.100794576, y: -0.000009107971, z: 0.0000035123824}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.99999964, z: 0.99999994}
+    - name: Elf04_Bip L Finger11
+      parentName: Elf04_Bip L Finger1
+      position: {x: -0.04368338, y: 0.000000012111664, z: 0.000000048446655}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000011}
+    - name: Elf04_Bip L Finger1Nub
+      parentName: Elf04_Bip L Finger11
+      position: {x: -0.06691772, y: -0.000000048446655, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: Elf04_Bip L Finger0
+      parentName: Elf04_Bip L Hand
+      position: {x: -0.020138063, y: 0.004127655, z: -0.028119747}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.99999964}
+    - name: Elf04_Bip L Finger01
+      parentName: Elf04_Bip L Finger0
+      position: {x: -0.047443338, y: -0.00000009689331, z: 0.000000006055832}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000011, y: 1.0000002, z: 1.0000005}
+    - name: Elf04_Bip L Finger0Nub
+      parentName: Elf04_Bip L Finger01
+      position: {x: -0.04744342, y: -0.000000024223327, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Elf04_Bip R Clavicle
+      parentName: Elf04_Bip Neck
+      position: {x: 0.034193844, y: -0.0026119528, z: -0.01981502}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000005}
+    - name: armor shoulder right
+      parentName: Elf04_Bip R Clavicle
+      position: {x: -0.044860948, y: -0.01339303, z: -0.051332235}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Elf04_Bip R UpperArm
+      parentName: Elf04_Bip R Clavicle
+      position: {x: -0.10781193, y: 0.000000048446655, z: -0.00000009689331}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
+    - name: Elf04_Bip R Forearm
+      parentName: Elf04_Bip R UpperArm
+      position: {x: -0.22795871, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000008, y: 1.0000006, z: 1.0000005}
+    - name: Elf04_Bip R Hand
+      parentName: Elf04_Bip R Forearm
+      position: {x: -0.23612347, y: -0.000000024223327, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
+    - name: Elf04_Bip R Finger1
+      parentName: Elf04_Bip R Hand
+      position: {x: -0.10079448, y: -0.000009156418, z: -0.000003488159}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 0.99999994, z: 1.0000001}
+    - name: Elf04_Bip R Finger11
+      parentName: Elf04_Bip R Finger1
+      position: {x: -0.043683283, y: 0, z: 0.000000048446655}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Elf04_Bip R Finger1Nub
+      parentName: Elf04_Bip R Finger11
+      position: {x: -0.06691762, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Elf04_Bip R Finger0
+      parentName: Elf04_Bip R Hand
+      position: {x: -0.020138014, y: 0.004127655, z: 0.028119795}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 1, y: 1.0000019, z: 1.0000004}
+    - name: Elf04_Bip R Finger01
+      parentName: Elf04_Bip R Finger0
+      position: {x: -0.047443338, y: 0, z: -0.00000009689331}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000017, y: 0.9999991, z: 1.0000005}
+    - name: Elf04_Bip R Finger0Nub
+      parentName: Elf04_Bip R Finger01
+      position: {x: -0.04744342, y: 0.000000024223327, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: breast left
+      parentName: Elf04_Bip Spine1
+      position: {x: -0.07973544, y: 0.0036183354, z: 0.00000038757324}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1, z: 1.0000002}
+    - name: breast right
+      parentName: Elf04_Bip Spine1
+      position: {x: -0.07973544, y: 0.0036183354, z: 0.00000038757324}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1, z: 1.0000002}
+    - name: Elf04_Bip L Thigh
+      parentName: Elf04_Bip Spine
+      position: {x: 0.07338534, y: -0.037113238, z: 0.0954456}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000005}
+    - name: Elf04_Bip L Calf
+      parentName: Elf04_Bip L Thigh
+      position: {x: -0.50632846, y: 0.000000024223327, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000008, z: 1.0000004}
+    - name: Elf04_Bip L Foot
+      parentName: Elf04_Bip L Calf
+      position: {x: -0.43689328, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.9999996}
+    - name: Elf04_Bip L Toe0
+      parentName: Elf04_Bip L Foot
+      position: {x: -0.15436606, y: 0.120044924, z: 0.000000024223327}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Elf04_Bip L Toe0Nub
+      parentName: Elf04_Bip L Toe0
+      position: {x: -0.036765233, y: 1.8924474e-10, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Elf04_Bip R Thigh
+      parentName: Elf04_Bip Spine
+      position: {x: 0.10582358, y: -0.0137493545, z: -0.073844306}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 1.0000012, y: 1.0000004, z: 1.0000008}
+    - name: Elf04_Bip R Calf
+      parentName: Elf04_Bip R Thigh
+      position: {x: -0.50632846, y: 0.000000048446655, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999995, y: 1.0000004, z: 1}
+    - name: Elf04_Bip R Foot
+      parentName: Elf04_Bip R Calf
+      position: {x: -0.43689364, y: 0.000000018167496, z: -0.000000048446655}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 1, z: 0.99999994}
+    - name: Elf04_Bip R Toe0
+      parentName: Elf04_Bip R Foot
+      position: {x: -0.15436606, y: 0.1200449, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Elf04_Bip R Toe0Nub
+      parentName: Elf04_Bip R Toe0
+      position: {x: -0.0367652, y: -0.000000001513958, z: 0.000000048446655}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: skirt back right 1
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.10789913, y: -0.081131965, z: -0.061221965}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
+    - name: skirt back right 2
+      parentName: skirt back right 1
+      position: {x: -0.12489834, y: -0.00000012111664, z: -0.00000019378662}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.000001}
+    - name: skirt back right 3
+      parentName: skirt back right 2
+      position: {x: -0.22958793, y: -0.000000048446655, z: 0.00000029067994}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000012, y: 1.0000008, z: 1.0000015}
+    - name: skirt back right 4
+      parentName: skirt back right 3
+      position: {x: -0.2690746, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 0.9999997}
+    - name: skirt left 1
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.08799792, y: 0.023449732, z: 0.1482419}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000007, z: 1.0000012}
+    - name: skirt left 2
+      parentName: skirt left 1
+      position: {x: -0.12575914, y: 0.000000048446655, z: -0.00000009689331}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000007, z: 1.0000002}
+    - name: skirt back left 1
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.10789903, y: -0.08113206, z: 0.06122251}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000017}
+    - name: skirt back left 2
+      parentName: skirt back left 1
+      position: {x: -0.12489814, y: -0.00000006055832, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999997, y: 1.0000001, z: 0.9999996}
+    - name: skirt back left 3
+      parentName: skirt back left 2
+      position: {x: -0.22958852, y: -0.000000012111664, z: -0.00000009689331}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.99999994}
+    - name: skirt back left 4
+      parentName: skirt back left 3
+      position: {x: -0.2690745, y: -0.000000036334992, z: 0.00000009689331}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1, z: 1.0000001}
+    - name: skirt front left 1
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.076763146, y: 0.116141506, z: 0.07940018}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000012}
+    - name: skirt front left 2
+      parentName: skirt front left 1
+      position: {x: -0.12265588, y: -0.00000009689331, z: 0.00000019378662}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 0.99999976}
+    - name: skirt front right 1
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.076763146, y: 0.1161416, z: -0.079399936}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1.000001}
+    - name: skirt front right 2
+      parentName: skirt front right 1
+      position: {x: -0.12265588, y: -0.00000019378662, z: 0.00000009689331}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000008, z: 1.0000006}
+    - name: skirt front middle 1
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.06824516, y: 0.13304609, z: -0.000000012111664}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000011, z: 1.0000013}
+    - name: skirt front middle 2
+      parentName: skirt front middle 1
+      position: {x: -0.313203, y: 0, z: 0.000000024223327}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: skirt front middle 3
+      parentName: skirt front middle 2
+      position: {x: -0.31461382, y: -0.00000014533997, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: skirt right 1
+      parentName: Elf04_Bip Pelvis
+      position: {x: -0.08799928, y: 0.023449829, z: -0.14824176}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000013}
+    - name: skirt right 2
+      parentName: skirt right 1
+      position: {x: -0.12575981, y: -0.000000048446655, z: 0.000000048446655}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999964, y: 0.99999964, z: 0.9999998}
+    - name: Elf04_Bip Prop1
+      parentName: Elf04_Bip
+      position: {x: -0.06307517, y: -0.33255824, z: 0.17396002}
+      rotation: {x: 0.7770612, y: 0.1450391, z: 0.57037145, w: -0.2231949}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: Object001
+      parentName: "\u65CB\u98CEnew(Clone)"
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

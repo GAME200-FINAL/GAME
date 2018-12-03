@@ -1,0 +1,593 @@
+fileFormatVersion: 2
+guid: 555c82738a2b9fb48acd16ce05173fa1
+timeCreated: 1529261923
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Avatar_Himeko_C3_KZ
+    100002: Avatar_Mei_LD_SKL02_Air
+    100004: Bip001
+    100006: Bip001 Footsteps
+    100008: Bip001 Head
+    100010: Bip001 HeadNub
+    100012: Bip001 L Calf
+    100014: Bip001 L Clavicle
+    100016: Bip001 L Finger0
+    100018: Bip001 L Finger01
+    100020: Bip001 L Finger02
+    100022: Bip001 L Finger0Nub
+    100024: Bip001 L Finger1
+    100026: Bip001 L Finger11
+    100028: Bip001 L Finger12
+    100030: Bip001 L Finger1Nub
+    100032: Bip001 L Finger2
+    100034: Bip001 L Finger21
+    100036: Bip001 L Finger22
+    100038: Bip001 L Finger2Nub
+    100040: Bip001 L Finger3
+    100042: Bip001 L Finger31
+    100044: Bip001 L Finger32
+    100046: Bip001 L Finger3Nub
+    100048: Bip001 L Finger4
+    100050: Bip001 L Finger41
+    100052: Bip001 L Finger42
+    100054: Bip001 L Finger4Nub
+    100056: Bip001 L Foot
+    100058: Bip001 L Forearm
+    100060: Bip001 L Hand
+    100062: Bip001 L Thigh
+    100064: Bip001 L Toe0
+    100066: Bip001 L Toe0Nub
+    100068: Bip001 L UpperArm
+    100070: Bip001 Neck
+    100072: Bip001 Pelvis
+    100074: Bip001 R Calf
+    100076: Bip001 R Clavicle
+    100078: Bip001 R Finger0
+    100080: Bip001 R Finger01
+    100082: Bip001 R Finger02
+    100084: Bip001 R Finger0Nub
+    100086: Bip001 R Finger1
+    100088: Bip001 R Finger11
+    100090: Bip001 R Finger12
+    100092: Bip001 R Finger1Nub
+    100094: Bip001 R Finger2
+    100096: Bip001 R Finger21
+    100098: Bip001 R Finger22
+    100100: Bip001 R Finger2Nub
+    100102: Bip001 R Finger3
+    100104: Bip001 R Finger31
+    100106: Bip001 R Finger32
+    100108: Bip001 R Finger3Nub
+    100110: Bip001 R Finger4
+    100112: Bip001 R Finger41
+    100114: Bip001 R Finger42
+    100116: Bip001 R Finger4Nub
+    100118: Bip001 R Foot
+    100120: Bip001 R Forearm
+    100122: Bip001 R Hand
+    100124: Bip001 R Thigh
+    100126: Bip001 R Toe0
+    100128: Bip001 R Toe0Nub
+    100130: Bip001 R UpperArm
+    100132: Bip001 Spine
+    100134: Bip001 Spine1
+    100136: Bip001 Spine2
+    100138: Body005
+    100140: Bone037
+    100142: Bone038
+    100144: Bone039
+    100146: Bone040
+    100148: Bone041
+    100150: Bone042
+    100152: Bone043
+    100154: Bone044
+    100156: Bone044(mirrored)
+    100158: Bone045
+    100160: Bone045(mirrored)
+    100162: Dummy002
+    100164: EffectPos
+    100166: Eye_L
+    100168: Eye_L002
+    100170: Eye_L003
+    100172: Eye_L004
+    100174: Eye_L005
+    100176: Eye_L006
+    100178: Eye_L007
+    100180: Eye_L008
+    100182: Eye_L009
+    100184: Eye_L010
+    100186: Eye_L011
+    100188: Eye_L012
+    100190: Eye_L015
+    100192: Eye_R
+    100194: Eye_R001
+    100196: Eye_R002
+    100198: Eye_R003
+    100200: Eye_R004
+    100202: Eye_R005
+    100204: Eye_R006
+    100206: Eye_R007
+    100208: Eye_R008
+    100210: Eye_R009
+    100212: Eye_R010
+    100214: Eye_R011
+    100216: Eye_R012
+    100218: Eye_R015
+    100220: HandGunPoint
+    100222: HandGunSinglePoint
+    100224: Himeko_C1_Hairpin
+    100226: Hitbox
+    100228: Hitbox001
+    100230: Hitbox002
+    100232: InnerCamera
+    100234: InnerCamera001
+    100236: InnerCamera002
+    100238: InnerCamera003
+    100240: InnerCamera004
+    100242: InnerCamera005
+    100244: InnerCamera006
+    100246: InnerCamera007
+    100248: InnerCamera008
+    100250: InnerCamera009
+    100252: InnerCamera010
+    100254: InnerCamera011
+    100256: InnerCamera012
+    100258: Mouth003
+    100260: Mouth004
+    100262: Mouth005
+    100264: Mouth006
+    100266: Mouth007
+    100268: Mouth008
+    100270: Mouth009
+    100272: Mouth010
+    100274: Mouth011
+    100276: Mouth012
+    100278: Mouth013
+    100280: Mouth014
+    100282: //RootNode
+    100284: Point01
+    100286: Point02
+    100288: Point03
+    100290: Point04
+    100292: Point05
+    100294: Point06
+    100296: Point07
+    100298: Point08
+    100300: RealShadowPaster
+    100302: RealShadowPaster001
+    100304: RealShadowPaster002
+    100306: RealShadowPaster003
+    100308: RealShadowPaster004
+    100310: RealShadowPaster005
+    100312: RealShadowPaster006
+    100314: RealShadowPaster007
+    100316: RealShadowPaster008
+    100318: RealShadowPaster009
+    100320: RealShadowPaster010
+    100322: RealShadowPaster011
+    100324: RealShadowPaster012
+    100326: ShadowPaster
+    100328: ShadowPaster001
+    100330: ShadowPaster002
+    100332: ShadowPasterL
+    100334: ShadowPasterR
+    100336: ThrowPoint01
+    400000: Avatar_Himeko_C3_KZ
+    400002: Avatar_Mei_LD_SKL02_Air
+    400004: Bip001
+    400006: Bip001 Footsteps
+    400008: Bip001 Head
+    400010: Bip001 HeadNub
+    400012: Bip001 L Calf
+    400014: Bip001 L Clavicle
+    400016: Bip001 L Finger0
+    400018: Bip001 L Finger01
+    400020: Bip001 L Finger02
+    400022: Bip001 L Finger0Nub
+    400024: Bip001 L Finger1
+    400026: Bip001 L Finger11
+    400028: Bip001 L Finger12
+    400030: Bip001 L Finger1Nub
+    400032: Bip001 L Finger2
+    400034: Bip001 L Finger21
+    400036: Bip001 L Finger22
+    400038: Bip001 L Finger2Nub
+    400040: Bip001 L Finger3
+    400042: Bip001 L Finger31
+    400044: Bip001 L Finger32
+    400046: Bip001 L Finger3Nub
+    400048: Bip001 L Finger4
+    400050: Bip001 L Finger41
+    400052: Bip001 L Finger42
+    400054: Bip001 L Finger4Nub
+    400056: Bip001 L Foot
+    400058: Bip001 L Forearm
+    400060: Bip001 L Hand
+    400062: Bip001 L Thigh
+    400064: Bip001 L Toe0
+    400066: Bip001 L Toe0Nub
+    400068: Bip001 L UpperArm
+    400070: Bip001 Neck
+    400072: Bip001 Pelvis
+    400074: Bip001 R Calf
+    400076: Bip001 R Clavicle
+    400078: Bip001 R Finger0
+    400080: Bip001 R Finger01
+    400082: Bip001 R Finger02
+    400084: Bip001 R Finger0Nub
+    400086: Bip001 R Finger1
+    400088: Bip001 R Finger11
+    400090: Bip001 R Finger12
+    400092: Bip001 R Finger1Nub
+    400094: Bip001 R Finger2
+    400096: Bip001 R Finger21
+    400098: Bip001 R Finger22
+    400100: Bip001 R Finger2Nub
+    400102: Bip001 R Finger3
+    400104: Bip001 R Finger31
+    400106: Bip001 R Finger32
+    400108: Bip001 R Finger3Nub
+    400110: Bip001 R Finger4
+    400112: Bip001 R Finger41
+    400114: Bip001 R Finger42
+    400116: Bip001 R Finger4Nub
+    400118: Bip001 R Foot
+    400120: Bip001 R Forearm
+    400122: Bip001 R Hand
+    400124: Bip001 R Thigh
+    400126: Bip001 R Toe0
+    400128: Bip001 R Toe0Nub
+    400130: Bip001 R UpperArm
+    400132: Bip001 Spine
+    400134: Bip001 Spine1
+    400136: Bip001 Spine2
+    400138: Body005
+    400140: Bone037
+    400142: Bone038
+    400144: Bone039
+    400146: Bone040
+    400148: Bone041
+    400150: Bone042
+    400152: Bone043
+    400154: Bone044
+    400156: Bone044(mirrored)
+    400158: Bone045
+    400160: Bone045(mirrored)
+    400162: Dummy002
+    400164: EffectPos
+    400166: Eye_L
+    400168: Eye_L002
+    400170: Eye_L003
+    400172: Eye_L004
+    400174: Eye_L005
+    400176: Eye_L006
+    400178: Eye_L007
+    400180: Eye_L008
+    400182: Eye_L009
+    400184: Eye_L010
+    400186: Eye_L011
+    400188: Eye_L012
+    400190: Eye_L015
+    400192: Eye_R
+    400194: Eye_R001
+    400196: Eye_R002
+    400198: Eye_R003
+    400200: Eye_R004
+    400202: Eye_R005
+    400204: Eye_R006
+    400206: Eye_R007
+    400208: Eye_R008
+    400210: Eye_R009
+    400212: Eye_R010
+    400214: Eye_R011
+    400216: Eye_R012
+    400218: Eye_R015
+    400220: HandGunPoint
+    400222: HandGunSinglePoint
+    400224: Himeko_C1_Hairpin
+    400226: Hitbox
+    400228: Hitbox001
+    400230: Hitbox002
+    400232: InnerCamera
+    400234: InnerCamera001
+    400236: InnerCamera002
+    400238: InnerCamera003
+    400240: InnerCamera004
+    400242: InnerCamera005
+    400244: InnerCamera006
+    400246: InnerCamera007
+    400248: InnerCamera008
+    400250: InnerCamera009
+    400252: InnerCamera010
+    400254: InnerCamera011
+    400256: InnerCamera012
+    400258: Mouth003
+    400260: Mouth004
+    400262: Mouth005
+    400264: Mouth006
+    400266: Mouth007
+    400268: Mouth008
+    400270: Mouth009
+    400272: Mouth010
+    400274: Mouth011
+    400276: Mouth012
+    400278: Mouth013
+    400280: Mouth014
+    400282: //RootNode
+    400284: Point01
+    400286: Point02
+    400288: Point03
+    400290: Point04
+    400292: Point05
+    400294: Point06
+    400296: Point07
+    400298: Point08
+    400300: RealShadowPaster
+    400302: RealShadowPaster001
+    400304: RealShadowPaster002
+    400306: RealShadowPaster003
+    400308: RealShadowPaster004
+    400310: RealShadowPaster005
+    400312: RealShadowPaster006
+    400314: RealShadowPaster007
+    400316: RealShadowPaster008
+    400318: RealShadowPaster009
+    400320: RealShadowPaster010
+    400322: RealShadowPaster011
+    400324: RealShadowPaster012
+    400326: ShadowPaster
+    400328: ShadowPaster001
+    400330: ShadowPaster002
+    400332: ShadowPasterL
+    400334: ShadowPasterR
+    400336: ThrowPoint01
+    2100000: 'Material #4'
+    2100002: 'Material #8'
+    2100004: Avatar_Bronya_Left_Eye
+    2100006: Avatar_Bronya_Right_Eye
+    2100008: 'Material #11'
+    2100010: Avatar_Himeko_C1_Material_Hair
+    2100012: Avatar_HimeKo_RightEye
+    2100014: Avatar_HimeKo_Mouth
+    2100016: Avatar_Himeko_C2_Material_Skin
+    2100018: Avatar_Himeko_C2_Material_Body
+    2100020: 'Material #55'
+    2100022: Avatar_Himeko_C2_Material_Hair
+    2100024: 'Material #15'
+    2100026: 'Material #16'
+    2100028: Avatar_HimeKo_LeftEye
+    2100030: 'Material #17'
+    2100032: 'Material #18'
+    2100034: 'Material #20'
+    2100036: Avatar_Kiana_RightEye
+    2100038: Avatar_Kiana_LeftEye
+    2100040: Avatar_Kiana_Mouth
+    2100042: 'Material #23'
+    2100044: 'Material #24'
+    2100046: 'Material #26'
+    2100048: 'Material #29'
+    2100050: 'Material #30'
+    2100052: 'Material #32'
+    2100054: 'Material #34'
+    2100056: 'Material #35'
+    2100058: 'Material #37'
+    2100060: Avatar_Mei_Material_Eye_R
+    2100062: Avatar_Mei_Material_Eye_L
+    2100064: Avatar_Mei_Material_Mouth
+    2100066: 'Material #39'
+    2100068: 'Material #42'
+    2100070: 'Material #43'
+    2100072: 'Material #46'
+    2100074: 'Material #47'
+    2100076: 'Material #48'
+    2100078: 'Material #49'
+    2100080: 'Material #50'
+    2100082: 'Material #54'
+    2100084: Avatar_Ai_LeftEye
+    2100086: Avatar_Ai_RightEye
+    2300000: Eye_L
+    2300002: Eye_L002
+    2300004: Eye_L003
+    2300006: Eye_L004
+    2300008: Eye_L005
+    2300010: Eye_L006
+    2300012: Eye_L007
+    2300014: Eye_L008
+    2300016: Eye_L009
+    2300018: Eye_L010
+    2300020: Eye_L011
+    2300022: Eye_L012
+    2300024: Eye_L015
+    2300026: Eye_R
+    2300028: Eye_R001
+    2300030: Eye_R002
+    2300032: Eye_R003
+    2300034: Eye_R004
+    2300036: Eye_R005
+    2300038: Eye_R006
+    2300040: Eye_R007
+    2300042: Eye_R008
+    2300044: Eye_R009
+    2300046: Eye_R010
+    2300048: Eye_R011
+    2300050: Eye_R012
+    2300052: Eye_R015
+    2300054: Himeko_C1_Hairpin
+    2300056: Mouth003
+    2300058: Mouth004
+    2300060: Mouth005
+    2300062: Mouth006
+    2300064: Mouth007
+    2300066: Mouth008
+    2300068: Mouth009
+    2300070: Mouth010
+    2300072: Mouth011
+    2300074: Mouth012
+    2300076: Mouth013
+    2300078: Mouth014
+    3300000: Eye_L
+    3300002: Eye_L002
+    3300004: Eye_L003
+    3300006: Eye_L004
+    3300008: Eye_L005
+    3300010: Eye_L006
+    3300012: Eye_L007
+    3300014: Eye_L008
+    3300016: Eye_L009
+    3300018: Eye_L010
+    3300020: Eye_L011
+    3300022: Eye_L012
+    3300024: Eye_L015
+    3300026: Eye_R
+    3300028: Eye_R001
+    3300030: Eye_R002
+    3300032: Eye_R003
+    3300034: Eye_R004
+    3300036: Eye_R005
+    3300038: Eye_R006
+    3300040: Eye_R007
+    3300042: Eye_R008
+    3300044: Eye_R009
+    3300046: Eye_R010
+    3300048: Eye_R011
+    3300050: Eye_R012
+    3300052: Eye_R015
+    3300054: Himeko_C1_Hairpin
+    3300056: Mouth003
+    3300058: Mouth004
+    3300060: Mouth005
+    3300062: Mouth006
+    3300064: Mouth007
+    3300066: Mouth008
+    3300068: Mouth009
+    3300070: Mouth010
+    3300072: Mouth011
+    3300074: Mouth012
+    3300076: Mouth013
+    3300078: Mouth014
+    4300000: Eye_L002
+    4300002: Eye_R001
+    4300004: Eye_L
+    4300006: Eye_R
+    4300008: Mouth003
+    4300010: Himeko_C1_Hairpin
+    4300012: Eye_R002
+    4300014: Mouth004
+    4300016: Body005
+    4300018: Mouth005
+    4300020: Eye_R003
+    4300022: Eye_L003
+    4300024: Eye_R004
+    4300026: Mouth006
+    4300028: Eye_L004
+    4300030: Eye_R005
+    4300032: Eye_L005
+    4300034: Mouth007
+    4300036: Eye_L006
+    4300038: Eye_R006
+    4300040: Mouth008
+    4300042: Mouth009
+    4300044: Eye_R007
+    4300046: Eye_L007
+    4300048: Eye_R008
+    4300050: Eye_L008
+    4300052: Mouth010
+    4300054: Eye_R009
+    4300056: Eye_L009
+    4300058: Mouth011
+    4300060: Mouth012
+    4300062: Eye_L010
+    4300064: Eye_R010
+    4300066: Mouth013
+    4300068: Eye_L011
+    4300070: Eye_R011
+    4300072: Eye_R012
+    4300074: Mouth014
+    4300076: Eye_L012
+    4300078: Eye_L015
+    4300080: Eye_R015
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Body005
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
