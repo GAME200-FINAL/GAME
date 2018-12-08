@@ -36,6 +36,7 @@ public class chmove : MonoBehaviour
 	Vector3 updirection;
 	public GameObject jumpeffect;
     float tofall;
+    GameObject direction;
 	//public GameObject ground;
 
 	public bool isGrounded()
@@ -46,6 +47,7 @@ public class chmove : MonoBehaviour
          	// Use this for initialization
 	void Start () 
     {
+        direction = GameObject.Find("direction");
 		Vector3 updirection = GameObject.Find("direction").transform.up;
 		updirection.z = 0;
 		updirection.x = 0;
@@ -105,10 +107,10 @@ public class chmove : MonoBehaviour
             }
             Vector3 forward,right,targetDirection;
             Quaternion targetRotation;
-            forward = Camera.main.transform.forward;
+            forward = direction.transform.forward;
             forward.y = 0;
             forward = forward.normalized;
-            right = Camera.main.transform.right;
+            right = direction.transform.right;
             right.y = 0;
             targetDirection = forward * Input.GetAxis("Vertical") + right * Input.GetAxis("Horizontal");
             targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
