@@ -36,8 +36,8 @@ public class collisiondetect : MonoBehaviour {
             float distance = Vector3.Distance(transform.position, enemy.transform.position);
             Vector3 diff = enemy.transform.position - transform.position;
             float angle = Vector3.Angle(transform.forward, diff);
-            Debug.Log(distance);
-            Debug.Log(angle);
+            //Debug.Log(distance);
+           // Debug.Log(angle);
             if (distance < attackdistance && angle <= 90)
             {
                 pausetime(0.15f);

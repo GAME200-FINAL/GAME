@@ -8,6 +8,8 @@ public class chattack : MonoBehaviour {
     AnimatorStateInfo prestate;
     int slashnum;
     GameObject enemy;
+    public GameObject katana;
+    public GameObject backkatana;
     private void Awake()
     {
         animecontrol = GetComponent<Animator>();
@@ -15,7 +17,7 @@ public class chattack : MonoBehaviour {
     }
     // Use this for initialization
     void Start () {
-  
+      
     }
 	
 	// Update is called once per frame
@@ -55,11 +57,15 @@ public class chattack : MonoBehaviour {
         {
             animecontrol.SetBool("guard", false);
         }
-        if (state.IsTag("normalattack")&&state.IsTag("attack"))
-        if(state.normalizedTime>=1)
+        if (state.IsTag("normalattack") || state.IsTag("attack"))
         {
-            resetmove();
-           
+            Debug.Log("attack");
+            if (state.normalizedTime >= 1)
+            {
+                Debug.Log("reset");
+                resetmove();
+
+            }
         }
     }
     public void resetmove()
@@ -69,6 +75,7 @@ public class chattack : MonoBehaviour {
     }
     void Attack()
     {
+        weapondisplay();
         //speedback ();
         animecontrol.SetBool("attack", true);
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
@@ -91,6 +98,22 @@ public class chattack : MonoBehaviour {
         {
             animecontrol.SetInteger("attacktime", 4);
             slashnum = 3;
+        }
+    }
+    void backweapon()
+    {
+        if(katana.activeSelf)
+        {
+            katana.SetActive(false);
+            //backkatana.SetActive(true);
+        }
+    }
+    void weapondisplay()
+    {
+        if (!katana.activeSelf)
+        {
+            katana.SetActive(true);
+           // backkatana.SetActive(false);
         }
     }
 }
