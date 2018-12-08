@@ -22,6 +22,11 @@ public class chattack : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if(state.IsTag("holster")&&state.normalizedTime>0.8f)
+        {
+          
+            backweapon();
+        }
         if(enemy==null)
          {
             if (this.tag == "p1")
@@ -48,7 +53,7 @@ public class chattack : MonoBehaviour {
 
                 transform.LookAt(enemy.transform);
             }
-
+            weapondisplay();
             animecontrol.Play("guard");
             animecontrol.SetBool("guard", true);
         }
@@ -112,6 +117,7 @@ public class chattack : MonoBehaviour {
     }
     void HeavyAttack()
     {
+        weapondisplay();
         resetmove();
         animecontrol.SetBool("attack", true);
         animecontrol.Play("heavyattack");

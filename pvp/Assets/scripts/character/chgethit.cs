@@ -40,6 +40,7 @@ public class chgethit : MonoBehaviour {
         if (!(chstate.IsTag("dodge")&&chstate.normalizedTime<0.5f)&&!chstate.IsTag("guard"))
         {
             //GetComponent<chattack>().resetmove();
+            //GetComponent<chattack>().backweapon();
             if (hp > 0)
             {
                if(!chstate.IsTag("mgethit"))
@@ -66,7 +67,8 @@ public class chgethit : MonoBehaviour {
             chstate = this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
             if (!chstate.IsTag("dodge"))
             {
-              //GetComponent<chattack>().resetmove();
+            //GetComponent<chattack>().resetmove();
+            //GetComponent<chattack>().backweapon();
             if (hp > 0)
                 {
                  // hp -= 10;
