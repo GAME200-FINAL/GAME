@@ -279,7 +279,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.55066204
+      - time: 0.49930254
         functionName: heavyattackdetect
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
@@ -1256,7 +1256,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 1
     hasExtraRoot: 1
     skeletonHasParents: 1
