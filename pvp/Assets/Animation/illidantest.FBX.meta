@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 987662e2d46a9ee4a9363223fdb25ad5
-timeCreated: 1543786094
-licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: 1-30
     100002: 1-30.Target
@@ -299,6 +297,12 @@ ModelImporter:
     7400000: Take 001
     9500000: //RootNode
     13700000: Mesh_Illidan
+    6000828045688606266: 1-30
+    6000828045688606268: 34-61
+    6000828045688606270: Camera01
+    6000828045688606272: Camera02
+    6000828045688606274: Camera03
+    6000828045688606276: Camera04
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -318,6 +322,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -349,6 +354,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.001
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -368,7 +375,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

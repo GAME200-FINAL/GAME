@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: dbec80d463fd01b49b5837ee55c22846
-timeCreated: 1540181775
-licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: Bip001
     100002: Bip001-Head
@@ -256,6 +254,7 @@ ModelImporter:
     7400000: Take 001
     9500000: //RootNode
     13700000: MOC_BoneFighter_A_SKEL
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -271,10 +270,26 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Bip001-Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Spine' has translation
+      animation that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Spine1' has translation
+      animation that will be discarded.\n\t'Bip001-Spine2' has translation animation
+      that will be discarded.\n\t'Bip001-L-Clavicle' has translation animation that
+      will be discarded.\n\t'Bip001-L-Finger01' has scale animation that will be discarded.\n\t'Bip001-L-Finger1'
+      has scale animation that will be discarded.\n\t'Bip001-L-Finger11' has scale
+      animation that will be discarded.\n\t'Bip001-R-Clavicle' has translation animation
+      that will be discarded.\n\t'Bip001-R-Finger11' has scale animation that will
+      be discarded.\n\t'Bip001-L-Thigh' has translation animation that will be discarded.\n\t'Bip001-L-Toe0'
+      has translation animation that will be discarded.\n\t'Bip001-R-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Toe0' has translation animation
+      that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -306,6 +321,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1062,7 +1079,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1

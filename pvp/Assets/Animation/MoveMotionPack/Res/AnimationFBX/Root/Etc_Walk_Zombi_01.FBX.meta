@@ -1,8 +1,7 @@
 fileFormatVersion: 2
 guid: 297644808deb33f4ba506a5260d03669
-timeCreated: 18446744011573954816
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: Bip01
     100002: Bip01 Footsteps
@@ -238,7 +237,33 @@ ModelImporter:
     13700000: man01
     13700002: man02
     13700004: man03
-  externalObjects: {}
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 09 - Default
+    second: {fileID: 2100000, guid: abc9647384c31234a8b2ee2a72f9c14b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 02f192f8e03ab8d4caa1e8927f1ee719, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\uBA38\uB9AC"
+    second: {fileID: 2100000, guid: 6492e56d5e64ce643aed833b4f1c5511, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\uC0C1\uCCB4"
+    second: {fileID: 2100000, guid: 555b95788d9860f43ac40e9052470d81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\uD558\uCCB4"
+    second: {fileID: 2100000, guid: 37a5e6100daea314d83bd62244fb9af7, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -251,12 +276,24 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
+      does not match position in animation file:\n\t'Bip01 L Thigh' : position error
+      = 10.591195 mm\n\t'Bip01 R Thigh' : position error = 9.761587 mm\n"
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Bip01 Spine' has translation animation that
+      will be discarded.\n\t'Bip01 Spine' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'Bip01 Neck' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'Bip01 L Clavicle'
+      has translation animation that will be discarded.\n\t'Bip01 R Clavicle' has
+      translation animation that will be discarded.\n\t'Bip01 L Thigh' has translation
+      animation that will be discarded.\n\t'Bip01 R Thigh' has translation animation
+      that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -281,11 +318,15 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1218,7 +1259,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 0

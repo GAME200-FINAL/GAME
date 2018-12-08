@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: d4c081336e2cb0a46bcd2d7e87889c6e
-timeCreated: 1508089519
-licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: ankle_jnt_lf
     100002: ankle_jnt_rt
@@ -254,22 +252,23 @@ ModelImporter:
     13700020: barbarianWaistarmorLefthigh_meshShape
     13700022: barbarianWaistarmorRighthigh_meshShape
     13700024: barbarianWeaponhigh_meshShape
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: armor_mat
-    second: {fileID: 2100000, guid: a973a786f6dfa85408bc0f1f46875d1d, type: 2}
+    second: {fileID: 2100000, guid: 7bda9d5e7ea72bc47ac6a651e3e7f75f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: eye_mat
-    second: {fileID: 2100000, guid: 1ff0b250d87418547bc0e9549247d12f, type: 2}
+    second: {fileID: 2100000, guid: f25f6a5b857c82b4ca7c55e200d0651c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skin_mat
-    second: {fileID: 2100000, guid: 1ff0b250d87418547bc0e9549247d12f, type: 2}
+    second: {fileID: 2100000, guid: f25f6a5b857c82b4ca7c55e200d0651c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -441,6 +440,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -532,24 +532,33 @@ ModelImporter:
         curve:
           serializedVersion: 2
           curve:
-          - serializedVersion: 2
+          - serializedVersion: 3
             time: 0
             value: 0
             inSlope: 0
             outSlope: 0
             tangentMode: 0
-          - serializedVersion: 2
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
             time: 0.060372517
             value: 1
             inSlope: 0
             outSlope: 0
             tangentMode: 0
-          - serializedVersion: 2
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
             time: 1
             value: 0
             inSlope: 0
             outSlope: 0
             tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
           preInfinity: 3
           postInfinity: 3
           rotationOrder: 0
@@ -1037,6 +1046,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1907,7 +1918,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
