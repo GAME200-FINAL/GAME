@@ -39,7 +39,23 @@ public class chattack : MonoBehaviour {
 
                 Attack();
         }
-        if(state.IsTag("normalattack")&&state.IsTag("attack"))
+
+        if (Input.GetButtonDown("Fire2") && !state.IsTag("mgethit"))
+        {
+            if (enemy != null)
+            {
+
+                transform.LookAt(enemy.transform);
+            }
+
+            animecontrol.Play("guard");
+            animecontrol.SetBool("guard", true);
+        }
+        if(Input.GetButtonUp("Fire2")&&state.IsTag("guard"))
+        {
+            animecontrol.SetBool("guard", false);
+        }
+        if (state.IsTag("normalattack")&&state.IsTag("attack"))
         if(state.normalizedTime>=1)
         {
             resetmove();

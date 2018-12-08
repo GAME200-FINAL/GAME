@@ -98,6 +98,8 @@ ModelImporter:
     100184: ShadowPasterR
     100186: ThrowPoint01
     100188: //RootNode
+    100190: "??\xD7y\xD7?"
+    100192: "\xD7t\xD7\xFC"
     400000: Avatar_Himeko_C3_KZ
     400002: Avatar_Mei_LD_SKL02_Air
     400004: Body005
@@ -193,6 +195,8 @@ ModelImporter:
     400184: ShadowPasterR
     400186: ThrowPoint01
     400188: //RootNode
+    400190: "??\xD7y\xD7?"
+    400192: "\xD7t\xD7\xFC"
     2100000: 'Material #4'
     2100002: 'Material #8'
     2100004: Avatar_Bronya_Left_Eye
@@ -424,7 +428,11 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
+<<<<<<< HEAD
     hasPreviousCalculatedGlobalScale: 0
+=======
+    hasPreviousCalculatedGlobalScale: 1
+>>>>>>> 2cd65dedbb63a8d7cf767905fdef59b03a305f47
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
