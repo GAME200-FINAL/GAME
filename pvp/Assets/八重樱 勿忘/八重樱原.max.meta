@@ -3,330 +3,330 @@ guid: 74c6d402fddb01643a791264af4ec3ca
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: "??\xD7y\xD7?"
-    100004: Bip001
-    100006: Bip001 Footsteps
-    100008: Bip001 Head
-    100010: Bip001 HeadNub
-    100012: Bip001 L Calf
-    100014: Bip001 L Clavicle
-    100016: Bip001 L Finger0
-    100018: Bip001 L Finger01
-    100020: Bip001 L Finger02
-    100022: Bip001 L Finger0Nub
-    100024: Bip001 L Finger1
-    100026: Bip001 L Finger11
-    100028: Bip001 L Finger12
-    100030: Bip001 L Finger1Nub
-    100032: Bip001 L Finger2
-    100034: Bip001 L Finger21
-    100036: Bip001 L Finger22
-    100038: Bip001 L Finger2Nub
-    100040: Bip001 L Finger3
-    100042: Bip001 L Finger31
-    100044: Bip001 L Finger32
-    100046: Bip001 L Finger3Nub
-    100048: Bip001 L Finger4
-    100050: Bip001 L Finger41
-    100052: Bip001 L Finger42
-    100054: Bip001 L Finger4Nub
-    100056: Bip001 L Foot
-    100058: Bip001 L Forearm
-    100060: Bip001 L Hand
-    100062: Bip001 L Thigh
-    100064: Bip001 L Toe0
-    100066: Bip001 L Toe0Nub
-    100068: Bip001 L UpperArm
-    100070: Bip001 Neck
-    100072: Bip001 Pelvis
-    100074: Bip001 R Calf
-    100076: Bip001 R Clavicle
-    100078: Bip001 R Finger0
-    100080: Bip001 R Finger01
-    100082: Bip001 R Finger02
-    100084: Bip001 R Finger0Nub
-    100086: Bip001 R Finger1
-    100088: Bip001 R Finger11
-    100090: Bip001 R Finger12
-    100092: Bip001 R Finger1Nub
-    100094: Bip001 R Finger2
-    100096: Bip001 R Finger21
-    100098: Bip001 R Finger22
-    100100: Bip001 R Finger2Nub
-    100102: Bip001 R Finger3
-    100104: Bip001 R Finger31
-    100106: Bip001 R Finger32
-    100108: Bip001 R Finger3Nub
-    100110: Bip001 R Finger4
-    100112: Bip001 R Finger41
-    100114: Bip001 R Finger42
-    100116: Bip001 R Finger4Nub
-    100118: Bip001 R Foot
-    100120: Bip001 R Forearm
-    100122: Bip001 R Hand
-    100124: Bip001 R Thigh
-    100126: Bip001 R Toe0
-    100128: Bip001 R Toe0Nub
-    100130: Bip001 R UpperArm
-    100132: Bip001 Spine
-    100134: Bip001 Spine1
-    100136: Bip001 Spine2
-    100138: Bone_Ear_L01
-    100140: Bone_Ear_L02
-    100142: Bone_Ear_L03
-    100144: Bone_Ear_L04
-    100146: Bone_Ear_L05
-    100148: Bone_EarLR01
-    100150: Bone_EarLR02
-    100152: Bone_EarLR03
-    100154: Bone_EarLR04
-    100156: Bone_EarLR05
-    100158: Bone_Hair_B01
-    100160: Bone_Hair_B02
-    100162: Bone_Hair_B03
-    100164: Bone_Hair_B04
-    100166: Bone_Hair_B05
-    100168: Bone_Hair_B06
-    100170: Bone_Hair_B07
-    100172: Bone_Hair_F11
-    100174: Bone_Hair_F12
-    100176: Bone_Hair_F13
-    100178: Bone_Hair_F14
-    100180: Bone_Hair_F21
-    100182: Bone_Hair_F22
-    100184: Bone_Hair_F23
-    100186: Bone_Hair_F24
-    100188: Bone_Hair_F31
-    100190: Bone_Hair_F32
-    100192: Bone_Hair_F33
-    100194: Bone_Hair_F34
-    100196: Bone_Hair_F41
-    100198: Bone_Hair_F42
-    100200: Bone_Hair_F43
-    100202: Bone_Hair_F44
-    100204: Bone_Hair_F51
-    100206: Bone_Hair_F52
-    100208: Bone_Hair_F53
-    100210: Bone_Hair_F54
-    100212: Bone_Hair_L11
-    100214: Bone_Hair_L12
-    100216: Bone_Hair_L13
-    100218: Bone_Hair_L14
-    100220: Bone_Hair_L21
-    100222: Bone_Hair_L22
-    100224: Bone_Hair_L23
-    100226: Bone_Hair_L24
-    100228: Bone_Hair_L31
-    100230: Bone_Hair_L32
-    100232: Bone_Hair_L33
-    100234: Bone_Hair_L34
-    100236: Bone_Hair_L41
-    100238: Bone_Hair_L42
-    100240: Bone_Hair_L43
-    100242: Bone_Hair_L44
-    100244: Bone_Hair_L51
-    100246: Bone_Hair_L52
-    100248: Bone_Hair_L53
-    100250: Bone_Hair_L54
-    100252: Bone_Hair_L61
-    100254: Bone_Hair_L62
-    100256: Bone_Hair_L63
-    100258: Bone_Hair_L64
-    100260: Bone_Hair_R11
-    100262: Bone_Hair_R12
-    100264: Bone_Hair_R13
-    100266: Bone_Hair_R14
-    100268: Bone_Hair_R21
-    100270: Bone_Hair_R22
-    100272: Bone_Hair_R23
-    100274: Bone_Hair_R24
-    100276: Bone_Hair_R31
-    100278: Bone_Hair_R32
-    100280: Bone_Hair_R33
-    100282: Bone_Hair_R34
-    100284: Bone_Hair_R41
-    100286: Bone_Hair_R42
-    100288: Bone_Hair_R43
-    100290: Bone_Hair_R44
-    100292: Bone_Hair_R51
-    100294: Bone_Hair_R52
-    100296: Bone_Hair_R53
-    100298: Bone_Hair_R54
-    100300: Bone_Hair_R61
-    100302: Bone_Hair_R62
-    100304: Bone_Hair_R63
-    100306: Bone_Hair_R64
-    100308: Bone_Knife00
-    100310: Bone_Knife01
-    100312: Model_Body
-    100314: Model_Face
-    100316: Model_Hair
-    100318: Model_Knife00
-    100320: Model_Knife01
-    100322: "\xD7t\xD7\xFC"
-    400000: //RootNode
-    400002: "??\xD7y\xD7?"
-    400004: Bip001
-    400006: Bip001 Footsteps
-    400008: Bip001 Head
-    400010: Bip001 HeadNub
-    400012: Bip001 L Calf
-    400014: Bip001 L Clavicle
-    400016: Bip001 L Finger0
-    400018: Bip001 L Finger01
-    400020: Bip001 L Finger02
-    400022: Bip001 L Finger0Nub
-    400024: Bip001 L Finger1
-    400026: Bip001 L Finger11
-    400028: Bip001 L Finger12
-    400030: Bip001 L Finger1Nub
-    400032: Bip001 L Finger2
-    400034: Bip001 L Finger21
-    400036: Bip001 L Finger22
-    400038: Bip001 L Finger2Nub
-    400040: Bip001 L Finger3
-    400042: Bip001 L Finger31
-    400044: Bip001 L Finger32
-    400046: Bip001 L Finger3Nub
-    400048: Bip001 L Finger4
-    400050: Bip001 L Finger41
-    400052: Bip001 L Finger42
-    400054: Bip001 L Finger4Nub
-    400056: Bip001 L Foot
-    400058: Bip001 L Forearm
-    400060: Bip001 L Hand
-    400062: Bip001 L Thigh
-    400064: Bip001 L Toe0
-    400066: Bip001 L Toe0Nub
-    400068: Bip001 L UpperArm
-    400070: Bip001 Neck
-    400072: Bip001 Pelvis
-    400074: Bip001 R Calf
-    400076: Bip001 R Clavicle
-    400078: Bip001 R Finger0
-    400080: Bip001 R Finger01
-    400082: Bip001 R Finger02
-    400084: Bip001 R Finger0Nub
-    400086: Bip001 R Finger1
-    400088: Bip001 R Finger11
-    400090: Bip001 R Finger12
-    400092: Bip001 R Finger1Nub
-    400094: Bip001 R Finger2
-    400096: Bip001 R Finger21
-    400098: Bip001 R Finger22
-    400100: Bip001 R Finger2Nub
-    400102: Bip001 R Finger3
-    400104: Bip001 R Finger31
-    400106: Bip001 R Finger32
-    400108: Bip001 R Finger3Nub
-    400110: Bip001 R Finger4
-    400112: Bip001 R Finger41
-    400114: Bip001 R Finger42
-    400116: Bip001 R Finger4Nub
-    400118: Bip001 R Foot
-    400120: Bip001 R Forearm
-    400122: Bip001 R Hand
-    400124: Bip001 R Thigh
-    400126: Bip001 R Toe0
-    400128: Bip001 R Toe0Nub
-    400130: Bip001 R UpperArm
-    400132: Bip001 Spine
-    400134: Bip001 Spine1
-    400136: Bip001 Spine2
-    400138: Bone_Ear_L01
-    400140: Bone_Ear_L02
-    400142: Bone_Ear_L03
-    400144: Bone_Ear_L04
-    400146: Bone_Ear_L05
-    400148: Bone_EarLR01
-    400150: Bone_EarLR02
-    400152: Bone_EarLR03
-    400154: Bone_EarLR04
-    400156: Bone_EarLR05
-    400158: Bone_Hair_B01
-    400160: Bone_Hair_B02
-    400162: Bone_Hair_B03
-    400164: Bone_Hair_B04
-    400166: Bone_Hair_B05
-    400168: Bone_Hair_B06
-    400170: Bone_Hair_B07
-    400172: Bone_Hair_F11
-    400174: Bone_Hair_F12
-    400176: Bone_Hair_F13
-    400178: Bone_Hair_F14
-    400180: Bone_Hair_F21
-    400182: Bone_Hair_F22
-    400184: Bone_Hair_F23
-    400186: Bone_Hair_F24
-    400188: Bone_Hair_F31
-    400190: Bone_Hair_F32
-    400192: Bone_Hair_F33
-    400194: Bone_Hair_F34
-    400196: Bone_Hair_F41
-    400198: Bone_Hair_F42
-    400200: Bone_Hair_F43
-    400202: Bone_Hair_F44
-    400204: Bone_Hair_F51
-    400206: Bone_Hair_F52
-    400208: Bone_Hair_F53
-    400210: Bone_Hair_F54
-    400212: Bone_Hair_L11
-    400214: Bone_Hair_L12
-    400216: Bone_Hair_L13
-    400218: Bone_Hair_L14
-    400220: Bone_Hair_L21
-    400222: Bone_Hair_L22
-    400224: Bone_Hair_L23
-    400226: Bone_Hair_L24
-    400228: Bone_Hair_L31
-    400230: Bone_Hair_L32
-    400232: Bone_Hair_L33
-    400234: Bone_Hair_L34
-    400236: Bone_Hair_L41
-    400238: Bone_Hair_L42
-    400240: Bone_Hair_L43
-    400242: Bone_Hair_L44
-    400244: Bone_Hair_L51
-    400246: Bone_Hair_L52
-    400248: Bone_Hair_L53
-    400250: Bone_Hair_L54
-    400252: Bone_Hair_L61
-    400254: Bone_Hair_L62
-    400256: Bone_Hair_L63
-    400258: Bone_Hair_L64
-    400260: Bone_Hair_R11
-    400262: Bone_Hair_R12
-    400264: Bone_Hair_R13
-    400266: Bone_Hair_R14
-    400268: Bone_Hair_R21
-    400270: Bone_Hair_R22
-    400272: Bone_Hair_R23
-    400274: Bone_Hair_R24
-    400276: Bone_Hair_R31
-    400278: Bone_Hair_R32
-    400280: Bone_Hair_R33
-    400282: Bone_Hair_R34
-    400284: Bone_Hair_R41
-    400286: Bone_Hair_R42
-    400288: Bone_Hair_R43
-    400290: Bone_Hair_R44
-    400292: Bone_Hair_R51
-    400294: Bone_Hair_R52
-    400296: Bone_Hair_R53
-    400298: Bone_Hair_R54
-    400300: Bone_Hair_R61
-    400302: Bone_Hair_R62
-    400304: Bone_Hair_R63
-    400306: Bone_Hair_R64
-    400308: Bone_Knife00
-    400310: Bone_Knife01
-    400312: Model_Body
-    400314: Model_Face
-    400316: Model_Hair
-    400318: Model_Knife00
-    400320: Model_Knife01
-    400322: "\xD7t\xD7\xFC"
+    100000: "??\xD7y\xD7?"
+    100002: Bip001
+    100004: Bip001 Footsteps
+    100006: Bip001 Head
+    100008: Bip001 HeadNub
+    100010: Bip001 L Calf
+    100012: Bip001 L Clavicle
+    100014: Bip001 L Finger0
+    100016: Bip001 L Finger01
+    100018: Bip001 L Finger02
+    100020: Bip001 L Finger0Nub
+    100022: Bip001 L Finger1
+    100024: Bip001 L Finger11
+    100026: Bip001 L Finger12
+    100028: Bip001 L Finger1Nub
+    100030: Bip001 L Finger2
+    100032: Bip001 L Finger21
+    100034: Bip001 L Finger22
+    100036: Bip001 L Finger2Nub
+    100038: Bip001 L Finger3
+    100040: Bip001 L Finger31
+    100042: Bip001 L Finger32
+    100044: Bip001 L Finger3Nub
+    100046: Bip001 L Finger4
+    100048: Bip001 L Finger41
+    100050: Bip001 L Finger42
+    100052: Bip001 L Finger4Nub
+    100054: Bip001 L Foot
+    100056: Bip001 L Forearm
+    100058: Bip001 L Hand
+    100060: Bip001 L Thigh
+    100062: Bip001 L Toe0
+    100064: Bip001 L Toe0Nub
+    100066: Bip001 L UpperArm
+    100068: Bip001 Neck
+    100070: Bip001 Pelvis
+    100072: Bip001 R Calf
+    100074: Bip001 R Clavicle
+    100076: Bip001 R Finger0
+    100078: Bip001 R Finger01
+    100080: Bip001 R Finger02
+    100082: Bip001 R Finger0Nub
+    100084: Bip001 R Finger1
+    100086: Bip001 R Finger11
+    100088: Bip001 R Finger12
+    100090: Bip001 R Finger1Nub
+    100092: Bip001 R Finger2
+    100094: Bip001 R Finger21
+    100096: Bip001 R Finger22
+    100098: Bip001 R Finger2Nub
+    100100: Bip001 R Finger3
+    100102: Bip001 R Finger31
+    100104: Bip001 R Finger32
+    100106: Bip001 R Finger3Nub
+    100108: Bip001 R Finger4
+    100110: Bip001 R Finger41
+    100112: Bip001 R Finger42
+    100114: Bip001 R Finger4Nub
+    100116: Bip001 R Foot
+    100118: Bip001 R Forearm
+    100120: Bip001 R Hand
+    100122: Bip001 R Thigh
+    100124: Bip001 R Toe0
+    100126: Bip001 R Toe0Nub
+    100128: Bip001 R UpperArm
+    100130: Bip001 Spine
+    100132: Bip001 Spine1
+    100134: Bip001 Spine2
+    100136: Bone_Ear_L01
+    100138: Bone_Ear_L02
+    100140: Bone_Ear_L03
+    100142: Bone_Ear_L04
+    100144: Bone_Ear_L05
+    100146: Bone_EarLR01
+    100148: Bone_EarLR02
+    100150: Bone_EarLR03
+    100152: Bone_EarLR04
+    100154: Bone_EarLR05
+    100156: Bone_Hair_B01
+    100158: Bone_Hair_B02
+    100160: Bone_Hair_B03
+    100162: Bone_Hair_B04
+    100164: Bone_Hair_B05
+    100166: Bone_Hair_B06
+    100168: Bone_Hair_B07
+    100170: Bone_Hair_F11
+    100172: Bone_Hair_F12
+    100174: Bone_Hair_F13
+    100176: Bone_Hair_F14
+    100178: Bone_Hair_F21
+    100180: Bone_Hair_F22
+    100182: Bone_Hair_F23
+    100184: Bone_Hair_F24
+    100186: Bone_Hair_F31
+    100188: Bone_Hair_F32
+    100190: Bone_Hair_F33
+    100192: Bone_Hair_F34
+    100194: Bone_Hair_F41
+    100196: Bone_Hair_F42
+    100198: Bone_Hair_F43
+    100200: Bone_Hair_F44
+    100202: Bone_Hair_F51
+    100204: Bone_Hair_F52
+    100206: Bone_Hair_F53
+    100208: Bone_Hair_F54
+    100210: Bone_Hair_L11
+    100212: Bone_Hair_L12
+    100214: Bone_Hair_L13
+    100216: Bone_Hair_L14
+    100218: Bone_Hair_L21
+    100220: Bone_Hair_L22
+    100222: Bone_Hair_L23
+    100224: Bone_Hair_L24
+    100226: Bone_Hair_L31
+    100228: Bone_Hair_L32
+    100230: Bone_Hair_L33
+    100232: Bone_Hair_L34
+    100234: Bone_Hair_L41
+    100236: Bone_Hair_L42
+    100238: Bone_Hair_L43
+    100240: Bone_Hair_L44
+    100242: Bone_Hair_L51
+    100244: Bone_Hair_L52
+    100246: Bone_Hair_L53
+    100248: Bone_Hair_L54
+    100250: Bone_Hair_L61
+    100252: Bone_Hair_L62
+    100254: Bone_Hair_L63
+    100256: Bone_Hair_L64
+    100258: Bone_Hair_R11
+    100260: Bone_Hair_R12
+    100262: Bone_Hair_R13
+    100264: Bone_Hair_R14
+    100266: Bone_Hair_R21
+    100268: Bone_Hair_R22
+    100270: Bone_Hair_R23
+    100272: Bone_Hair_R24
+    100274: Bone_Hair_R31
+    100276: Bone_Hair_R32
+    100278: Bone_Hair_R33
+    100280: Bone_Hair_R34
+    100282: Bone_Hair_R41
+    100284: Bone_Hair_R42
+    100286: Bone_Hair_R43
+    100288: Bone_Hair_R44
+    100290: Bone_Hair_R51
+    100292: Bone_Hair_R52
+    100294: Bone_Hair_R53
+    100296: Bone_Hair_R54
+    100298: Bone_Hair_R61
+    100300: Bone_Hair_R62
+    100302: Bone_Hair_R63
+    100304: Bone_Hair_R64
+    100306: Bone_Knife00
+    100308: Bone_Knife01
+    100310: Model_Body
+    100312: Model_Face
+    100314: Model_Hair
+    100316: Model_Knife00
+    100318: Model_Knife01
+    100320: "\xD7t\xD7\xFC"
+    100322: //RootNode
+    400000: "??\xD7y\xD7?"
+    400002: Bip001
+    400004: Bip001 Footsteps
+    400006: Bip001 Head
+    400008: Bip001 HeadNub
+    400010: Bip001 L Calf
+    400012: Bip001 L Clavicle
+    400014: Bip001 L Finger0
+    400016: Bip001 L Finger01
+    400018: Bip001 L Finger02
+    400020: Bip001 L Finger0Nub
+    400022: Bip001 L Finger1
+    400024: Bip001 L Finger11
+    400026: Bip001 L Finger12
+    400028: Bip001 L Finger1Nub
+    400030: Bip001 L Finger2
+    400032: Bip001 L Finger21
+    400034: Bip001 L Finger22
+    400036: Bip001 L Finger2Nub
+    400038: Bip001 L Finger3
+    400040: Bip001 L Finger31
+    400042: Bip001 L Finger32
+    400044: Bip001 L Finger3Nub
+    400046: Bip001 L Finger4
+    400048: Bip001 L Finger41
+    400050: Bip001 L Finger42
+    400052: Bip001 L Finger4Nub
+    400054: Bip001 L Foot
+    400056: Bip001 L Forearm
+    400058: Bip001 L Hand
+    400060: Bip001 L Thigh
+    400062: Bip001 L Toe0
+    400064: Bip001 L Toe0Nub
+    400066: Bip001 L UpperArm
+    400068: Bip001 Neck
+    400070: Bip001 Pelvis
+    400072: Bip001 R Calf
+    400074: Bip001 R Clavicle
+    400076: Bip001 R Finger0
+    400078: Bip001 R Finger01
+    400080: Bip001 R Finger02
+    400082: Bip001 R Finger0Nub
+    400084: Bip001 R Finger1
+    400086: Bip001 R Finger11
+    400088: Bip001 R Finger12
+    400090: Bip001 R Finger1Nub
+    400092: Bip001 R Finger2
+    400094: Bip001 R Finger21
+    400096: Bip001 R Finger22
+    400098: Bip001 R Finger2Nub
+    400100: Bip001 R Finger3
+    400102: Bip001 R Finger31
+    400104: Bip001 R Finger32
+    400106: Bip001 R Finger3Nub
+    400108: Bip001 R Finger4
+    400110: Bip001 R Finger41
+    400112: Bip001 R Finger42
+    400114: Bip001 R Finger4Nub
+    400116: Bip001 R Foot
+    400118: Bip001 R Forearm
+    400120: Bip001 R Hand
+    400122: Bip001 R Thigh
+    400124: Bip001 R Toe0
+    400126: Bip001 R Toe0Nub
+    400128: Bip001 R UpperArm
+    400130: Bip001 Spine
+    400132: Bip001 Spine1
+    400134: Bip001 Spine2
+    400136: Bone_Ear_L01
+    400138: Bone_Ear_L02
+    400140: Bone_Ear_L03
+    400142: Bone_Ear_L04
+    400144: Bone_Ear_L05
+    400146: Bone_EarLR01
+    400148: Bone_EarLR02
+    400150: Bone_EarLR03
+    400152: Bone_EarLR04
+    400154: Bone_EarLR05
+    400156: Bone_Hair_B01
+    400158: Bone_Hair_B02
+    400160: Bone_Hair_B03
+    400162: Bone_Hair_B04
+    400164: Bone_Hair_B05
+    400166: Bone_Hair_B06
+    400168: Bone_Hair_B07
+    400170: Bone_Hair_F11
+    400172: Bone_Hair_F12
+    400174: Bone_Hair_F13
+    400176: Bone_Hair_F14
+    400178: Bone_Hair_F21
+    400180: Bone_Hair_F22
+    400182: Bone_Hair_F23
+    400184: Bone_Hair_F24
+    400186: Bone_Hair_F31
+    400188: Bone_Hair_F32
+    400190: Bone_Hair_F33
+    400192: Bone_Hair_F34
+    400194: Bone_Hair_F41
+    400196: Bone_Hair_F42
+    400198: Bone_Hair_F43
+    400200: Bone_Hair_F44
+    400202: Bone_Hair_F51
+    400204: Bone_Hair_F52
+    400206: Bone_Hair_F53
+    400208: Bone_Hair_F54
+    400210: Bone_Hair_L11
+    400212: Bone_Hair_L12
+    400214: Bone_Hair_L13
+    400216: Bone_Hair_L14
+    400218: Bone_Hair_L21
+    400220: Bone_Hair_L22
+    400222: Bone_Hair_L23
+    400224: Bone_Hair_L24
+    400226: Bone_Hair_L31
+    400228: Bone_Hair_L32
+    400230: Bone_Hair_L33
+    400232: Bone_Hair_L34
+    400234: Bone_Hair_L41
+    400236: Bone_Hair_L42
+    400238: Bone_Hair_L43
+    400240: Bone_Hair_L44
+    400242: Bone_Hair_L51
+    400244: Bone_Hair_L52
+    400246: Bone_Hair_L53
+    400248: Bone_Hair_L54
+    400250: Bone_Hair_L61
+    400252: Bone_Hair_L62
+    400254: Bone_Hair_L63
+    400256: Bone_Hair_L64
+    400258: Bone_Hair_R11
+    400260: Bone_Hair_R12
+    400262: Bone_Hair_R13
+    400264: Bone_Hair_R14
+    400266: Bone_Hair_R21
+    400268: Bone_Hair_R22
+    400270: Bone_Hair_R23
+    400272: Bone_Hair_R24
+    400274: Bone_Hair_R31
+    400276: Bone_Hair_R32
+    400278: Bone_Hair_R33
+    400280: Bone_Hair_R34
+    400282: Bone_Hair_R41
+    400284: Bone_Hair_R42
+    400286: Bone_Hair_R43
+    400288: Bone_Hair_R44
+    400290: Bone_Hair_R51
+    400292: Bone_Hair_R52
+    400294: Bone_Hair_R53
+    400296: Bone_Hair_R54
+    400298: Bone_Hair_R61
+    400300: Bone_Hair_R62
+    400302: Bone_Hair_R63
+    400304: Bone_Hair_R64
+    400306: Bone_Knife00
+    400308: Bone_Knife01
+    400310: Model_Body
+    400312: Model_Face
+    400314: Model_Hair
+    400316: Model_Knife00
+    400318: Model_Knife01
+    400320: "\xD7t\xD7\xFC"
+    400322: //RootNode
     2100000: 'Material #26'
     2100002: 'Material #30'
     2100004: 'Material #27'
@@ -343,7 +343,6 @@ ModelImporter:
     13700004: Model_Hair
     13700006: Model_Knife00
     13700008: Model_Knife01
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -416,7 +415,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1

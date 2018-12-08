@@ -61,11 +61,12 @@ public class chgethit : MonoBehaviour {
     }
     public void getattackheavy()
     {
+        //Debug.Log("getattackheavy");
            animecontrol.speed = 1;
            // if (GetComponent<chmove>().isGrounded())
                    transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
             chstate = this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
-            if (!chstate.IsTag("dodge"))
+            if (!(chstate.IsTag("dodge") && chstate.normalizedTime < 0.5f))
             {
             GetComponent<chattack>().resetmove();
             GetComponent<chattack>().backweapon();

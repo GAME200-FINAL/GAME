@@ -280,7 +280,7 @@ ModelImporter:
       curves: []
       events:
       - time: 0.49930254
-        functionName: heavyattackdetect
+        functionName: heavydetect
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
           type: 3}

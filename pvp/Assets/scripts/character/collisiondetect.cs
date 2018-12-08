@@ -40,17 +40,19 @@ public class collisiondetect : MonoBehaviour {
            // Debug.Log(angle);
             if (distance < attackdistance && angle <= 90)
             {
-                pausetime(0.15f);
+                pausetime(0.1f);
                 enemy.GetComponent<chgethit>().getattacknormal();
             }
 
         }
 
     }
-    void heavyattackdetect()
+    void heavydetect()
     {
+       //Debug.Log("heavy1");
         if (enemy != null)
         {
+           // Debug.Log("heavy2");
             float distance = Vector3.Distance(transform.position, enemy.transform.position);
             Vector3 diff = enemy.transform.position - transform.position;
             float angle = Vector3.Angle(transform.forward, diff);
@@ -58,6 +60,7 @@ public class collisiondetect : MonoBehaviour {
             // Debug.Log(angle);
             if (distance < attackdistance && angle <= 90)
             {
+              // Debug.Log("heavy3");
                 pausetime(0.1f);
                 enemy.GetComponent<chgethit>().getattackheavy();
             }
