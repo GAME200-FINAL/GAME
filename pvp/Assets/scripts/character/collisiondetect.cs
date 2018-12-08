@@ -47,6 +47,23 @@ public class collisiondetect : MonoBehaviour {
         }
 
     }
+    void heavyattackdetect()
+    {
+        if (enemy != null)
+        {
+            float distance = Vector3.Distance(transform.position, enemy.transform.position);
+            Vector3 diff = enemy.transform.position - transform.position;
+            float angle = Vector3.Angle(transform.forward, diff);
+            //Debug.Log(distance);
+            // Debug.Log(angle);
+            if (distance < attackdistance && angle <= 90)
+            {
+                pausetime(0.1f);
+                enemy.GetComponent<chgethit>().getattackheavy();
+            }
+
+        }
+    }
     void pausetime(float t)
     {
         if (!stoptime)
@@ -54,6 +71,15 @@ public class collisiondetect : MonoBehaviour {
             stoptime = true;
             Time.timeScale = 0;
             reststoptime = t;
+        }
+    }
+    void chargepause()
+    {
+        if (!stoptime)
+        {
+            stoptime = true;
+            Time.timeScale = 0;
+            //reststoptime = 0.2f;
         }
     }
 }

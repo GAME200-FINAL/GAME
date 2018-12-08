@@ -26,11 +26,18 @@ public class chgethit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (enemy == null)
+        {
+            if (this.tag == "p1")
+                enemy = GameObject.FindWithTag("p2");
+            else
+                enemy = GameObject.FindWithTag("p1");
+        }
         chstate = animecontrol.GetCurrentAnimatorStateInfo(0);
 	}
     public void getattacknormal()
     {
-        if (!(chstate.IsTag("dodge")&&chstate.normalizedTime<0.5f)&&!chstate.IsTag("blockback"))
+        if (!(chstate.IsTag("dodge")&&chstate.normalizedTime<0.5f)&&!chstate.IsTag("guard"))
         {
             //GetComponent<chattack>().resetmove();
             if (hp > 0)
@@ -51,18 +58,18 @@ public class chgethit : MonoBehaviour {
             }
         }
     }
-    public void getattactheavy()
+    public void getattackheavy()
     {
            animecontrol.speed = 1;
-            if (GetComponent<chmove>().isGrounded())
-                    transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
+           // if (GetComponent<chmove>().isGrounded())
+                   transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
             chstate = this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
-            if (!chstate.IsTag("dodge") && !chstate.IsTag("blockback"))
+            if (!chstate.IsTag("dodge"))
             {
-              GetComponent<chattack>().resetmove();
+              //GetComponent<chattack>().resetmove();
             if (hp > 0)
                 {
-                  hp -= 10;
+                 // hp -= 10;
                   animecontrol.Play("gethitback");
                 }
                 else

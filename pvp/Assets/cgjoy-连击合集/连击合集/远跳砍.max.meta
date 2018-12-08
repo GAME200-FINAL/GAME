@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 1219b4d037c072c4ab97d20e97d980eb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: "??\xD7y\xD7?"
+    100002: B_Pr_Bip
+    100004: B_Pr_Bip Footsteps
+    100006: B_Pr_Bip Head
+    100008: B_Pr_Bip Head_Nub
+    100010: B_Pr_Bip L Calf
+    100012: B_Pr_Bip L Clavicle
+    100014: B_Pr_Bip L Finger0
+    100016: B_Pr_Bip L Finger01
+    100018: B_Pr_Bip L Finger0_Nub
+    100020: B_Pr_Bip L Finger1
+    100022: B_Pr_Bip L Finger11
+    100024: B_Pr_Bip L Finger1_Nub
+    100026: B_Pr_Bip L Finger2
+    100028: B_Pr_Bip L Finger21
+    100030: B_Pr_Bip L Finger2_Nub
+    100032: B_Pr_Bip L Foot
+    100034: B_Pr_Bip L Forearm
+    100036: B_Pr_Bip L Hand
+    100038: B_Pr_Bip L Thigh
+    100040: B_Pr_Bip L Toe0
+    100042: B_Pr_Bip L Toe0_Nub
+    100044: B_Pr_Bip L Toe1
+    100046: B_Pr_Bip L Toe1_Nub
+    100048: B_Pr_Bip L UpperArm
+    100050: B_Pr_Bip Neck
+    100052: B_Pr_Bip Pelvis
+    100054: B_Pr_Bip R Calf
+    100056: B_Pr_Bip R Clavicle
+    100058: B_Pr_Bip R Finger0
+    100060: B_Pr_Bip R Finger01
+    100062: B_Pr_Bip R Finger0_Nub
+    100064: B_Pr_Bip R Finger1
+    100066: B_Pr_Bip R Finger11
+    100068: B_Pr_Bip R Finger1_Nub
+    100070: B_Pr_Bip R Finger2
+    100072: B_Pr_Bip R Finger21
+    100074: B_Pr_Bip R Finger2_Nub
+    100076: B_Pr_Bip R Foot
+    100078: B_Pr_Bip R Forearm
+    100080: B_Pr_Bip R Hand
+    100082: B_Pr_Bip R Thigh
+    100084: B_Pr_Bip R Toe0
+    100086: B_Pr_Bip R Toe0_Nub
+    100088: B_Pr_Bip R Toe1
+    100090: B_Pr_Bip R Toe1_Nub
+    100092: B_Pr_Bip R UpperArm
+    100094: B_Pr_Bip Spine
+    100096: B_Pr_Bip Spine1
+    100098: B_Pr_Bip Spine2
+    100100: B_Pr_Hair_Back_Left
+    100102: B_Pr_Hair_Back_Left_Nub
+    100104: B_Pr_Hair_Back_Left_Root
+    100106: B_Pr_Hair_Back_Right
+    100108: B_Pr_Hair_Back_Right_Nub
+    100110: B_Pr_Hair_Back_Right_Root
+    100112: B_Pr_Hair_Front
+    100114: B_Pr_Hair_Front_Nub
+    100116: B_Pr_Hair_Front_Root
+    100118: B_Pr_Hair_Left_01
+    100120: B_Pr_Hair_Left_01_Nub
+    100122: B_Pr_Hair_Left_01_Root
+    100124: B_Pr_Hair_Left_02
+    100126: B_Pr_Hair_Left_02_Nub
+    100128: B_Pr_Hair_Left_02_Root
+    100130: B_Pr_Hair_Left_03
+    100132: B_Pr_Hair_Left_03_Nub
+    100134: B_Pr_Hair_Left_03_Root
+    100136: B_Pr_Hair_Right_01
+    100138: B_Pr_Hair_Right_01_Nub
+    100140: B_Pr_Hair_Right_01_Root
+    100142: B_Pr_Hair_Right_02
+    100144: B_Pr_Hair_Right_02_Nub
+    100146: B_Pr_Hair_Right_02_Root
+    100148: B_Pr_Hair_Right_03
+    100150: B_Pr_Hair_Right_03_Nub
+    100152: B_Pr_Hair_Right_03_Root
+    100154: B_Pr_Head_Eye_L
+    100156: B_Pr_Head_Eye_L_NUB
+    100158: B_Pr_Head_Eye_R
+    100160: B_Pr_Head_Eye_R_NUB
+    100162: B_Pr_Head_Head_Root
+    100164: B_Pr_Head_Skull
+    100166: B_Pr_Mod_Belt_BL
+    100168: B_Pr_Mod_Belt_BL_Nub
+    100170: B_Pr_Mod_Belt_BL_Root
+    100172: B_Pr_Mod_Belt_BR
+    100174: B_Pr_Mod_Belt_BR_Nub
+    100176: B_Pr_Mod_Belt_BR_Root
+    100178: B_Pr_Mod_FX_Suck_Particules
+    100180: B_Pr_Sword_L
+    100182: B_Pr_Sword_R
+    100184: CTRL_Prince_Face_Morpher
+    100186: M_Prince_Body
+    100188: M_Prince_Medaillon
+    100190: Pr_LSword_Control
+    100192: Pr_LSword_Pos_Ref_Fliped
+    100194: Pr_LSword_Pos_Ref_on_Him01
+    100196: Pr_LSword_Pos_Ref_Straight
+    100198: Pr_RDagger_Control
+    100200: Pr_RDagger_Pos_Ref
+    100202: Pr_RSword_Control
+    100204: Pr_RSword_Pos_Ref_Fliped
+    100206: Pr_RSword_Pos_Ref_on_Him
+    100208: Pr_RSword_Pos_Ref_Straight
+    100210: Prince_Collision_Box
+    100212: Prince_Position_for_LMace_on_Him
+    100214: Prince_Position_for_LSword_on_Him
+    100216: Prince_Position_for_RDagger_on_Him
+    100218: Prince_Position_for_Sword_in_RHand
+    100220: Prince_Position_for_Sword_LHand
+    100222: RIG_Eye_L_REF
+    100224: RIG_Eye_R_REF
+    100226: RIG_Face_Bones_PosCons_01
+    100228: RIG_Face_Bones_PosCons_02
+    100230: RIG_Face_Bones_PosCons_03
+    100232: RIG_Face_Bones_PosCons_04
+    100234: RIG_Face_Bones_PosCons_05
+    100236: RIG_Face_Bones_PosCons_06
+    100238: RIG_Face_Bones_PosCons_07
+    100240: RIG_Face_Bones_PosCons_08
+    100242: RIG_Face_Bones_PosCons_09
+    100244: RIG_Face_Bones_PosCons_10
+    100246: RIG_Face_Bones_PosCons_11
+    100248: RIG_Face_Bones_PosCons_12
+    100250: RIG_Face_Bones_PosCons_13
+    100252: RIG_Face_Bones_PosCons_14
+    100254: Text01
+    100256: Weapon_Axe_01
+    100258: Weapon_Axe_02
+    100260: Weapon_Axe_03
+    100262: Weapon_Dagger_01
+    100264: Weapon_Dagger_02
+    100266: Weapon_Dagger_ref
+    100268: Weapon_Hammer_01
+    100270: Weapon_Hammer_02
+    100272: Weapon_Sword_01
+    100274: Weapon_Sword_02
+    100276: Weapon_Sword_04
+    100278: Weapon_Sword_05
+    100280: Weapon_Sword_06
+    100282: Weapon_Sword_07
+    100284: Weapon_Sword_08
+    100286: "\xD7t\xD7\xFC"
+    100288: //RootNode
+    400000: "??\xD7y\xD7?"
+    400002: B_Pr_Bip
+    400004: B_Pr_Bip Footsteps
+    400006: B_Pr_Bip Head
+    400008: B_Pr_Bip Head_Nub
+    400010: B_Pr_Bip L Calf
+    400012: B_Pr_Bip L Clavicle
+    400014: B_Pr_Bip L Finger0
+    400016: B_Pr_Bip L Finger01
+    400018: B_Pr_Bip L Finger0_Nub
+    400020: B_Pr_Bip L Finger1
+    400022: B_Pr_Bip L Finger11
+    400024: B_Pr_Bip L Finger1_Nub
+    400026: B_Pr_Bip L Finger2
+    400028: B_Pr_Bip L Finger21
+    400030: B_Pr_Bip L Finger2_Nub
+    400032: B_Pr_Bip L Foot
+    400034: B_Pr_Bip L Forearm
+    400036: B_Pr_Bip L Hand
+    400038: B_Pr_Bip L Thigh
+    400040: B_Pr_Bip L Toe0
+    400042: B_Pr_Bip L Toe0_Nub
+    400044: B_Pr_Bip L Toe1
+    400046: B_Pr_Bip L Toe1_Nub
+    400048: B_Pr_Bip L UpperArm
+    400050: B_Pr_Bip Neck
+    400052: B_Pr_Bip Pelvis
+    400054: B_Pr_Bip R Calf
+    400056: B_Pr_Bip R Clavicle
+    400058: B_Pr_Bip R Finger0
+    400060: B_Pr_Bip R Finger01
+    400062: B_Pr_Bip R Finger0_Nub
+    400064: B_Pr_Bip R Finger1
+    400066: B_Pr_Bip R Finger11
+    400068: B_Pr_Bip R Finger1_Nub
+    400070: B_Pr_Bip R Finger2
+    400072: B_Pr_Bip R Finger21
+    400074: B_Pr_Bip R Finger2_Nub
+    400076: B_Pr_Bip R Foot
+    400078: B_Pr_Bip R Forearm
+    400080: B_Pr_Bip R Hand
+    400082: B_Pr_Bip R Thigh
+    400084: B_Pr_Bip R Toe0
+    400086: B_Pr_Bip R Toe0_Nub
+    400088: B_Pr_Bip R Toe1
+    400090: B_Pr_Bip R Toe1_Nub
+    400092: B_Pr_Bip R UpperArm
+    400094: B_Pr_Bip Spine
+    400096: B_Pr_Bip Spine1
+    400098: B_Pr_Bip Spine2
+    400100: B_Pr_Hair_Back_Left
+    400102: B_Pr_Hair_Back_Left_Nub
+    400104: B_Pr_Hair_Back_Left_Root
+    400106: B_Pr_Hair_Back_Right
+    400108: B_Pr_Hair_Back_Right_Nub
+    400110: B_Pr_Hair_Back_Right_Root
+    400112: B_Pr_Hair_Front
+    400114: B_Pr_Hair_Front_Nub
+    400116: B_Pr_Hair_Front_Root
+    400118: B_Pr_Hair_Left_01
+    400120: B_Pr_Hair_Left_01_Nub
+    400122: B_Pr_Hair_Left_01_Root
+    400124: B_Pr_Hair_Left_02
+    400126: B_Pr_Hair_Left_02_Nub
+    400128: B_Pr_Hair_Left_02_Root
+    400130: B_Pr_Hair_Left_03
+    400132: B_Pr_Hair_Left_03_Nub
+    400134: B_Pr_Hair_Left_03_Root
+    400136: B_Pr_Hair_Right_01
+    400138: B_Pr_Hair_Right_01_Nub
+    400140: B_Pr_Hair_Right_01_Root
+    400142: B_Pr_Hair_Right_02
+    400144: B_Pr_Hair_Right_02_Nub
+    400146: B_Pr_Hair_Right_02_Root
+    400148: B_Pr_Hair_Right_03
+    400150: B_Pr_Hair_Right_03_Nub
+    400152: B_Pr_Hair_Right_03_Root
+    400154: B_Pr_Head_Eye_L
+    400156: B_Pr_Head_Eye_L_NUB
+    400158: B_Pr_Head_Eye_R
+    400160: B_Pr_Head_Eye_R_NUB
+    400162: B_Pr_Head_Head_Root
+    400164: B_Pr_Head_Skull
+    400166: B_Pr_Mod_Belt_BL
+    400168: B_Pr_Mod_Belt_BL_Nub
+    400170: B_Pr_Mod_Belt_BL_Root
+    400172: B_Pr_Mod_Belt_BR
+    400174: B_Pr_Mod_Belt_BR_Nub
+    400176: B_Pr_Mod_Belt_BR_Root
+    400178: B_Pr_Mod_FX_Suck_Particules
+    400180: B_Pr_Sword_L
+    400182: B_Pr_Sword_R
+    400184: CTRL_Prince_Face_Morpher
+    400186: M_Prince_Body
+    400188: M_Prince_Medaillon
+    400190: Pr_LSword_Control
+    400192: Pr_LSword_Pos_Ref_Fliped
+    400194: Pr_LSword_Pos_Ref_on_Him01
+    400196: Pr_LSword_Pos_Ref_Straight
+    400198: Pr_RDagger_Control
+    400200: Pr_RDagger_Pos_Ref
+    400202: Pr_RSword_Control
+    400204: Pr_RSword_Pos_Ref_Fliped
+    400206: Pr_RSword_Pos_Ref_on_Him
+    400208: Pr_RSword_Pos_Ref_Straight
+    400210: Prince_Collision_Box
+    400212: Prince_Position_for_LMace_on_Him
+    400214: Prince_Position_for_LSword_on_Him
+    400216: Prince_Position_for_RDagger_on_Him
+    400218: Prince_Position_for_Sword_in_RHand
+    400220: Prince_Position_for_Sword_LHand
+    400222: RIG_Eye_L_REF
+    400224: RIG_Eye_R_REF
+    400226: RIG_Face_Bones_PosCons_01
+    400228: RIG_Face_Bones_PosCons_02
+    400230: RIG_Face_Bones_PosCons_03
+    400232: RIG_Face_Bones_PosCons_04
+    400234: RIG_Face_Bones_PosCons_05
+    400236: RIG_Face_Bones_PosCons_06
+    400238: RIG_Face_Bones_PosCons_07
+    400240: RIG_Face_Bones_PosCons_08
+    400242: RIG_Face_Bones_PosCons_09
+    400244: RIG_Face_Bones_PosCons_10
+    400246: RIG_Face_Bones_PosCons_11
+    400248: RIG_Face_Bones_PosCons_12
+    400250: RIG_Face_Bones_PosCons_13
+    400252: RIG_Face_Bones_PosCons_14
+    400254: Text01
+    400256: Weapon_Axe_01
+    400258: Weapon_Axe_02
+    400260: Weapon_Axe_03
+    400262: Weapon_Dagger_01
+    400264: Weapon_Dagger_02
+    400266: Weapon_Dagger_ref
+    400268: Weapon_Hammer_01
+    400270: Weapon_Hammer_02
+    400272: Weapon_Sword_01
+    400274: Weapon_Sword_02
+    400276: Weapon_Sword_04
+    400278: Weapon_Sword_05
+    400280: Weapon_Sword_06
+    400282: Weapon_Sword_07
+    400284: Weapon_Sword_08
+    400286: "\xD7t\xD7\xFC"
+    400288: //RootNode
+    2100000: 3 - Default
+    2100002: No Name
+    2100004: Prince_Cloth
+    2100006: Prince_Body
+    2100008: 7 - Default
+    2100010: 11 - Default
+    2100012: ACT_Weapon_Sword_08
+    2100014: ACT_Weapon_Sword_04
+    2100016: ACT_Weapon_Sword_05
+    2100018: ACT_Weapon_Sword_06
+    2100020: ACT_Weapon_Sword_07
+    2100022: ACT_Weapon_Sword_01_A
+    2100024: ACT_Weapon_Sword_02
+    2100026: ACT_Weapon_Hammer_02_A
+    2100028: ACT_Weapon_Hammer_01
+    2100030: ACT_Weapon_Axe_01_A
+    2100032: ACT_Weapon_Axe_02
+    2100034: ACT_Weapon_Axe_03_A
+    2100036: ACT_Weapon_Dagger_01
+    2100038: ACT_Weapon_Dagger_02
+    2300000: B_Pr_Hair_Back_Left
+    2300002: B_Pr_Hair_Back_Left_Root
+    2300004: B_Pr_Hair_Back_Right
+    2300006: B_Pr_Hair_Back_Right_Root
+    2300008: B_Pr_Hair_Front
+    2300010: B_Pr_Hair_Front_Root
+    2300012: B_Pr_Hair_Left_01
+    2300014: B_Pr_Hair_Left_01_Root
+    2300016: B_Pr_Hair_Left_02
+    2300018: B_Pr_Hair_Left_02_Root
+    2300020: B_Pr_Hair_Left_03
+    2300022: B_Pr_Hair_Left_03_Root
+    2300024: B_Pr_Hair_Right_01
+    2300026: B_Pr_Hair_Right_01_Root
+    2300028: B_Pr_Hair_Right_02
+    2300030: B_Pr_Hair_Right_02_Root
+    2300032: B_Pr_Hair_Right_03
+    2300034: B_Pr_Hair_Right_03_Root
+    2300036: B_Pr_Head_Eye_L
+    2300038: B_Pr_Head_Eye_L_NUB
+    2300040: B_Pr_Head_Eye_R
+    2300042: B_Pr_Head_Eye_R_NUB
+    2300044: B_Pr_Head_Head_Root
+    2300046: B_Pr_Head_Skull
+    2300048: B_Pr_Mod_Belt_BL
+    2300050: B_Pr_Mod_Belt_BL_Nub
+    2300052: B_Pr_Mod_Belt_BL_Root
+    2300054: B_Pr_Mod_Belt_BR
+    2300056: B_Pr_Mod_Belt_BR_Nub
+    2300058: B_Pr_Mod_Belt_BR_Root
+    2300060: B_Pr_Mod_FX_Suck_Particules
+    2300062: B_Pr_Sword_L
+    2300064: B_Pr_Sword_R
+    2300066: Prince_Collision_Box
+    2300068: RIG_Eye_L_REF
+    2300070: RIG_Eye_R_REF
+    2300072: Weapon_Axe_01
+    2300074: Weapon_Axe_02
+    2300076: Weapon_Axe_03
+    2300078: Weapon_Dagger_01
+    2300080: Weapon_Dagger_02
+    2300082: Weapon_Dagger_ref
+    2300084: Weapon_Hammer_01
+    2300086: Weapon_Hammer_02
+    2300088: Weapon_Sword_01
+    2300090: Weapon_Sword_02
+    2300092: Weapon_Sword_04
+    2300094: Weapon_Sword_05
+    2300096: Weapon_Sword_06
+    2300098: Weapon_Sword_07
+    2300100: Weapon_Sword_08
+    3300000: B_Pr_Hair_Back_Left
+    3300002: B_Pr_Hair_Back_Left_Root
+    3300004: B_Pr_Hair_Back_Right
+    3300006: B_Pr_Hair_Back_Right_Root
+    3300008: B_Pr_Hair_Front
+    3300010: B_Pr_Hair_Front_Root
+    3300012: B_Pr_Hair_Left_01
+    3300014: B_Pr_Hair_Left_01_Root
+    3300016: B_Pr_Hair_Left_02
+    3300018: B_Pr_Hair_Left_02_Root
+    3300020: B_Pr_Hair_Left_03
+    3300022: B_Pr_Hair_Left_03_Root
+    3300024: B_Pr_Hair_Right_01
+    3300026: B_Pr_Hair_Right_01_Root
+    3300028: B_Pr_Hair_Right_02
+    3300030: B_Pr_Hair_Right_02_Root
+    3300032: B_Pr_Hair_Right_03
+    3300034: B_Pr_Hair_Right_03_Root
+    3300036: B_Pr_Head_Eye_L
+    3300038: B_Pr_Head_Eye_L_NUB
+    3300040: B_Pr_Head_Eye_R
+    3300042: B_Pr_Head_Eye_R_NUB
+    3300044: B_Pr_Head_Head_Root
+    3300046: B_Pr_Head_Skull
+    3300048: B_Pr_Mod_Belt_BL
+    3300050: B_Pr_Mod_Belt_BL_Nub
+    3300052: B_Pr_Mod_Belt_BL_Root
+    3300054: B_Pr_Mod_Belt_BR
+    3300056: B_Pr_Mod_Belt_BR_Nub
+    3300058: B_Pr_Mod_Belt_BR_Root
+    3300060: B_Pr_Mod_FX_Suck_Particules
+    3300062: B_Pr_Sword_L
+    3300064: B_Pr_Sword_R
+    3300066: Prince_Collision_Box
+    3300068: RIG_Eye_L_REF
+    3300070: RIG_Eye_R_REF
+    3300072: Weapon_Axe_01
+    3300074: Weapon_Axe_02
+    3300076: Weapon_Axe_03
+    3300078: Weapon_Dagger_01
+    3300080: Weapon_Dagger_02
+    3300082: Weapon_Dagger_ref
+    3300084: Weapon_Hammer_01
+    3300086: Weapon_Hammer_02
+    3300088: Weapon_Sword_01
+    3300090: Weapon_Sword_02
+    3300092: Weapon_Sword_04
+    3300094: Weapon_Sword_05
+    3300096: Weapon_Sword_06
+    3300098: Weapon_Sword_07
+    3300100: Weapon_Sword_08
+    4300000: B_Pr_Hair_Left_01_Root
+    4300002: B_Pr_Hair_Left_01
+    4300004: B_Pr_Hair_Left_02_Root
+    4300006: B_Pr_Hair_Left_02
+    4300008: B_Pr_Hair_Left_03_Root
+    4300010: B_Pr_Hair_Left_03
+    4300012: B_Pr_Hair_Back_Left_Root
+    4300014: B_Pr_Hair_Back_Left
+    4300016: B_Pr_Hair_Front_Root
+    4300018: B_Pr_Hair_Front
+    4300020: B_Pr_Hair_Right_01_Root
+    4300022: B_Pr_Hair_Right_01
+    4300024: B_Pr_Hair_Right_02_Root
+    4300026: B_Pr_Hair_Right_02
+    4300028: B_Pr_Hair_Right_03_Root
+    4300030: B_Pr_Hair_Right_03
+    4300032: B_Pr_Hair_Back_Right_Root
+    4300034: B_Pr_Hair_Back_Right
+    4300036: B_Pr_Head_Head_Root
+    4300038: B_Pr_Head_Skull
+    4300040: B_Pr_Head_Eye_L
+    4300042: B_Pr_Head_Eye_L_NUB
+    4300044: RIG_Eye_L_REF
+    4300046: B_Pr_Head_Eye_R
+    4300048: B_Pr_Head_Eye_R_NUB
+    4300050: RIG_Eye_R_REF
+    4300052: CTRL_Prince_Face_Morpher
+    4300054: B_Pr_Sword_R
+    4300056: B_Pr_Sword_L
+    4300058: Weapon_Sword_08
+    4300060: Weapon_Sword_04
+    4300062: Weapon_Sword_05
+    4300064: Weapon_Sword_06
+    4300066: Weapon_Sword_07
+    4300068: Weapon_Sword_01
+    4300070: Weapon_Sword_02
+    4300072: Weapon_Hammer_02
+    4300074: Weapon_Hammer_01
+    4300076: Weapon_Axe_01
+    4300078: Weapon_Axe_02
+    4300080: Weapon_Axe_03
+    4300082: Weapon_Dagger_ref
+    4300084: B_Pr_Mod_Belt_BL_Root
+    4300086: B_Pr_Mod_Belt_BL
+    4300088: B_Pr_Mod_Belt_BL_Nub
+    4300090: B_Pr_Mod_Belt_BR_Root
+    4300092: B_Pr_Mod_Belt_BR
+    4300094: B_Pr_Mod_Belt_BR_Nub
+    4300096: M_Prince_Body
+    4300098: M_Prince_Medaillon
+    4300100: B_Pr_Mod_FX_Suck_Particules
+    4300102: Weapon_Dagger_02
+    4300104: Weapon_Dagger_01
+    4300106: Prince_Collision_Box
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: CTRL_Prince_Face_Morpher
+    13700002: M_Prince_Body
+    13700004: M_Prince_Medaillon
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

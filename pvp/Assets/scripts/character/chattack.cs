@@ -9,7 +9,6 @@ public class chattack : MonoBehaviour {
     int slashnum;
     GameObject enemy;
     public GameObject katana;
-    public GameObject backkatana;
     private void Awake()
     {
         animecontrol = GetComponent<Animator>();
@@ -31,7 +30,7 @@ public class chattack : MonoBehaviour {
                 enemy = GameObject.FindWithTag("p1");
          }
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
-        if (Input.GetButtonDown("Fire1")&&!state.IsTag("mgethit"))
+        if (Input.GetButtonDown("Fire1")&&!Input.GetKey("q")&&!state.IsTag("mgethit"))
         {
                 if (enemy != null)
                 {
@@ -53,16 +52,27 @@ public class chattack : MonoBehaviour {
             animecontrol.Play("guard");
             animecontrol.SetBool("guard", true);
         }
+        if(Input.GetKey("q")&&Input.GetButtonDown("Fire1"))
+        {
+            if (enemy != null)
+            {
+
+                transform.LookAt(enemy.transform);
+            }
+
+            HeavyAttack();
+        }
         if(Input.GetButtonUp("Fire2")&&state.IsTag("guard"))
         {
+            resetmove();
             animecontrol.SetBool("guard", false);
         }
         if (state.IsTag("normalattack") || state.IsTag("attack"))
         {
-            Debug.Log("attack");
+          //  Debug.Log("attack");
             if (state.normalizedTime >= 1)
             {
-                Debug.Log("reset");
+                //Debug.Log("reset");
                 resetmove();
 
             }
@@ -99,6 +109,12 @@ public class chattack : MonoBehaviour {
             animecontrol.SetInteger("attacktime", 4);
             slashnum = 3;
         }
+    }
+    void HeavyAttack()
+    {
+        resetmove();
+        animecontrol.SetBool("attack", true);
+        animecontrol.Play("heavyattack");
     }
     void backweapon()
     {
