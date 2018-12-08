@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: da31c22818472b04197999c62bf5cd74
-timeCreated: 1541813045
-licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: "??\xD7y\xD7?"
     100002: ACT_Weapon_Axe_02
@@ -632,6 +630,7 @@ ModelImporter:
     13700016: M_Prince_Sleeve_Right
     13700018: M_Prince_Veil
     13700020: Pr_face
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -651,6 +650,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -682,6 +682,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
