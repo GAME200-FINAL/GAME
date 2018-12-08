@@ -122,7 +122,7 @@ public class chattack : MonoBehaviour {
         animecontrol.SetBool("attack", true);
         animecontrol.Play("heavyattack");
     }
-    void backweapon()
+    public void backweapon()
     {
         if(katana.activeSelf)
         {
