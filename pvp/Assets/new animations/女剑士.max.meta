@@ -355,7 +355,11 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
+<<<<<<< HEAD
+    hasPreviousCalculatedGlobalScale: 0
+=======
     hasPreviousCalculatedGlobalScale: 1
+>>>>>>> 2cd65dedbb63a8d7cf767905fdef59b03a305f47
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
