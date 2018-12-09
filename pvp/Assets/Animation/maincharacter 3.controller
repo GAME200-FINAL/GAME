@@ -183,120 +183,6 @@ AnimatorController:
     m_IKPass: 1
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
-  - serializedVersion: 5
-    m_Name: axe
-    m_StateMachine: {fileID: 1107523291508947124}
-    m_Mask: {fileID: 0}
-    m_Motions:
-    - serializedVersion: 2
-      m_State: {fileID: 1102462261046702550}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102145812470323026}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 7400018, guid: d4c081336e2cb0a46bcd2d7e87889c6e, type: 3}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 7400018, guid: d4c081336e2cb0a46bcd2d7e87889c6e, type: 3}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 7400018, guid: d4c081336e2cb0a46bcd2d7e87889c6e, type: 3}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 7400000, guid: 4437ee164220a5d4db2f555fae0deec2, type: 2}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 7400018, guid: d4c081336e2cb0a46bcd2d7e87889c6e, type: 3}
-    - serializedVersion: 2
-      m_State: {fileID: 1102240425478426150}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102524728008448014}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102597634631847738}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102642143680593072}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102396864635856122}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102580043182309830}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 7400000, guid: 69fd69f93e9f9cd4aba42f865c75a1f7, type: 2}
-    - serializedVersion: 2
-      m_State: {fileID: 1102737580863002576}
-      m_Motion: {fileID: 7400014, guid: 332a8a5bfb2fc4a18944ffe0345b93c7, type: 3}
-    - serializedVersion: 2
-      m_State: {fileID: 1102352066348381440}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102832644167956810}
-      m_Motion: {fileID: 7400002, guid: becafa5ef094e754a952660d67181c47, type: 3}
-    - serializedVersion: 2
-      m_State: {fileID: 1102129410511937514}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102489822130083146}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102555788030298668}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102144979506687920}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102349622353786398}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102573996406601284}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102004983547289448}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102465557936299500}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102367086610621186}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 1102700978892435696}
-      m_Motion: {fileID: 7400000, guid: 8dec1fd4207000f4dae4e67a12da702e, type: 3}
-    - serializedVersion: 2
-      m_State: {fileID: 1102933146072737244}
-      m_Motion: {fileID: 7400000, guid: 9774cce9b6681fa46a771234ad077e59, type: 3}
-    - serializedVersion: 2
-      m_State: {fileID: 1102804589800416538}
-      m_Motion: {fileID: 0}
-    - serializedVersion: 2
-      m_State: {fileID: 0}
-      m_Motion: {fileID: 7400000, guid: fafdbfb3197c5134ba58d89ea676f34a, type: 3}
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: 0
-    m_DefaultWeight: 1
-    m_IKPass: 1
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
 --- !u!206 &206772417270280388
 BlendTree:
   m_ObjectHideFlags: 1
@@ -5597,7 +5483,7 @@ AnimatorStateMachine:
   - first: {fileID: 1107411717175167348}
     second: []
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 36, y: -48, z: 0}
+  m_AnyStatePosition: {x: -120, y: -48, z: 0}
   m_EntryPosition: {x: 24, y: 60, z: 0}
   m_ExitPosition: {x: 900, y: 396, z: 0}
   m_ParentStateMachinePosition: {x: 588, y: 456, z: 0}

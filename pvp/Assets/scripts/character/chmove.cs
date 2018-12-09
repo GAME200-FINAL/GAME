@@ -8,8 +8,6 @@ using Rewired;
 public class chmove : MonoBehaviour 
 
 {
-     public Player player;
-     public int playerId;
      Animator maincontrol;
      AnimatorStateInfo state;
      Vector3 move=Vector3.zero;
