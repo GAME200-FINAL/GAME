@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using Rewired;
 
 
 public class chmove : MonoBehaviour 
 
 {
+     public Player player;
+     public int playerId;
      Animator maincontrol;
      AnimatorStateInfo state;
      Vector3 move=Vector3.zero;
@@ -39,6 +41,21 @@ public class chmove : MonoBehaviour
     GameObject direction;
 	//public GameObject ground;
 
+
+    [System.NonSerialized] // Don't serialize this so the value is lost on an editor script recompile.
+		private bool initialized;
+
+	private void Initialize ()
+	{
+		// Get the Rewired Player object for this player.
+		player = ReInput.players.GetPlayer (playerId);
+
+		initialized = true;
+	}
+  
+
+
+
 	public bool isGrounded()
 	{
 		return(Physics.Raycast (transform.position+new Vector3(0,1,0), -Vector3.up,1.3f,1<<8));
@@ -69,6 +86,37 @@ public class chmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+	    if (!ReInput.isReady)
+			return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+		if (!initialized)
+			Initialize (); // Reinitialize after a recompile in the editor
+
+
+
+
+
+
+
+        /* inputVector = new Vector3(player.GetAxis("Horizontal"), player.GetAxis("Vertical"));
+        movementVector = Vector3.zero;
+        verticalVector = Vector3.zero;
+
+
+        jump = player.GetButtonDown("Jump");//cross
+        circleAtk = player.GetButtonDown("CircleAttack");//circle
+        triAtkLong = player.GetButtonTimedPressDown("TriAttackLong", 0.4f);//long triangle
+        triangleAtk = player.GetButtonTimedPressUp("TriangleAttack", 0f, 0.4f);
+        dash = player.GetButtonDown("Dash");
+        squareSkill = player.GetButtonDown("SquareSkill");*/
+
+
+
+
+
+
+
+
+
         //Debug.Log (isGrounded ());
         if (state.IsTag("idle"))
             transform.rotation = Quaternion.FromToRotation(Vector3.up, updirection) * transform.rotation;
@@ -107,10 +155,10 @@ public class chmove : MonoBehaviour
             }
             Vector3 forward,right,targetDirection;
             Quaternion targetRotation;
-            forward = direction.transform.forward;
+            forward = Camera.main.transform.forward;
             forward.y = 0;
             forward = forward.normalized;
-            right = direction.transform.right;
+            right = Camera.main.transform.right;
             right.y = 0;
             targetDirection = forward * Input.GetAxis("Vertical") + right * Input.GetAxis("Horizontal");
             targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
