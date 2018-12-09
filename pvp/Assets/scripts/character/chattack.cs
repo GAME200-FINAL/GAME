@@ -38,11 +38,6 @@ public class chattack : MonoBehaviour {
             return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
         if (!initialized)
             Initialize(); // Reinitialize after a recompile in the editor
-        if (state.IsTag("holster")&&state.normalizedTime>0.8f)
-        {
-          
-            backweapon();
-        }
         if(enemy==null)
          {
             if (this.tag == "p1")
@@ -51,6 +46,18 @@ public class chattack : MonoBehaviour {
                 enemy = GameObject.FindWithTag("p1");
          }
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
+        if(state.IsTag("normalattack")&&state.normalizedTime>=1)
+        {
+            if(state.normalizedTime>=1)
+            {
+                animecontrol.SetInteger("attacktime", 0);
+            }
+        }
+        if(state.IsTag("heavyattack"))
+        {
+            animecontrol.SetBool("heavyattack", false);
+        }
+        
         if (player.GetButtonDown("Fire")&&!state.IsTag("mgethit"))
         {
                 if (enemy != null)
@@ -62,70 +69,66 @@ public class chattack : MonoBehaviour {
                 Attack();
         }
 
-        if (player.GetButtonDown("Block") && !state.IsTag("mgethit"))
+        if (player.GetButtonDown("Block") )
         {
-            if (enemy != null)
+            if (!state.IsTag("mgethit") && !(state.IsTag("normalattack")&&state.normalizedTime<0.8f) && !(state.IsTag("heavyattack")&&state.normalizedTime<0.8f))
             {
+                if (enemy != null)
+                {
 
-                transform.LookAt(enemy.transform);
+                    transform.LookAt(enemy.transform);
+                }
+                weapondisplay();
+                animecontrol.Play("guard");
+                animecontrol.SetBool("guard", true);
             }
-            weapondisplay();
-            animecontrol.Play("guard");
-            animecontrol.SetBool("guard", true);
         }
         if(player.GetButtonDown("Fire2"))
         {
-            if (enemy != null)
+            if (!state.IsTag("mgethit")&& !state.IsTag("heavyattack"))
             {
+                if (enemy != null)
+                {
 
-                transform.LookAt(enemy.transform);
+                    transform.LookAt(enemy.transform);
+                }
+
+                HeavyAttack();
             }
-
-            HeavyAttack();
         }
         if(!player.GetButton("Block")&&state.IsTag("guard"))
         {
             resetmove();
             animecontrol.SetBool("guard", false);
         }
-        if (state.IsTag("normalattack") || state.IsTag("attack"))
-        {
-          //  Debug.Log("attack");
-            if (state.normalizedTime >= 1)
-            {
-                //Debug.Log("reset");
-                resetmove();
-
-            }
-        }
     }
     public void resetmove()
     {
-        animecontrol.SetBool("attack", false);
+       // backweapon();
+        animecontrol.SetBool("heavyattack", false);
         animecontrol.SetInteger("attacktime", 0);
     }
     void Attack()
     {
         weapondisplay();
         //speedback ();
-        animecontrol.SetBool("attack", true);
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
-        if (!state.IsTag("attack") && !state.IsTag("normalattack") || (state.IsTag("blockback") && !prestate.IsTag("attack") && !prestate.IsTag("normalattack")))
+        if (!state.IsTag("attack") && !state.IsTag("normalattack"))
         {
             animecontrol.SetInteger("attacktime", 1);
             slashnum = 0;
         }
-        else if ((state.IsName("Base.groundattack.combo1.attack1") && state.normalizedTime < 0.7f) || (state.IsTag("blockback") && prestate.IsName("Base.groundattack.combo1.attack1")))
+        else if (state.IsName("Base.groundattack.normalattack.attack1"))
         {
             animecontrol.SetInteger("attacktime", 2);
             slashnum = 1;
         }
-        else if ((state.IsName("Base.groundattack.combo1.attack2") && state.normalizedTime < 0.7f) || (state.IsTag("blockback") && prestate.IsName("Base.groundattack.combo1.attack2")))
+        else if (state.IsName("Base.groundattack.normalattack.attack2"))
         {
             animecontrol.SetInteger("attacktime", 3);
             slashnum = 2;
         }
-        else if ((state.IsName("Base.groundattack.combo1.attack3") && state.normalizedTime < 0.7f) || (state.IsTag("blockback") && prestate.IsName("Base.groundattack.combo1.attack3")))
+        else if (state.IsName("Base.groundattack.normalattack.attack3"))
         {
             animecontrol.SetInteger("attacktime", 4);
             slashnum = 3;
@@ -134,9 +137,7 @@ public class chattack : MonoBehaviour {
     void HeavyAttack()
     {
         weapondisplay();
-        resetmove();
-        animecontrol.SetBool("attack", true);
-        animecontrol.Play("heavyattack");
+        animecontrol.SetBool("heavyattack",true);
     }
     public void backweapon()
     {
