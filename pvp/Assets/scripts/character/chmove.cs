@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 using Rewired;
 
 
-
 public class chmove : MonoBehaviour 
 
 {
@@ -128,10 +127,10 @@ public class chmove : MonoBehaviour
             }
             Vector3 forward,right,targetDirection;
             Quaternion targetRotation;
-            forward = direction.transform.forward;
+            forward = Camera.main.transform.forward;
             forward.y = 0;
             forward = forward.normalized;
-            right = direction.transform.right;
+            right = Camera.main.transform.right;
             right.y = 0;
             targetDirection = forward * player.GetAxis("Move Vertical") + right * player.GetAxis("Move Horizontal");
             targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
