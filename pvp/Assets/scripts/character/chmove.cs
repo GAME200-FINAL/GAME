@@ -39,31 +39,32 @@ public class chmove : MonoBehaviour
 	public GameObject jumpeffect;
     float tofall;
     GameObject direction;
-	//public GameObject ground;
+    public int playerID;
+    public Player player;
+    bool initialized = false;
 
+    //public GameObject ground;
+    private void Initialize()
+    {
+        // Get the Rewired Player object for this player.
+        player = ReInput.players.GetPlayer(playerID);
 
-    [System.NonSerialized] // Don't serialize this so the value is lost on an editor script recompile.
-		private bool initialized;
+        initialized = true;
+    }
 
-	private void Initialize ()
-	{
-		// Get the Rewired Player object for this player.
-		player = ReInput.players.GetPlayer (playerId);
-
-		initialized = true;
-	}
-  
-
-
-
-	public bool isGrounded()
+    public bool isGrounded()
 	{
 		return(Physics.Raycast (transform.position+new Vector3(0,1,0), -Vector3.up,1.3f,1<<8));
-	}    
+	}
 
-         	// Use this for initialization
-	void Start () 
+    // Use this for initialization
+    private void Awake()
     {
+        player = ReInput.players.GetPlayer(playerID);
+    }
+    void Start () 
+    {
+        
         direction = GameObject.Find("direction");
 		Vector3 updirection = GameObject.Find("direction").transform.up;
 		updirection.z = 0;
@@ -86,37 +87,10 @@ public class chmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	    if (!ReInput.isReady)
-			return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
-		if (!initialized)
-			Initialize (); // Reinitialize after a recompile in the editor
-
-
-
-
-
-
-
-        /* inputVector = new Vector3(player.GetAxis("Horizontal"), player.GetAxis("Vertical"));
-        movementVector = Vector3.zero;
-        verticalVector = Vector3.zero;
-
-
-        jump = player.GetButtonDown("Jump");//cross
-        circleAtk = player.GetButtonDown("CircleAttack");//circle
-        triAtkLong = player.GetButtonTimedPressDown("TriAttackLong", 0.4f);//long triangle
-        triangleAtk = player.GetButtonTimedPressUp("TriangleAttack", 0f, 0.4f);
-        dash = player.GetButtonDown("Dash");
-        squareSkill = player.GetButtonDown("SquareSkill");*/
-
-
-
-
-
-
-
-
-
+        if (!ReInput.isReady)
+            return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if (!initialized)
+            Initialize(); // Reinitialize after a recompile in the editor
         //Debug.Log (isGrounded ());
         if (state.IsTag("idle"))
             transform.rotation = Quaternion.FromToRotation(Vector3.up, updirection) * transform.rotation;
@@ -133,12 +107,12 @@ public class chmove : MonoBehaviour
             }
             // transform.Translate(transform.forward*2f,Space.World);
         }
-        if (state.IsTag("run") && targetspeed > 1.5)
+        if (state.IsTag("run"))
         {
             //transform.Translate (Vector3.forward * 10 * Time.deltaTime);
-            controller.Move(transform.forward * currentspeed*5 * Time.deltaTime);
+            controller.Move(transform.forward * currentspeed*4 * Time.deltaTime);
         }
-        if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
+        if (player.GetAxis("Move Horizontal")!=0||player.GetAxis("Move Vertical")!=0)
         {
             targetspeed = 2;
             if (!state.IsTag("attack") && !state.IsTag("normalattack") && !state.IsTag("airattack"))
@@ -160,7 +134,7 @@ public class chmove : MonoBehaviour
             forward = forward.normalized;
             right = Camera.main.transform.right;
             right.y = 0;
-            targetDirection = forward * Input.GetAxis("Vertical") + right * Input.GetAxis("Horizontal");
+            targetDirection = forward * player.GetAxis("Move Vertical") + right * player.GetAxis("Move Horizontal");
             targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 0.5f);
             if (state.IsTag("idle") || state.IsTag("fall"))
