@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Rewired;
 
 public class chattack : MonoBehaviour {
     Animator animecontrol;
@@ -9,20 +10,35 @@ public class chattack : MonoBehaviour {
     int slashnum;
     GameObject enemy;
     public GameObject katana;
+    public int playerID;
+    public Player player;
+    bool initialized = false;
     private void Awake()
     {
         animecontrol = GetComponent<Animator>();
-    
+        player = ReInput.players.GetPlayer(playerID);
+
     }
     // Use this for initialization
     void Start () {
       
     }
-	
-	// Update is called once per frame
-	void Update ()
+    private void Initialize()
     {
-        if(state.IsTag("holster")&&state.normalizedTime>0.8f)
+        // Get the Rewired Player object for this player.
+        player = ReInput.players.GetPlayer(playerID);
+
+        initialized = true;
+    }
+
+    // Update is called once per frame
+    void Update ()
+    {
+        if (!ReInput.isReady)
+            return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if (!initialized)
+            Initialize(); // Reinitialize after a recompile in the editor
+        if (state.IsTag("holster")&&state.normalizedTime>0.8f)
         {
           
             backweapon();
@@ -35,7 +51,7 @@ public class chattack : MonoBehaviour {
                 enemy = GameObject.FindWithTag("p1");
          }
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
-        if (Input.GetButtonDown("Fire1")&&!Input.GetKey("q")&&!state.IsTag("mgethit"))
+        if (player.GetButtonDown("Fire")&&!state.IsTag("mgethit"))
         {
                 if (enemy != null)
                 {
@@ -46,7 +62,7 @@ public class chattack : MonoBehaviour {
                 Attack();
         }
 
-        if (Input.GetButtonDown("Fire2") && !state.IsTag("mgethit"))
+        if (player.GetButtonDown("Block") && !state.IsTag("mgethit"))
         {
             if (enemy != null)
             {
@@ -57,7 +73,7 @@ public class chattack : MonoBehaviour {
             animecontrol.Play("guard");
             animecontrol.SetBool("guard", true);
         }
-        if(Input.GetKey("q")&&Input.GetButtonDown("Fire1"))
+        if(player.GetButtonDown("Fire2"))
         {
             if (enemy != null)
             {
@@ -67,7 +83,7 @@ public class chattack : MonoBehaviour {
 
             HeavyAttack();
         }
-        if(Input.GetButtonUp("Fire2")&&state.IsTag("guard"))
+        if(!player.GetButton("Block")&&state.IsTag("guard"))
         {
             resetmove();
             animecontrol.SetBool("guard", false);
