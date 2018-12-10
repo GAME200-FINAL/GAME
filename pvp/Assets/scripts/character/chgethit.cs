@@ -39,7 +39,7 @@ public class chgethit : MonoBehaviour {
     {
         if (!(chstate.IsTag("dodge")&&chstate.normalizedTime<0.5f)&&!chstate.IsTag("guard")&&!chstate.IsTag("blocksuccuss"))
         {
-            if (chstate.IsTag("block"))
+            if (chstate.IsTag("block")&&chstate.normalizedTime<0.8f)
             {
                 animecontrol.SetBool("block", true);
             }
