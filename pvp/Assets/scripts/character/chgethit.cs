@@ -37,17 +37,69 @@ public class chgethit : MonoBehaviour {
 	}
     public void getattacknormal()
     {
-        if (!(chstate.IsTag("dodge")&&chstate.normalizedTime<0.5f)&&!chstate.IsTag("guard"))
+        if (!(chstate.IsTag("dodge")&&chstate.normalizedTime<0.5f)&&!chstate.IsTag("guard")&&!chstate.IsTag("blocksuccuss"))
         {
+            if (chstate.IsTag("block"))
+            {
+                animecontrol.SetBool("block", true);
+            }
+            else
+            {
+                GetComponent<chattack>().resetmove();
+                GetComponent<chattack>().backweapon();
+                if (hp > 0)
+                {
+                    if (!chstate.IsTag("mgethit"))
+                        animecontrol.Play("mgethit");
+                    else
+                        animecontrol.Play("mgethit1");
+
+                }
+                else
+                {
+                    if (!die)
+                    {
+                        die = true;
+                        godie();
+                    }
+                }
+            }
+        }
+    }
+    public void getattackheavy()
+    {
+        if (chstate.IsTag("block") && chstate.normalizedTime < 0.5f)
+        {
+            animecontrol.SetBool("block", true);
+        }
+        else if(!chstate.IsTag("blocksuccess"))
+        {
+            transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
+            chstate = this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
             GetComponent<chattack>().resetmove();
             GetComponent<chattack>().backweapon();
-            if (hp > 0)
-            {
-               if(!chstate.IsTag("mgethit"))
-                animecontrol.Play("mgethit");
-                else
-                 animecontrol.Play("mgethit1");
+                if (hp > 0)
+                {
 
+                    animecontrol.Play("gethitback");
+                }
+                else
+                {
+                    if (!die)
+                    {
+                        die = true;
+                        godie();
+                    }
+
+                }
+        }
+    }
+    public void getblock()
+    {
+         if (hp > 0)
+            {
+
+                animecontrol.Play("gethitback");
             }
             else
             {
@@ -56,34 +108,7 @@ public class chgethit : MonoBehaviour {
                     die = true;
                     godie();
                 }
-            }
-        }
-    }
-    public void getattackheavy()
-    {
-        //Debug.Log("getattackheavy");
-           animecontrol.speed = 1;
-           // if (GetComponent<chmove>().isGrounded())
-                   transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
-            chstate = this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
-            if (!(chstate.IsTag("dodge") && chstate.normalizedTime < 0.5f))
-            {
-            GetComponent<chattack>().resetmove();
-            GetComponent<chattack>().backweapon();
-            if (hp > 0)
-                {
-                 // hp -= 10;
-                  animecontrol.Play("gethitback");
-                }
-                else
-                {
-                    if(!die)
-                     {
-                         die = true;
-                         godie();
-                     }
-               
-                }
+
             }
     }
     void godie()

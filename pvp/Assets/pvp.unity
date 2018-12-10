@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000002, guid: c299b3afe776fbf40ac6ed470f71688c,
+  m_LightingDataAsset: {fileID: 112000002, guid: ad238e369d52bf54d8fadf64db89166e,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -510,6 +510,11 @@ Prefab:
       propertyPath: playerID
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 95027553651059530, guid: 0013ec0f6abd6124c9fb35c2a9c8a496,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a462c79744dcba54298c674ffd8e8f27, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0013ec0f6abd6124c9fb35c2a9c8a496, type: 2}
   m_IsPrefabAsset: 0
@@ -1240,6 +1245,24 @@ MonoBehaviour:
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 0
+    - _id: 5
+      _name: Dash
+      _type: 1
+      _descriptiveName: Dash
+      _positiveDescriptiveName: 
+      _negativeDescriptiveName: 
+      _behaviorId: 0
+      _userAssignable: 1
+      _categoryId: 0
+    - _id: 6
+      _name: Skill
+      _type: 1
+      _descriptiveName: Skill
+      _positiveDescriptiveName: 
+      _negativeDescriptiveName: 
+      _behaviorId: 0
+      _userAssignable: 1
+      _categoryId: 0
     actionCategories:
     - _name: Default
       _descriptiveName: Default
@@ -1249,7 +1272,7 @@ MonoBehaviour:
     actionCategoryMap:
       list:
       - categoryId: 0
-        actionIds: 0000000001000000020000000300000004000000
+        actionIds: 00000000010000000200000003000000040000000500000006000000
     inputBehaviors:
     - _id: 0
       _name: Default
@@ -1361,12 +1384,34 @@ MonoBehaviour:
         _modifierKey1: 0
         _modifierKey2: 0
         _modifierKey3: 0
+      - _actionCategoryId: 0
+        _actionId: 5
+        _elementType: 1
+        _elementIdentifierId: 4
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 0
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
+      - _actionCategoryId: 0
+        _actionId: 6
+        _elementType: 1
+        _elementIdentifierId: 10
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 0
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
     keyboardMaps: []
     mouseMaps: []
     customControllerMaps: []
     customControllers: []
     playerIdCounter: 3
-    actionIdCounter: 5
+    actionIdCounter: 7
     actionCategoryIdCounter: 1
     inputBehaviorIdCounter: 1
     mapCategoryIdCounter: 1

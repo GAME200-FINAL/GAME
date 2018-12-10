@@ -55,10 +55,21 @@ public class chattack : MonoBehaviour {
         }
         if(state.IsTag("heavyattack"))
         {
-            animecontrol.SetBool("heavyattack", false);
+            if (animecontrol.GetBool("heavyattack"))
+                animecontrol.SetBool("heavyattack", false);
         }
-        
-        if (player.GetButtonDown("Fire")&&!state.IsTag("mgethit"))
+        if (state.IsTag("sattack"))
+        {
+            if (animecontrol.GetBool("skillattack"))
+                animecontrol.SetBool("skillattack", false);
+        }
+        if(state.IsTag("blocksuccess"))
+        {
+            if(animecontrol.GetBool("block"))
+            animecontrol.SetBool("block", false);
+        }
+
+        if (player.GetButtonDown("Fire")&&!state.IsTag("mgethit")&&!player.GetButton("Skill"))
         {
                 if (enemy != null)
                 {
@@ -69,21 +80,48 @@ public class chattack : MonoBehaviour {
                 Attack();
         }
 
+        if (player.GetButtonDown("Fire2") && !state.IsTag("mgethit") &&player.GetButton("Skill"))
+        {
+            if (enemy != null)
+            {
+
+                transform.LookAt(enemy.transform);
+            }
+
+            SkillAttack();
+        }
+
         if (player.GetButtonDown("Block") )
         {
-            if (!state.IsTag("mgethit") && !(state.IsTag("normalattack")&&state.normalizedTime<0.8f) && !(state.IsTag("heavyattack")&&state.normalizedTime<0.8f))
+            if (!player.GetButton("Skill"))
             {
-                if (enemy != null)
+                if (!state.IsTag("mgethit") && !(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
                 {
+                    if (enemy != null)
+                    {
 
-                    transform.LookAt(enemy.transform);
+                        transform.LookAt(enemy.transform);
+                    }
+                    weapondisplay();
+                    animecontrol.Play("guard");
+                    animecontrol.SetBool("guard", true);
                 }
-                weapondisplay();
-                animecontrol.Play("guard");
-                animecontrol.SetBool("guard", true);
+            }
+            else
+            {
+                if (!state.IsTag("mgethit") && !(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
+                {
+                    if (enemy != null)
+                    {
+
+                        transform.LookAt(enemy.transform);
+                    }
+                    weapondisplay();
+                    animecontrol.Play("block");
+                }
             }
         }
-        if(player.GetButtonDown("Fire2"))
+        if(player.GetButtonDown("Fire2")&&!player.GetButton("Skill"))
         {
             if (!state.IsTag("mgethit")&& !state.IsTag("heavyattack"))
             {
@@ -96,11 +134,17 @@ public class chattack : MonoBehaviour {
                 HeavyAttack();
             }
         }
+        if(player.GetButtonDown("Dash"))
+        {
+            resetmove();
+            animecontrol.Play("dash");
+        }
         if(!player.GetButton("Block")&&state.IsTag("guard"))
         {
             resetmove();
             animecontrol.SetBool("guard", false);
         }
+
     }
     public void resetmove()
     {
@@ -134,17 +178,23 @@ public class chattack : MonoBehaviour {
             slashnum = 3;
         }
     }
+    void SkillAttack()
+    {
+        animecontrol.SetBool("skillattack", true);
+    }
     void HeavyAttack()
     {
-        weapondisplay();
         animecontrol.SetBool("heavyattack",true);
     }
     public void backweapon()
     {
-        if(katana.activeSelf)
+        if (state.IsTag("idle"))
         {
-            katana.SetActive(false);
-            //backkatana.SetActive(true);
+            if (katana.activeSelf)
+            {
+                katana.SetActive(false);
+                //backkatana.SetActive(true);
+            }
         }
     }
     void weapondisplay()

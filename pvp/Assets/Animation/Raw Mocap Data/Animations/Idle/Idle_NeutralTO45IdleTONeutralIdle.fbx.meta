@@ -214,7 +214,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.0684495
+      - time: 0.0050053885
         functionName: backweapon
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: a5095973686db4449a0f4de0dd7bc51f,
