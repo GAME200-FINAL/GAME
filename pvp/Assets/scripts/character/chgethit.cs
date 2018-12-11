@@ -46,6 +46,7 @@ public class chgethit : MonoBehaviour {
             }
             else
             {
+                transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
                 GetComponent<chattack>().resetmove();
                 GetComponent<chattack>().backweapon();
                 if (hp > 0)
