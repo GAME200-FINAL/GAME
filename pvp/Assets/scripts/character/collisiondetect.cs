@@ -86,11 +86,36 @@ public class collisiondetect : MonoBehaviour {
 
         }
     }
+    void roundnormaldetect()
+    {
+        if (enemy != null)
+        {
+            // Debug.Log("heavy2");
+            float distance = Vector3.Distance(transform.position, enemy.transform.position);
+            Vector3 diff = enemy.transform.position - transform.position;
+            float angle = Vector3.Angle(transform.forward, diff);
+            //Debug.Log(distance);
+            // Debug.Log(angle);
+            if (distance < attackdistance && angle <= 180)
+            {
+                // Debug.Log("heavy3");
+                pausetime(0.1f);
+                enemy.GetComponent<chgethit>().getattacknormal();
+            }
+
+        }
+    }
     void blockdetect()
     {
-                // Debug.Log("heavy3");
-        pausetime(0.1f);
-        enemy.GetComponent<chgethit>().getblock();
+        float distance = Vector3.Distance(transform.position, enemy.transform.position);
+        Vector3 diff = enemy.transform.position - transform.position;
+        float angle = Vector3.Angle(transform.forward, diff);
+        if (distance < attackdistance && angle <= 180)
+        {
+            // Debug.Log("heavy3");
+            pausetime(0.1f);
+            enemy.GetComponent<chgethit>().getblock();
+        }
     }
     public void pausetime(float t)
     {

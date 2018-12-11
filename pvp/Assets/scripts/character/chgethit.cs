@@ -39,7 +39,7 @@ public class chgethit : MonoBehaviour {
     {
         if (!(chstate.IsTag("dodge")&&chstate.normalizedTime<0.5f)&&!chstate.IsTag("guard")&&!chstate.IsTag("blocksuccuss"))
         {
-            if (chstate.IsTag("block")&&chstate.normalizedTime<0.8f)
+            if (chstate.IsTag("block")&&chstate.normalizedTime<0.5f)
             {
                 animecontrol.SetBool("block", true);
                 GetComponent<collisiondetect>().pausetime(0.2f);
@@ -70,7 +70,7 @@ public class chgethit : MonoBehaviour {
     }
     public void getattackheavy()
     {
-        if (chstate.IsTag("block") && chstate.normalizedTime < 0.8f)
+        if (chstate.IsTag("block") && chstate.normalizedTime < 0.5f)
         {
             animecontrol.SetBool("block", true);
             GetComponent<collisiondetect>().pausetime(0.2f);

@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 6922c391e36651c46841f29328dca78b
-timeCreated: 1508763544
-licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: Bip01
     100002: Bip01 Footsteps
@@ -186,22 +184,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 02 - Default
-    second: {fileID: 2100000, guid: 0da871aead2ffe1449d6f9a83f948256, type: 2}
+    second: {fileID: 2100000, guid: a0cbc25fc04e2f24e95eacbbba7a3ecd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 03 - Default
-    second: {fileID: 2100000, guid: 04981bda6ee47df4fa9abd8a4af21278, type: 2}
+    second: {fileID: 2100000, guid: 1914a2c64fb313f42b7bd704bc74ad86, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 08 - Default
-    second: {fileID: 2100000, guid: e8c0be60c94006c4da94ddb485cdaacc, type: 2}
+    second: {fileID: 2100000, guid: 5d41da6a1a127d340b79379d1366e0b5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 09 - Default
-    second: {fileID: 2100000, guid: e8c0be60c94006c4da94ddb485cdaacc, type: 2}
+    second: {fileID: 2100000, guid: 5d41da6a1a127d340b79379d1366e0b5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -220,6 +218,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -231,7 +230,7 @@ ModelImporter:
     - serializedVersion: 16
       name: sting
       takeName: Take 001
-      firstFrame: 0
+      firstFrame: 15
       lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
@@ -255,52 +254,59 @@ ModelImporter:
         curve:
           serializedVersion: 2
           curve:
-          - serializedVersion: 2
+          - serializedVersion: 3
             time: 0
             value: -0.00390625
             inSlope: 0
             outSlope: 0
             tangentMode: 0
-          - serializedVersion: 2
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
             time: 0.15429688
             value: 0.0104813725
             inSlope: 0
             outSlope: 0
             tangentMode: 0
-          - serializedVersion: 2
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
             time: 0.298891
             value: 0.004886441
             inSlope: -0.031585805
             outSlope: -0.031585805
             tangentMode: 0
-          - serializedVersion: 2
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
             time: 0.67258954
             value: -0.00062451453
             inSlope: -0.018205237
             outSlope: -0.018205237
             tangentMode: 0
-          - serializedVersion: 2
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
             time: 1
             value: -0.0036315918
             inSlope: 0
             outSlope: 0
             tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
           preInfinity: 3
           postInfinity: 3
           rotationOrder: 0
       events:
-      - time: 0.20412646
-        functionName: jihuo
+      - time: 0
+        functionName: weapondisplay
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 58324fe2667924044b373518b051b756,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.4867641
-        functionName: playslashsound
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: b7014f9aae6d6be4da1521fe39ccae9b,
+        objectReferenceParameter: {fileID: 11500000, guid: a5095973686db4449a0f4de0dd7bc51f,
           type: 3}
         floatParameter: 0
         intParameter: 0
@@ -332,6 +338,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.02
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1192,7 +1200,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 1
     hasExtraRoot: 1
     skeletonHasParents: 1

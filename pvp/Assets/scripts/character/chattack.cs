@@ -13,6 +13,7 @@ public class chattack : MonoBehaviour {
     public int playerID;
     public Player player;
     bool initialized = false;
+    bool stingeffect;
     private void Awake()
     {
         animecontrol = GetComponent<Animator>();
@@ -21,7 +22,7 @@ public class chattack : MonoBehaviour {
     }
     // Use this for initialization
     void Start () {
-      
+        stingeffect = false;
     }
     private void Initialize()
     {
@@ -34,6 +35,7 @@ public class chattack : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+        
         if (!ReInput.isReady)
             return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
         if (!initialized)
@@ -64,16 +66,37 @@ public class chattack : MonoBehaviour {
             if (animecontrol.GetBool("heavyskill"))
                 animecontrol.SetBool("heavyskill", false);
         }
-        if (state.IsTag("normalskill"))
-        {
-            if (animecontrol.GetBool("heavyskill"))
-                animecontrol.SetBool("normalskill", false);
-        }
+  
         if (state.IsTag("blocksuccess"))
         {
             if(animecontrol.GetBool("block"))
             animecontrol.SetBool("block", false);
         }
+        
+        if (state.IsTag("normalskill"))
+        {
+            if (enemy != null)
+            {
+                    float distance = Vector3.Distance(transform.position, enemy.transform.position);
+                    Vector3 diff = enemy.transform.position - transform.position;
+                    float angle = Vector3.Angle(transform.forward, diff);
+                    //Debug.Log(distance);
+                    // Debug.Log(angle);
+                    if (distance < GetComponent<collisiondetect>().attackdistance && angle <= 90)
+                    {
+                        if (!stingeffect)
+                        {
+                            stingeffect = true;
+                            //GetComponent<collisiondetect>().pausetime(0.1f);
+                            animecontrol.SetBool("normalskill", false);
+                            enemy.GetComponent<chgethit>().getattacknormal();
+                        }
+                    }
+            }
+           if (state.normalizedTime>0.6f)
+               animecontrol.SetBool("normalskill", false);
+        }
+        
 
         if (player.GetButtonDown("Fire")&&!state.IsTag("mgethit")&&!player.GetButton("Skill"))
         {
@@ -83,7 +106,7 @@ public class chattack : MonoBehaviour {
                     transform.LookAt(enemy.transform);
                 }
 
-            if (this.name == "himeko") SAttack();
+            if (this.name == "himeko") HAttack();
             else SAttack();
         }
 
@@ -113,7 +136,7 @@ public class chattack : MonoBehaviour {
         {
             if (!player.GetButton("Skill"))
             {
-                if (!state.IsTag("mgethit") && !(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
+                if (!state.IsTag("mgethit") && !state.IsTag("holster")&& !(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
                 {
                     if (enemy != null)
                     {
@@ -127,7 +150,7 @@ public class chattack : MonoBehaviour {
             }
             else
             {
-                if (!state.IsTag("mgethit") && !(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
+                if (!state.IsTag("block")&&!state.IsTag("blocksuccess")&&!state.IsTag("holster")&&!(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
                 {
                     if (enemy != null)
                     {
@@ -214,7 +237,7 @@ public class chattack : MonoBehaviour {
         {
             if (animecontrol.GetBool("normalattack"))
             {
-                if (state.normalizedTime > 0.5f)
+                if (state.normalizedTime > 0.7f)
                 {
                     animecontrol.SetInteger("attacktime", 2);
                     slashnum = 1;
@@ -229,7 +252,7 @@ public class chattack : MonoBehaviour {
         {
             if (animecontrol.GetBool("normalattack"))
             {
-                if (state.normalizedTime > 0.5f)
+                if (state.normalizedTime > 0.7f)
                 {
                     animecontrol.SetInteger("attacktime", 3);
                     slashnum = 2;
@@ -244,7 +267,7 @@ public class chattack : MonoBehaviour {
         {
             if (animecontrol.GetBool("normalattack"))
             {
-                if (state.normalizedTime > 0.5f)
+                if (state.normalizedTime > 0.7f)
                 {
 
                     animecontrol.SetInteger("attacktime", 4);
@@ -263,7 +286,9 @@ public class chattack : MonoBehaviour {
     }
     void NormalSkill()
     {
+        stingeffect = false;
         animecontrol.SetBool("normalskill", true);
+        animecontrol.Play("stingbefore");
     }
     void DashSkill()
     {
