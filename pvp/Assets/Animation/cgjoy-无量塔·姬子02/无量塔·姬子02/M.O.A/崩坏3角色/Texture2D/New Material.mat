@@ -4,10 +4,10 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: New Material
-  m_Shader: {fileID: 4800000, guid: 054a31a99d11e49d110086ba44295342, type: 3}
+  m_Shader: {fileID: 4800000, guid: bbc9976491ba0bb4f9eedb78b9d211e1, type: 3}
   m_ShaderKeywords: _EMISSION _IS_BLENDADDTOMATCAP_ON _IS_LIGHTCOLOR_1ST_SHADE_ON
     _IS_LIGHTCOLOR_2ND_SHADE_ON _IS_LIGHTCOLOR_AP_RIMLIGHT_ON _IS_LIGHTCOLOR_BASE_ON
     _IS_LIGHTCOLOR_HIGHCOLOR_ON _IS_LIGHTCOLOR_MATCAP_ON _IS_LIGHTCOLOR_RIMLIGHT_ON
@@ -70,7 +70,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ILMTex:
-        m_Texture: {fileID: 2800000, guid: aae31e56b440f0b4bbab3105784a7265, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1154335235a35fc42a3ee779b7e4e0a8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -184,7 +184,7 @@ Material:
     - _Clipping_Level: 0
     - _CullMode: 0
     - _Cutoff: 0.5
-    - _DarkenInnerLine: 0.2
+    - _DarkenInnerLine: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Farthest_Distance: 10
@@ -224,7 +224,7 @@ Material:
     - _OUTLINE: 0
     - _OcclusionStrength: 0.092
     - _Offset_Z: 0
-    - _Outline: 0.002
+    - _Outline: 0
     - _Outline_Width: 1.2
     - _Parallax: 0.02
     - _RimLight: 0

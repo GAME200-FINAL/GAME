@@ -106,11 +106,11 @@ public class chmove : MonoBehaviour
             targetspeed = 2;
             if (!state.IsTag("attack") && !state.IsTag("normalattack") && !state.IsTag("airattack"))
             {
-                if (!state.IsTag("dodge"))
-                {
-                        maincontrol.SetBool("running", true);
-                }
-                currentspeed = Mathf.SmoothDamp(currentspeed, targetspeed, ref refcurrentspeed, 0.15f);
+            
+                GetComponent<chattack>().backweapon();
+                maincontrol.SetBool("running", true);
+                // currentspeed = Mathf.SmoothDamp(currentspeed, targetspeed, ref refcurrentspeed, 0.15f);
+                currentspeed = targetspeed;
                 maincontrol.SetFloat("runspeed", currentspeed);
             }
             Vector3 forward,right,targetDirection;

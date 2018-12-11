@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: WeaponTrail 1
   m_Shader: {fileID: 4800000, guid: 9a849566f2af0b54fbcd1f3c0cb25d9f, type: 3}
@@ -142,7 +142,7 @@ Material:
     - _node_4719: {r: 1.4555782, g: 1.3529412, b: 2, a: 1}
     - _node_5951: {r: 1.5201125, g: 2.9117646, b: 2.9117646, a: 1}
     - _rongjiese: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - _waiyanse: {r: 0.20955884, g: 0.2718558, b: 1.5000001, a: 1}
+    - _waiyanse: {r: 0.7529412, g: 0.8156863, b: 8.784314, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6

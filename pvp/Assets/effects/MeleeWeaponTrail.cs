@@ -14,7 +14,7 @@ using System.Collections.Generic;
 public class MeleeWeaponTrail : MonoBehaviour
 {
 	[SerializeField]
-    public static bool _emit=true;
+    public  bool _emit=true;
    // public bool Emit { set{_emit = value;} }
 
 	bool _use = true;

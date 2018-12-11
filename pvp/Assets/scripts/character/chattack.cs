@@ -14,6 +14,7 @@ public class chattack : MonoBehaviour {
     public Player player;
     bool initialized = false;
     bool stingeffect;
+    public GameObject backkatana;
     private void Awake()
     {
         animecontrol = GetComponent<Animator>();
@@ -23,6 +24,7 @@ public class chattack : MonoBehaviour {
     // Use this for initialization
     void Start () {
         stingeffect = false;
+        katana.SetActive(false);
     }
     private void Initialize()
     {
@@ -48,15 +50,18 @@ public class chattack : MonoBehaviour {
                 enemy = GameObject.FindWithTag("p1");
          }
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
-        if(state.IsTag("normalattack"))
+        if (state.IsTag("normalattack"))
         {
-            if(state.normalizedTime>=1)
+            GetComponent<MeleeWeaponTrail>()._emit = true;
+            if (state.normalizedTime >= 1)
             {
                 animecontrol.SetBool("normalattack", false);
                 animecontrol.SetInteger("attacktime", 0);
             }
         }
-        if(state.IsTag("heavyattack"))
+        else
+            GetComponent<MeleeWeaponTrail>()._emit = false;
+        if (state.IsTag("heavyattack"))
         {
             if (animecontrol.GetBool("heavyattack"))
                 animecontrol.SetBool("heavyattack", false);
@@ -100,6 +105,7 @@ public class chattack : MonoBehaviour {
 
         if (player.GetButtonDown("Fire")&&!state.IsTag("mgethit")&&!player.GetButton("Skill"))
         {
+           // createtrail();
                 if (enemy != null)
                 {
         
@@ -108,17 +114,6 @@ public class chattack : MonoBehaviour {
 
             if (this.name == "himeko") HAttack();
             else SAttack();
-        }
-
-        if (player.GetButtonDown("Fire2") && !state.IsTag("mgethit") &&player.GetButton("Skill"))
-        {
-            if (enemy != null)
-            {
-
-                transform.LookAt(enemy.transform);
-            }
-
-            HeavySkill();
         }
         if (player.GetButtonDown("Fire") && !state.IsTag("mgethit") && player.GetButton("Skill"))
         {
@@ -130,8 +125,30 @@ public class chattack : MonoBehaviour {
 
             NormalSkill();
         }
+        if (player.GetButtonDown("Fire2") && !player.GetButton("Skill"))
+        {
+            if (!state.IsTag("mgethit") && !state.IsTag("heavyattack"))
+            {
+                if (enemy != null)
+                {
 
+                    transform.LookAt(enemy.transform);
+                }
 
+                HeavyAttack();
+            }
+        }
+        if (player.GetButtonDown("Fire2") && !state.IsTag("mgethit") &&player.GetButton("Skill"))
+        {
+            if (enemy != null)
+            {
+
+                transform.LookAt(enemy.transform);
+            }
+
+            HeavySkill();
+        }
+     
         if (player.GetButtonDown("Block") )
         {
             if (!player.GetButton("Skill"))
@@ -162,19 +179,7 @@ public class chattack : MonoBehaviour {
                 }
             }
         }
-        if(player.GetButtonDown("Fire2")&&!player.GetButton("Skill"))
-        {
-            if (!state.IsTag("mgethit")&& !state.IsTag("heavyattack"))
-            {
-                if (enemy != null)
-                {
-
-                    transform.LookAt(enemy.transform);
-                }
-
-                HeavyAttack();
-            }
-        }
+     
         if(player.GetButtonDown("Dash"))
         {
             resetmove();
@@ -300,13 +305,18 @@ public class chattack : MonoBehaviour {
     }
     public void backweapon()
     {
-        if (state.IsTag("idle"))
-        {
+        if(state.IsTag("holster"))
+        { 
             if (katana.activeSelf)
             {
                 katana.SetActive(false);
                 //backkatana.SetActive(true);
             }
+            if(backkatana!=null)
+            {
+                backkatana.SetActive(true);
+            }
+            //Instantiate(backeffect, katana.transform.position, Quaternion.identity);
         }
     }
     void weapondisplay()
@@ -316,5 +326,14 @@ public class chattack : MonoBehaviour {
             katana.SetActive(true);
            // backkatana.SetActive(false);
         }
+        if (backkatana != null)
+        {
+            backkatana.SetActive(false);
+        }
+        createtrail();
+    }
+    void createtrail()
+    {
+       GetComponent<MeleeWeaponTrail>().restarttrail();
     }
 }
