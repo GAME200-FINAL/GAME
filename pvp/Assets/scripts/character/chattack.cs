@@ -46,10 +46,11 @@ public class chattack : MonoBehaviour {
                 enemy = GameObject.FindWithTag("p1");
          }
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
-        if(state.IsTag("normalattack")&&state.normalizedTime>=1)
+        if(state.IsTag("normalattack"))
         {
             if(state.normalizedTime>=1)
             {
+                animecontrol.SetBool("normalattack", false);
                 animecontrol.SetInteger("attacktime", 0);
             }
         }
@@ -58,12 +59,17 @@ public class chattack : MonoBehaviour {
             if (animecontrol.GetBool("heavyattack"))
                 animecontrol.SetBool("heavyattack", false);
         }
-        if (state.IsTag("sattack"))
+        if (state.IsTag("heavyskill"))
         {
-            if (animecontrol.GetBool("skillattack"))
-                animecontrol.SetBool("skillattack", false);
+            if (animecontrol.GetBool("heavyskill"))
+                animecontrol.SetBool("heavyskill", false);
         }
-        if(state.IsTag("blocksuccess"))
+        if (state.IsTag("normalskill"))
+        {
+            if (animecontrol.GetBool("heavyskill"))
+                animecontrol.SetBool("normalskill", false);
+        }
+        if (state.IsTag("blocksuccess"))
         {
             if(animecontrol.GetBool("block"))
             animecontrol.SetBool("block", false);
@@ -77,7 +83,8 @@ public class chattack : MonoBehaviour {
                     transform.LookAt(enemy.transform);
                 }
 
-                Attack();
+            if (this.name == "himeko") SAttack();
+            else SAttack();
         }
 
         if (player.GetButtonDown("Fire2") && !state.IsTag("mgethit") &&player.GetButton("Skill"))
@@ -88,8 +95,19 @@ public class chattack : MonoBehaviour {
                 transform.LookAt(enemy.transform);
             }
 
-            SkillAttack();
+            HeavySkill();
         }
+        if (player.GetButtonDown("Fire") && !state.IsTag("mgethit") && player.GetButton("Skill"))
+        {
+            if (enemy != null)
+            {
+
+                transform.LookAt(enemy.transform);
+            }
+
+            NormalSkill();
+        }
+
 
         if (player.GetButtonDown("Block") )
         {
@@ -148,16 +166,19 @@ public class chattack : MonoBehaviour {
     }
     public void resetmove()
     {
-       // backweapon();
+        // backweapon();
+        animecontrol.SetBool("normalattack", false);
+        animecontrol.SetBool("heavyskill", false);
+        animecontrol.SetBool("normalskill", false);
         animecontrol.SetBool("heavyattack", false);
         animecontrol.SetInteger("attacktime", 0);
     }
-    void Attack()
+    void HAttack()
     {
         weapondisplay();
         //speedback ();
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
-        if (!state.IsTag("attack") && !state.IsTag("normalattack"))
+        if (!state.IsTag("normalattack"))
         {
             animecontrol.SetInteger("attacktime", 1);
             slashnum = 0;
@@ -178,9 +199,65 @@ public class chattack : MonoBehaviour {
             slashnum = 3;
         }
     }
-    void SkillAttack()
+    void SAttack()
     {
-        animecontrol.SetBool("skillattack", true);
+        weapondisplay();
+        //speedback ();
+        state = animecontrol.GetCurrentAnimatorStateInfo(0);
+        if (!state.IsTag("normalattack"))
+        {
+            animecontrol.SetBool("normalattack", true);
+            animecontrol.SetInteger("attacktime", 1);
+            slashnum = 0;
+        }
+        else if (state.IsName("Base.groundattack.normalattack.attack1"))
+        {
+            if (state.normalizedTime > 0.6f)
+            {
+                animecontrol.SetInteger("attacktime", 2);
+                slashnum = 1;
+            }
+            else
+            {
+                resetmove();
+            }
+        }
+        else if (state.IsName("Base.groundattack.normalattack.attack2"))
+        {
+            if (state.normalizedTime > 0.6f)
+            {
+                animecontrol.SetInteger("attacktime", 3);
+                slashnum = 2;
+            }
+            else
+            {
+                resetmove();
+            }
+        }
+        else if (state.IsName("Base.groundattack.normalattack.attack3"))
+        {
+            if (state.normalizedTime > 0.6f)
+            {
+                animecontrol.SetInteger("attacktime", 4);
+                slashnum = 3;
+            }
+            else
+            {
+                resetmove();
+            }
+        }
+    }
+    void HeavySkill()
+    {
+        animecontrol.SetBool("heavyskill", true);
+    }
+    void NormalSkill()
+    {
+        animecontrol.SetBool("normalskill", true);
+    }
+    void DashSkill()
+    {
+        animecontrol.SetBool("dashskill", true);
     }
     void HeavyAttack()
     {

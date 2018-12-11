@@ -92,7 +92,7 @@ public class collisiondetect : MonoBehaviour {
         pausetime(0.1f);
         enemy.GetComponent<chgethit>().getblock();
     }
-    void pausetime(float t)
+    public void pausetime(float t)
     {
         if (!stoptime)
         {

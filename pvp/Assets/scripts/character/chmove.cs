@@ -96,15 +96,6 @@ public class chmove : MonoBehaviour
             jumpcount = 0;
         //Debug.Log (movestate);
         state = maincontrol.GetCurrentAnimatorStateInfo(0);
-        if (Input.GetKeyDown("left shift") && !state.IsTag("dodge"))
-        {
-            if (isGrounded())
-            {
-                maincontrol.Play("dodge");
-                maincontrol.speed = 1;
-            }
-            // transform.Translate(transform.forward*2f,Space.World);
-        }
         if (state.IsTag("run"))
         {
             //transform.Translate (Vector3.forward * 10 * Time.deltaTime);
@@ -117,10 +108,7 @@ public class chmove : MonoBehaviour
             {
                 if (!state.IsTag("dodge"))
                 {
-                    if (isGrounded())
-                    {
                         maincontrol.SetBool("running", true);
-                    }
                 }
                 currentspeed = Mathf.SmoothDamp(currentspeed, targetspeed, ref refcurrentspeed, 0.15f);
                 maincontrol.SetFloat("runspeed", currentspeed);
