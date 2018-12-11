@@ -117,10 +117,8 @@ public class chmove : MonoBehaviour
             {
                 if (!state.IsTag("dodge"))
                 {
-                    if (isGrounded())
-                    {
                         maincontrol.SetBool("running", true);
-                    }
+                
                 }
                 currentspeed = Mathf.SmoothDamp(currentspeed, targetspeed, ref refcurrentspeed, 0.15f);
                 maincontrol.SetFloat("runspeed", currentspeed);
