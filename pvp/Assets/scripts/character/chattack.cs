@@ -212,38 +212,48 @@ public class chattack : MonoBehaviour {
         }
         else if (state.IsName("Base.groundattack.normalattack.attack1"))
         {
-            if (state.normalizedTime > 0.6f)
+            if (animecontrol.GetBool("normalattack"))
             {
-                animecontrol.SetInteger("attacktime", 2);
-                slashnum = 1;
-            }
-            else
-            {
-                resetmove();
+                if (state.normalizedTime > 0.5f)
+                {
+                    animecontrol.SetInteger("attacktime", 2);
+                    slashnum = 1;
+                }
+                else
+                {
+                    resetmove();
+                }
             }
         }
         else if (state.IsName("Base.groundattack.normalattack.attack2"))
         {
-            if (state.normalizedTime > 0.6f)
+            if (animecontrol.GetBool("normalattack"))
             {
-                animecontrol.SetInteger("attacktime", 3);
-                slashnum = 2;
-            }
-            else
-            {
-                resetmove();
+                if (state.normalizedTime > 0.5f)
+                {
+                    animecontrol.SetInteger("attacktime", 3);
+                    slashnum = 2;
+                }
+                else
+                {
+                    resetmove();
+                }
             }
         }
         else if (state.IsName("Base.groundattack.normalattack.attack3"))
         {
-            if (state.normalizedTime > 0.6f)
+            if (animecontrol.GetBool("normalattack"))
             {
-                animecontrol.SetInteger("attacktime", 4);
-                slashnum = 3;
-            }
-            else
-            {
-                resetmove();
+                if (state.normalizedTime > 0.5f)
+                {
+
+                    animecontrol.SetInteger("attacktime", 4);
+                    slashnum = 3;
+                }
+                else
+                {
+                    resetmove();
+                }
             }
         }
     }
