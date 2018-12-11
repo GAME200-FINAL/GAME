@@ -42,9 +42,11 @@ public class chgethit : MonoBehaviour {
             if (chstate.IsTag("block")&&chstate.normalizedTime<0.8f)
             {
                 animecontrol.SetBool("block", true);
+                GetComponent<collisiondetect>().pausetime(0.2f);
             }
             else
             {
+                transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
                 GetComponent<chattack>().resetmove();
                 GetComponent<chattack>().backweapon();
                 if (hp > 0)
@@ -68,9 +70,10 @@ public class chgethit : MonoBehaviour {
     }
     public void getattackheavy()
     {
-        if (chstate.IsTag("block") && chstate.normalizedTime < 0.5f)
+        if (chstate.IsTag("block") && chstate.normalizedTime < 0.8f)
         {
             animecontrol.SetBool("block", true);
+            GetComponent<collisiondetect>().pausetime(0.2f);
         }
         else if(!chstate.IsTag("blocksuccess"))
         {
