@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-    public GameObject enemy;
+    public BattleManager enemy;
     public float hp;
     public Slider hpStrip;
     public float brv;
@@ -22,6 +22,11 @@ public class BattleManager : MonoBehaviour
     public int combo;
 
 
+	void Start(){
+		enemy=GetComponent<BattleManager>();
+	}
+
+
     /*public void HPDamage(float damage){
         if (hp > 0) {
 		    hp -= damage * Time.deltaTime * timeScale;
@@ -30,32 +35,35 @@ public class BattleManager : MonoBehaviour
     } */
 
 
-	bool HealthDmg (float damage, float baseAtk)
+	bool HealthDmg ()
 	{
-		if (hp > 0) {
-			damage += damage * combo / 100;
-			hp -= damage * baseAtk;
+		if (hp > 0 && enemy.brv > brv) {
+			hp-=enemy.brv-brv;
 			hpStrip.value = hp;
-			damage /= baseAtk;
-			damage -= damage * combo / 100;
             return true;
 		}
         return false;
 	}
 
 
-    public void BRVDecrease(float damage){
+    public void BRVDecrease(float damage, float baseAtk){
           if (brv > 0) {
-		    brv -= damage * Time.deltaTime * timeScale;
+		    damage += damage * combo / 10;
+			brv -= damage * baseAtk;
 			hpStrip.value = brv;
+			//damage /= baseAtk;
+			damage -= damage * combo / 10;
 		}
     }
 
 
-    public void BRVIncrease(float damage){
+    public void BRVIncrease(float damage, float baseAtk){
           if (brv < brvStrip.maxValue) {
-		    brv += damage * Time.deltaTime * timeScale;
+		    damage += damage * combo / 10;
+			brv += damage * baseAtk;
 			hpStrip.value = brv;
+			//damage /= baseAtk;
+			damage -= damage * combo / 10;
 		}
     }
 
