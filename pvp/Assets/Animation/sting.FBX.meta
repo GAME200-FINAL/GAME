@@ -176,6 +176,7 @@ ModelImporter:
     4300000: XLF001_Ab
     4300002: Object01
     7400000: sting
+    7400002: stingstart
     9500000: //RootNode
     13700000: Object01
     13700002: XLF001_Ab
@@ -230,8 +231,8 @@ ModelImporter:
     - serializedVersion: 16
       name: sting
       takeName: Take 001
-      firstFrame: 15
-      lastFrame: 30
+      firstFrame: 10
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -302,8 +303,36 @@ ModelImporter:
           preInfinity: 3
           postInfinity: 3
           rotationOrder: 0
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: stingstart
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
       events:
-      - time: 0
+      - time: 1
         functionName: weapondisplay
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: a5095973686db4449a0f4de0dd7bc51f,

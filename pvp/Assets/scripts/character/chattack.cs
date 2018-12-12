@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Rewired;
 
-public class chattack : MonoBehaviour {
+public class chattack : MonoBehaviour
+{
     Animator animecontrol;
     AnimatorStateInfo state;
     AnimatorStateInfo prestate;
@@ -22,7 +23,8 @@ public class chattack : MonoBehaviour {
 
     }
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         stingeffect = false;
         katana.SetActive(false);
     }
@@ -35,24 +37,24 @@ public class chattack : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
-        
+
         if (!ReInput.isReady)
             return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
         if (!initialized)
             Initialize(); // Reinitialize after a recompile in the editor
-        if(enemy==null)
-         {
+        if (enemy == null)
+        {
             if (this.tag == "p1")
                 enemy = GameObject.FindWithTag("p2");
             else
                 enemy = GameObject.FindWithTag("p1");
-         }
+        }
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
         if (state.IsTag("normalattack"))
         {
-            GetComponent<MeleeWeaponTrail>()._emit = true;
+           // GetComponent<MeleeWeaponTrail>()._emit = true;
             if (state.normalizedTime >= 1)
             {
                 animecontrol.SetBool("normalattack", false);
@@ -60,7 +62,7 @@ public class chattack : MonoBehaviour {
             }
         }
         else
-            GetComponent<MeleeWeaponTrail>()._emit = false;
+          //  GetComponent<MeleeWeaponTrail>()._emit = false;
         if (state.IsTag("heavyattack"))
         {
             if (animecontrol.GetBool("heavyattack"))
@@ -71,46 +73,50 @@ public class chattack : MonoBehaviour {
             if (animecontrol.GetBool("heavyskill"))
                 animecontrol.SetBool("heavyskill", false);
         }
-  
+
         if (state.IsTag("blocksuccess"))
         {
-            if(animecontrol.GetBool("block"))
-            animecontrol.SetBool("block", false);
+            if (animecontrol.GetBool("block"))
+                animecontrol.SetBool("block", false);
         }
-        
+
         if (state.IsTag("normalskill"))
         {
-            if (enemy != null)
+            if (this.name == "himeko")
             {
+                transform.LookAt(enemy.transform);
+                if (enemy != null)
+                {
                     float distance = Vector3.Distance(transform.position, enemy.transform.position);
                     Vector3 diff = enemy.transform.position - transform.position;
                     float angle = Vector3.Angle(transform.forward, diff);
                     //Debug.Log(distance);
                     // Debug.Log(angle);
-                    if (distance < GetComponent<collisiondetect>().attackdistance && angle <= 90)
+                    if (distance < 2 && angle <= 90)
                     {
                         if (!stingeffect)
                         {
                             stingeffect = true;
                             //GetComponent<collisiondetect>().pausetime(0.1f);
-                            animecontrol.SetBool("normalskill", false);
-                            enemy.GetComponent<chgethit>().getattacknormal();
+                            StartCoroutine(stinghit());
+
                         }
                     }
-            }
-           if (state.normalizedTime>0.6f)
-               animecontrol.SetBool("normalskill", false);
-        }
-        
-
-        if (player.GetButtonDown("Fire")&&!state.IsTag("mgethit")&&!player.GetButton("Skill"))
-        {
-           // createtrail();
-                if (enemy != null)
-                {
-        
-                    transform.LookAt(enemy.transform);
                 }
+                if (state.normalizedTime > 0.8f)
+                    animecontrol.SetBool("normalskill", false);
+            }
+        }
+
+
+        if (player.GetButtonDown("Fire") && !state.IsTag("mgethit") && !player.GetButton("Skill"))
+        {
+            // createtrail();
+            if (enemy != null)
+            {
+
+                transform.LookAt(enemy.transform);
+            }
 
             if (this.name == "himeko") HAttack();
             else SAttack();
@@ -138,7 +144,7 @@ public class chattack : MonoBehaviour {
                 HeavyAttack();
             }
         }
-        if (player.GetButtonDown("Fire2") && !state.IsTag("mgethit") &&player.GetButton("Skill"))
+        if (player.GetButtonDown("Fire2") && !state.IsTag("mgethit") && player.GetButton("Skill"))
         {
             if (enemy != null)
             {
@@ -148,12 +154,12 @@ public class chattack : MonoBehaviour {
 
             HeavySkill();
         }
-     
-        if (player.GetButtonDown("Block") )
+
+        if (player.GetButtonDown("Block"))
         {
             if (!player.GetButton("Skill"))
             {
-                if (!state.IsTag("mgethit") && !state.IsTag("holster")&& !(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
+                if (!state.IsTag("mgethit") && !state.IsTag("holster") && !(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
                 {
                     if (enemy != null)
                     {
@@ -167,7 +173,7 @@ public class chattack : MonoBehaviour {
             }
             else
             {
-                if (!state.IsTag("block")&&!state.IsTag("blocksuccess")&&!state.IsTag("holster")&&!(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
+                if (!state.IsTag("block") && !state.IsTag("blocksuccess") && !state.IsTag("holster") && !(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
                 {
                     if (enemy != null)
                     {
@@ -179,13 +185,14 @@ public class chattack : MonoBehaviour {
                 }
             }
         }
-     
-        if(player.GetButtonDown("Dash"))
+
+        if (player.GetButtonDown("Dash"))
         {
+            backweapon();
             resetmove();
             animecontrol.Play("dash");
         }
-        if(!player.GetButton("Block")&&state.IsTag("guard"))
+        if (!player.GetButton("Block") && state.IsTag("guard"))
         {
             resetmove();
             animecontrol.SetBool("guard", false);
@@ -194,7 +201,7 @@ public class chattack : MonoBehaviour {
     }
     public void resetmove()
     {
-        // backweapon();
+        //backweapon();
         animecontrol.SetBool("normalattack", false);
         animecontrol.SetBool("heavyskill", false);
         animecontrol.SetBool("normalskill", false);
@@ -242,7 +249,7 @@ public class chattack : MonoBehaviour {
         {
             if (animecontrol.GetBool("normalattack"))
             {
-                if (state.normalizedTime > 0.7f)
+                if (state.normalizedTime > 0.5f)
                 {
                     animecontrol.SetInteger("attacktime", 2);
                     slashnum = 1;
@@ -255,24 +262,24 @@ public class chattack : MonoBehaviour {
         }
         else if (state.IsName("Base.groundattack.normalattack.attack2"))
         {
-            if (animecontrol.GetBool("normalattack"))
-            {
-                if (state.normalizedTime > 0.7f)
+           // if (animecontrol.GetBool("normalattack"))
+           // {
+                if (state.normalizedTime > 0.5f)
                 {
                     animecontrol.SetInteger("attacktime", 3);
                     slashnum = 2;
-                }
+               }
                 else
                 {
                     resetmove();
                 }
-            }
+           // }
         }
         else if (state.IsName("Base.groundattack.normalattack.attack3"))
         {
-            if (animecontrol.GetBool("normalattack"))
-            {
-                if (state.normalizedTime > 0.7f)
+            //if (animecontrol.GetBool("normalattack"))
+            //{
+                if (state.normalizedTime > 0.6f)
                 {
 
                     animecontrol.SetInteger("attacktime", 4);
@@ -282,7 +289,7 @@ public class chattack : MonoBehaviour {
                 {
                     resetmove();
                 }
-            }
+           // }
         }
     }
     void HeavySkill()
@@ -301,18 +308,18 @@ public class chattack : MonoBehaviour {
     }
     void HeavyAttack()
     {
-        animecontrol.SetBool("heavyattack",true);
+        animecontrol.SetBool("heavyattack", true);
     }
     public void backweapon()
     {
-        if(state.IsTag("holster"))
-        { 
+        if (state.IsTag("holster"))
+        {
             if (katana.activeSelf)
             {
                 katana.SetActive(false);
                 //backkatana.SetActive(true);
             }
-            if(backkatana!=null)
+            if (backkatana != null)
             {
                 backkatana.SetActive(true);
             }
@@ -324,16 +331,28 @@ public class chattack : MonoBehaviour {
         if (!katana.activeSelf)
         {
             katana.SetActive(true);
-           // backkatana.SetActive(false);
+            // backkatana.SetActive(false);
         }
         if (backkatana != null)
         {
             backkatana.SetActive(false);
         }
-        createtrail();
+       // createtrail();
     }
     void createtrail()
     {
-       GetComponent<MeleeWeaponTrail>().restarttrail();
+        GetComponent<MeleeWeaponTrail>().restarttrail();
+    }
+    IEnumerator stinghit()
+    {
+        animecontrol.speed = 0;
+        for(int i=0;i<3;i++)
+        {
+            yield return new WaitForSeconds(0.15f);
+            enemy.GetComponent<chgethit>().getattacknormal();
+        }
+        animecontrol.speed = 1;
+        animecontrol.SetBool("normalskill", false);
+        yield return null;
     }
 }
