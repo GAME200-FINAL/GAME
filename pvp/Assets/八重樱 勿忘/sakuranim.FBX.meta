@@ -1,322 +1,260 @@
 fileFormatVersion: 2
-guid: 2899b584a115c25469fde701d15d2f9c
+guid: 15b2e88f68637f34797181a643b36694
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: 3DCH_2036
     100002: "??\xD7y\xD7?"
-    100004: Bip002
-    100006: Bip002 Footsteps
-    100008: Bip002 Head
-    100010: Bip002 HeadNub
-    100012: Bip002 L Calf
-    100014: Bip002 L Clavicle
-    100016: Bip002 L Finger0
-    100018: Bip002 L Finger0Nub
-    100020: Bip002 L Foot
-    100022: Bip002 L Forearm
-    100024: Bip002 L Hand
-    100026: Bip002 L Thigh
-    100028: Bip002 L Toe0
-    100030: Bip002 L Toe0Nub
-    100032: Bip002 L UpperArm
-    100034: Bip002 Neck
-    100036: Bip002 Pelvis
-    100038: Bip002 R Calf
-    100040: Bip002 R Clavicle
-    100042: Bip002 R Finger0
-    100044: Bip002 R Finger0Nub
-    100046: Bip002 R Foot
-    100048: Bip002 R Forearm
-    100050: Bip002 R Hand
-    100052: Bip002 R Thigh
-    100054: Bip002 R Toe0
-    100056: Bip002 R Toe0Nub
-    100058: Bip002 R UpperArm
-    100060: Bip002 Spine
-    100062: Bip01
-    100064: Bip01 Footsteps
-    100066: Bip01 Head
-    100068: Bip01 HeadNub
-    100070: Bip01 L Calf
-    100072: Bip01 L Clavicle
-    100074: Bip01 L Finger0
-    100076: Bip01 L Finger0Nub
-    100078: Bip01 L Foot
-    100080: Bip01 L Forearm
-    100082: Bip01 L Hand
-    100084: Bip01 L Thigh
-    100086: Bip01 L Toe0
-    100088: Bip01 L Toe0Nub
-    100090: Bip01 L UpperArm
-    100092: Bip01 Neck
-    100094: Bip01 Pelvis
-    100096: Bip01 Prop1
-    100098: Bip01 Prop2
-    100100: Bip01 R Calf
-    100102: Bip01 R Clavicle
-    100104: Bip01 R Finger0
-    100106: Bip01 R Finger0Nub
-    100108: Bip01 R Foot
-    100110: Bip01 R Forearm
-    100112: Bip01 R Hand
-    100114: Bip01 R Thigh
-    100116: Bip01 R Toe0
-    100118: Bip01 R Toe0Nub
-    100120: Bip01 R UpperArm
-    100122: Bip01 Spine
-    100124: Bip01 Spine1
-    100126: Bone017
-    100128: Bone018
-    100130: Bone019
-    100132: Bone020
-    100134: Bone021
-    100136: Bone022
-    100138: Bone023
-    100140: Bone024
-    100142: Box001
-    100144: Camera001
-    100146: Camera001.Target
-    100148: default065
-    100150: default077
-    100152: Dummy002
-    100154: Dummy003
-    100156: Line001
-    100158: Line002
-    100160: Line003
-    100162: Line004
-    100164: Line005
-    100166: Line006
-    100168: Line007
-    100170: Line008
-    100172: Line009
-    100174: Line010
-    100176: Line011
-    100178: Line012
-    100180: Line013
-    100182: Line014
-    100184: Line015
-    100186: Line016
-    100188: Line017
-    100190: Line018
-    100192: Plane002
-    100194: Plane003
-    100196: Plane004
-    100198: Plane005
-    100200: Plane006
-    100202: Plane007
-    100204: Plane008
-    100206: Plane009
-    100208: Plane010
-    100210: Plane011
-    100212: Plane012
-    100214: Plane013
-    100216: Plane014
-    100218: Plane015
-    100220: Plane016
-    100222: Plane017
-    100224: Plane018
-    100226: Plane019
-    100228: Plane020
-    100230: Plane021
-    100232: Plane022
-    100234: Plane023
-    100236: Plane024
-    100238: Plane025
-    100240: Plane026
-    100242: Plane027
-    100244: Plane028
-    100246: Plane029
-    100248: Plane030
-    100250: Plane031
-    100252: Plane032
-    100254: Plane033
-    100256: Plane288
-    100258: Plane289
-    100260: Plane290
-    100262: Plane291
-    100264: Tube001
-    100266: Tube002
-    100268: //RootNode
-    100270: "\xD7t\xD7\xFC"
-    100272: "\u7EC4001"
-    100274: "\u7EC4002"
-    100276: "\u7EC4003"
-    100278: "\u7EC4004"
-    100280: "\u7EC4005"
-    100282: "\u7EC4006"
-    100284: "\u7EC4007"
-    100286: "\u7EC4008"
-    100288: "\u7EC4009"
-    100290: "\u7EC4010"
-    100292: "\u7EC4011"
-    100294: "\u7EC4012"
-    100296: "\u7EC4013"
-    100298: "\u7EC4014"
-    100300: "\u7EC4015"
-    100302: "\u7EC4016"
-    100304: "\u7EC4017"
-    100306: "\u7EC4018"
-    100308: "\u7EC4019"
-    100310: "\u7EC4020"
-    100312: "\u7EC4021"
+    100004: Bip01
+    100006: Bip01 Footsteps
+    100008: Bip01 Head
+    100010: Bip01 HeadNub
+    100012: Bip01 L Calf
+    100014: Bip01 L Clavicle
+    100016: Bip01 L Finger0
+    100018: Bip01 L Finger0Nub
+    100020: Bip01 L Foot
+    100022: Bip01 L Forearm
+    100024: Bip01 L Hand
+    100026: Bip01 L Thigh
+    100028: Bip01 L Toe0
+    100030: Bip01 L Toe0Nub
+    100032: Bip01 L UpperArm
+    100034: Bip01 Neck
+    100036: Bip01 Pelvis
+    100038: Bip01 Prop1
+    100040: Bip01 Prop2
+    100042: Bip01 R Calf
+    100044: Bip01 R Clavicle
+    100046: Bip01 R Finger0
+    100048: Bip01 R Finger0Nub
+    100050: Bip01 R Foot
+    100052: Bip01 R Forearm
+    100054: Bip01 R Hand
+    100056: Bip01 R Thigh
+    100058: Bip01 R Toe0
+    100060: Bip01 R Toe0Nub
+    100062: Bip01 R UpperArm
+    100064: Bip01 Spine
+    100066: Bip01 Spine1
+    100068: Bone017
+    100070: Bone018
+    100072: Bone019
+    100074: Bone020
+    100076: Bone021
+    100078: Bone022
+    100080: Bone023
+    100082: Bone024
+    100084: Camera001
+    100086: Camera001.Target
+    100088: default065
+    100090: default077
+    100092: Dummy002
+    100094: Dummy003
+    100096: Line001
+    100098: Line002
+    100100: Line003
+    100102: Line004
+    100104: Line005
+    100106: Line006
+    100108: Line007
+    100110: Line008
+    100112: Line009
+    100114: Line010
+    100116: Line011
+    100118: Line012
+    100120: Line013
+    100122: Line014
+    100124: Line015
+    100126: Line016
+    100128: Line017
+    100130: Line018
+    100132: Plane002
+    100134: Plane003
+    100136: Plane004
+    100138: Plane005
+    100140: Plane006
+    100142: Plane007
+    100144: Plane008
+    100146: Plane009
+    100148: Plane010
+    100150: Plane011
+    100152: Plane012
+    100154: Plane013
+    100156: Plane014
+    100158: Plane015
+    100160: Plane016
+    100162: Plane017
+    100164: Plane018
+    100166: Plane019
+    100168: Plane020
+    100170: Plane021
+    100172: Plane022
+    100174: Plane023
+    100176: Plane024
+    100178: Plane025
+    100180: Plane026
+    100182: Plane027
+    100184: Plane028
+    100186: Plane029
+    100188: Plane030
+    100190: Plane031
+    100192: Plane032
+    100194: Plane033
+    100196: Plane289
+    100198: Plane290
+    100200: Plane291
+    100202: //RootNode
+    100204: Tube001
+    100206: Tube002
+    100208: "\xD7t\xD7\xFC"
+    100210: "\u7EC4001"
+    100212: "\u7EC4002"
+    100214: "\u7EC4003"
+    100216: "\u7EC4004"
+    100218: "\u7EC4005"
+    100220: "\u7EC4006"
+    100222: "\u7EC4007"
+    100224: "\u7EC4008"
+    100226: "\u7EC4009"
+    100228: "\u7EC4010"
+    100230: "\u7EC4011"
+    100232: "\u7EC4012"
+    100234: "\u7EC4013"
+    100236: "\u7EC4014"
+    100238: "\u7EC4015"
+    100240: "\u7EC4016"
+    100242: "\u7EC4017"
+    100244: "\u7EC4018"
+    100246: "\u7EC4019"
+    100248: "\u7EC4020"
+    100250: "\u7EC4021"
     400000: 3DCH_2036
     400002: "??\xD7y\xD7?"
-    400004: Bip002
-    400006: Bip002 Footsteps
-    400008: Bip002 Head
-    400010: Bip002 HeadNub
-    400012: Bip002 L Calf
-    400014: Bip002 L Clavicle
-    400016: Bip002 L Finger0
-    400018: Bip002 L Finger0Nub
-    400020: Bip002 L Foot
-    400022: Bip002 L Forearm
-    400024: Bip002 L Hand
-    400026: Bip002 L Thigh
-    400028: Bip002 L Toe0
-    400030: Bip002 L Toe0Nub
-    400032: Bip002 L UpperArm
-    400034: Bip002 Neck
-    400036: Bip002 Pelvis
-    400038: Bip002 R Calf
-    400040: Bip002 R Clavicle
-    400042: Bip002 R Finger0
-    400044: Bip002 R Finger0Nub
-    400046: Bip002 R Foot
-    400048: Bip002 R Forearm
-    400050: Bip002 R Hand
-    400052: Bip002 R Thigh
-    400054: Bip002 R Toe0
-    400056: Bip002 R Toe0Nub
-    400058: Bip002 R UpperArm
-    400060: Bip002 Spine
-    400062: Bip01
-    400064: Bip01 Footsteps
-    400066: Bip01 Head
-    400068: Bip01 HeadNub
-    400070: Bip01 L Calf
-    400072: Bip01 L Clavicle
-    400074: Bip01 L Finger0
-    400076: Bip01 L Finger0Nub
-    400078: Bip01 L Foot
-    400080: Bip01 L Forearm
-    400082: Bip01 L Hand
-    400084: Bip01 L Thigh
-    400086: Bip01 L Toe0
-    400088: Bip01 L Toe0Nub
-    400090: Bip01 L UpperArm
-    400092: Bip01 Neck
-    400094: Bip01 Pelvis
-    400096: Bip01 Prop1
-    400098: Bip01 Prop2
-    400100: Bip01 R Calf
-    400102: Bip01 R Clavicle
-    400104: Bip01 R Finger0
-    400106: Bip01 R Finger0Nub
-    400108: Bip01 R Foot
-    400110: Bip01 R Forearm
-    400112: Bip01 R Hand
-    400114: Bip01 R Thigh
-    400116: Bip01 R Toe0
-    400118: Bip01 R Toe0Nub
-    400120: Bip01 R UpperArm
-    400122: Bip01 Spine
-    400124: Bip01 Spine1
-    400126: Bone017
-    400128: Bone018
-    400130: Bone019
-    400132: Bone020
-    400134: Bone021
-    400136: Bone022
-    400138: Bone023
-    400140: Bone024
-    400142: Box001
-    400144: Camera001
-    400146: Camera001.Target
-    400148: default065
-    400150: default077
-    400152: Dummy002
-    400154: Dummy003
-    400156: Line001
-    400158: Line002
-    400160: Line003
-    400162: Line004
-    400164: Line005
-    400166: Line006
-    400168: Line007
-    400170: Line008
-    400172: Line009
-    400174: Line010
-    400176: Line011
-    400178: Line012
-    400180: Line013
-    400182: Line014
-    400184: Line015
-    400186: Line016
-    400188: Line017
-    400190: Line018
-    400192: Plane002
-    400194: Plane003
-    400196: Plane004
-    400198: Plane005
-    400200: Plane006
-    400202: Plane007
-    400204: Plane008
-    400206: Plane009
-    400208: Plane010
-    400210: Plane011
-    400212: Plane012
-    400214: Plane013
-    400216: Plane014
-    400218: Plane015
-    400220: Plane016
-    400222: Plane017
-    400224: Plane018
-    400226: Plane019
-    400228: Plane020
-    400230: Plane021
-    400232: Plane022
-    400234: Plane023
-    400236: Plane024
-    400238: Plane025
-    400240: Plane026
-    400242: Plane027
-    400244: Plane028
-    400246: Plane029
-    400248: Plane030
-    400250: Plane031
-    400252: Plane032
-    400254: Plane033
-    400256: Plane288
-    400258: Plane289
-    400260: Plane290
-    400262: Plane291
-    400264: Tube001
-    400266: Tube002
-    400268: //RootNode
-    400270: "\xD7t\xD7\xFC"
-    400272: "\u7EC4001"
-    400274: "\u7EC4002"
-    400276: "\u7EC4003"
-    400278: "\u7EC4004"
-    400280: "\u7EC4005"
-    400282: "\u7EC4006"
-    400284: "\u7EC4007"
-    400286: "\u7EC4008"
-    400288: "\u7EC4009"
-    400290: "\u7EC4010"
-    400292: "\u7EC4011"
-    400294: "\u7EC4012"
-    400296: "\u7EC4013"
-    400298: "\u7EC4014"
-    400300: "\u7EC4015"
-    400302: "\u7EC4016"
-    400304: "\u7EC4017"
-    400306: "\u7EC4018"
-    400308: "\u7EC4019"
-    400310: "\u7EC4020"
-    400312: "\u7EC4021"
+    400004: Bip01
+    400006: Bip01 Footsteps
+    400008: Bip01 Head
+    400010: Bip01 HeadNub
+    400012: Bip01 L Calf
+    400014: Bip01 L Clavicle
+    400016: Bip01 L Finger0
+    400018: Bip01 L Finger0Nub
+    400020: Bip01 L Foot
+    400022: Bip01 L Forearm
+    400024: Bip01 L Hand
+    400026: Bip01 L Thigh
+    400028: Bip01 L Toe0
+    400030: Bip01 L Toe0Nub
+    400032: Bip01 L UpperArm
+    400034: Bip01 Neck
+    400036: Bip01 Pelvis
+    400038: Bip01 Prop1
+    400040: Bip01 Prop2
+    400042: Bip01 R Calf
+    400044: Bip01 R Clavicle
+    400046: Bip01 R Finger0
+    400048: Bip01 R Finger0Nub
+    400050: Bip01 R Foot
+    400052: Bip01 R Forearm
+    400054: Bip01 R Hand
+    400056: Bip01 R Thigh
+    400058: Bip01 R Toe0
+    400060: Bip01 R Toe0Nub
+    400062: Bip01 R UpperArm
+    400064: Bip01 Spine
+    400066: Bip01 Spine1
+    400068: Bone017
+    400070: Bone018
+    400072: Bone019
+    400074: Bone020
+    400076: Bone021
+    400078: Bone022
+    400080: Bone023
+    400082: Bone024
+    400084: Camera001
+    400086: Camera001.Target
+    400088: default065
+    400090: default077
+    400092: Dummy002
+    400094: Dummy003
+    400096: Line001
+    400098: Line002
+    400100: Line003
+    400102: Line004
+    400104: Line005
+    400106: Line006
+    400108: Line007
+    400110: Line008
+    400112: Line009
+    400114: Line010
+    400116: Line011
+    400118: Line012
+    400120: Line013
+    400122: Line014
+    400124: Line015
+    400126: Line016
+    400128: Line017
+    400130: Line018
+    400132: Plane002
+    400134: Plane003
+    400136: Plane004
+    400138: Plane005
+    400140: Plane006
+    400142: Plane007
+    400144: Plane008
+    400146: Plane009
+    400148: Plane010
+    400150: Plane011
+    400152: Plane012
+    400154: Plane013
+    400156: Plane014
+    400158: Plane015
+    400160: Plane016
+    400162: Plane017
+    400164: Plane018
+    400166: Plane019
+    400168: Plane020
+    400170: Plane021
+    400172: Plane022
+    400174: Plane023
+    400176: Plane024
+    400178: Plane025
+    400180: Plane026
+    400182: Plane027
+    400184: Plane028
+    400186: Plane029
+    400188: Plane030
+    400190: Plane031
+    400192: Plane032
+    400194: Plane033
+    400196: Plane289
+    400198: Plane290
+    400200: Plane291
+    400202: //RootNode
+    400204: Tube001
+    400206: Tube002
+    400208: "\xD7t\xD7\xFC"
+    400210: "\u7EC4001"
+    400212: "\u7EC4002"
+    400214: "\u7EC4003"
+    400216: "\u7EC4004"
+    400218: "\u7EC4005"
+    400220: "\u7EC4006"
+    400222: "\u7EC4007"
+    400224: "\u7EC4008"
+    400226: "\u7EC4009"
+    400228: "\u7EC4010"
+    400230: "\u7EC4011"
+    400232: "\u7EC4012"
+    400234: "\u7EC4013"
+    400236: "\u7EC4014"
+    400238: "\u7EC4015"
+    400240: "\u7EC4016"
+    400242: "\u7EC4017"
+    400244: "\u7EC4018"
+    400246: "\u7EC4019"
+    400248: "\u7EC4020"
+    400250: "\u7EC4021"
     2000000: Camera001
     2100000: 'Material #288'
     2100002: 05 - Default
@@ -328,88 +266,84 @@ ModelImporter:
     2100014: asefw4rwc
     2100016: vrthdrt
     2100018: fgcerger
-    2300000: Box001
-    2300002: default065
-    2300004: default077
-    2300006: Plane002
-    2300008: Plane003
-    2300010: Plane004
-    2300012: Plane005
-    2300014: Plane006
-    2300016: Plane007
-    2300018: Plane008
-    2300020: Plane009
-    2300022: Plane010
-    2300024: Plane011
-    2300026: Plane012
-    2300028: Plane013
-    2300030: Plane014
-    2300032: Plane015
-    2300034: Plane016
-    2300036: Plane017
-    2300038: Plane018
-    2300040: Plane019
-    2300042: Plane020
-    2300044: Plane021
-    2300046: Plane022
-    2300048: Plane023
-    2300050: Plane024
-    2300052: Plane025
-    2300054: Plane026
-    2300056: Plane027
-    2300058: Plane028
-    2300060: Plane029
-    2300062: Plane030
-    2300064: Plane031
-    2300066: Plane032
-    2300068: Plane033
-    2300070: Plane288
-    2300072: Plane289
-    2300074: Plane290
-    2300076: Plane291
-    2300078: Tube001
-    2300080: Tube002
-    3300000: Box001
-    3300002: default065
-    3300004: default077
-    3300006: Plane002
-    3300008: Plane003
-    3300010: Plane004
-    3300012: Plane005
-    3300014: Plane006
-    3300016: Plane007
-    3300018: Plane008
-    3300020: Plane009
-    3300022: Plane010
-    3300024: Plane011
-    3300026: Plane012
-    3300028: Plane013
-    3300030: Plane014
-    3300032: Plane015
-    3300034: Plane016
-    3300036: Plane017
-    3300038: Plane018
-    3300040: Plane019
-    3300042: Plane020
-    3300044: Plane021
-    3300046: Plane022
-    3300048: Plane023
-    3300050: Plane024
-    3300052: Plane025
-    3300054: Plane026
-    3300056: Plane027
-    3300058: Plane028
-    3300060: Plane029
-    3300062: Plane030
-    3300064: Plane031
-    3300066: Plane032
-    3300068: Plane033
-    3300070: Plane288
-    3300072: Plane289
-    3300074: Plane290
-    3300076: Plane291
-    3300078: Tube001
-    3300080: Tube002
+    2300000: default065
+    2300002: default077
+    2300004: Plane002
+    2300006: Plane003
+    2300008: Plane004
+    2300010: Plane005
+    2300012: Plane006
+    2300014: Plane007
+    2300016: Plane008
+    2300018: Plane009
+    2300020: Plane010
+    2300022: Plane011
+    2300024: Plane012
+    2300026: Plane013
+    2300028: Plane014
+    2300030: Plane015
+    2300032: Plane016
+    2300034: Plane017
+    2300036: Plane018
+    2300038: Plane019
+    2300040: Plane020
+    2300042: Plane021
+    2300044: Plane022
+    2300046: Plane023
+    2300048: Plane024
+    2300050: Plane025
+    2300052: Plane026
+    2300054: Plane027
+    2300056: Plane028
+    2300058: Plane029
+    2300060: Plane030
+    2300062: Plane031
+    2300064: Plane032
+    2300066: Plane033
+    2300068: Plane289
+    2300070: Plane290
+    2300072: Plane291
+    2300074: Tube001
+    2300076: Tube002
+    3300000: default065
+    3300002: default077
+    3300004: Plane002
+    3300006: Plane003
+    3300008: Plane004
+    3300010: Plane005
+    3300012: Plane006
+    3300014: Plane007
+    3300016: Plane008
+    3300018: Plane009
+    3300020: Plane010
+    3300022: Plane011
+    3300024: Plane012
+    3300026: Plane013
+    3300028: Plane014
+    3300030: Plane015
+    3300032: Plane016
+    3300034: Plane017
+    3300036: Plane018
+    3300038: Plane019
+    3300040: Plane020
+    3300042: Plane021
+    3300044: Plane022
+    3300046: Plane023
+    3300048: Plane024
+    3300050: Plane025
+    3300052: Plane026
+    3300054: Plane027
+    3300056: Plane028
+    3300058: Plane029
+    3300060: Plane030
+    3300062: Plane031
+    3300064: Plane032
+    3300066: Plane033
+    3300068: Plane289
+    3300070: Plane290
+    3300072: Plane291
+    3300074: Tube001
+    3300076: Tube002
     4300000: 3DCH_2036
     4300002: Plane290
     4300004: default065
@@ -448,20 +382,10 @@ ModelImporter:
     4300070: Plane031
     4300072: Plane032
     4300074: Plane033
-    4300076: Plane289
-    4300078: Box001
-    4300080: Plane288
-    4300082: Plane291
-    7400000: Atk02
-    7400002: Run
-    7400004: Atk01
-    7400006: CounterAtk
-    7400008: Atk03
-    7400010: Atk04
-    7400012: HeavyAtk
-    7400014: CounterAtkSuccess
-    7400016: Ultimate
-    7400018: HeavyAtkContinue
+    4300076: Plane291
+    4300078: Plane289
+    7400000: attackonetest
+    7400002: attack3
     9500000: //RootNode
     13700000: 3DCH_2036
     2186277476908879412: ImportLogs
@@ -474,7 +398,7 @@ ModelImporter:
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 1
+    bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
@@ -495,9 +419,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Atk01
+      name: attackonetest
       takeName: Take 001
-      firstFrame: 68
+      firstFrame: 70
       lastFrame: 83
       wrapMode: 0
       orientationOffsetY: 0
@@ -508,225 +432,9 @@ ModelImporter:
       loopTime: 0
       loopBlend: 1
       loopBlendOrientation: 1
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 1
-      keepOriginalOrientation: 1
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves:
-      - name: leftweight
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 3
-            time: 0
-            value: -0.00024414062
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.01953125
-            value: 0.990242
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 4
-      - name: Curve
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.0078125
-            value: 1.0024376
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 4
-      events:
-      - time: 0.78059053
-        functionName: normalattackdetect
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0
-        functionName: weapondisplay
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: a5095973686db4449a0f4de0dd7bc51f,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Atk02
-      takeName: Take 001
-      firstFrame: 82
-      lastFrame: 95
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 1
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
-      keepOriginalOrientation: 1
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves:
-      - name: leftweight
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.025390625
-            value: 1.0023689
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 4
-      - name: Curve
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.01953125
-            value: 1.0024414
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 4
-      events:
-      - time: 0.64135057
-        functionName: normalattackdetect
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: CounterAtk
-      takeName: Take 001
-      firstFrame: 156
-      lastFrame: 166
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 0
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
@@ -739,270 +447,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Atk03
+      name: attack3
       takeName: Take 001
-      firstFrame: 95
-      lastFrame: 110
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 1
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves:
-      - name: leftweight
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.2578125
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 4
-      - name: Curve
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.22460938
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 4
-      events:
-      - time: 0.721264
-        functionName: roundnormaldetect
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Atk04
-      takeName: Take 001
-      firstFrame: 115
-      lastFrame: 153
-      wrapMode: 0
-      orientationOffsetY: 90
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 1
-      keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 1
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events:
-      - time: 0.0675105
-        functionName: normalattackdetect
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.46504837
-        functionName: roundnormaldetect
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.7090539
-        functionName: rounddetect
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: HeavyAtk
-      takeName: Take 001
-      firstFrame: 210
-      lastFrame: 216
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 1
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves:
-      - name: leftweight
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.03125
-            value: 0.9975624
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 4
-      - name: Curve
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.037109375
-            value: 0.995121
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0.33333334
-            outWeight: 0.33333334
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 4
-      events:
-      - time: 0
-        functionName: weapondisplay
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: a5095973686db4449a0f4de0dd7bc51f,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: CounterAtkSuccess
-      takeName: Take 001
-      firstFrame: 166
-      lastFrame: 210
+      firstFrame: 83
+      lastFrame: 95
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1022,70 +470,6 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Ultimate
-      takeName: Take 001
-      firstFrame: 237
-      lastFrame: 360
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: HeavyAtkContinue
-      takeName: Take 001
-      firstFrame: 216
-      lastFrame: 237
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 1
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events:
-      - time: 0.11134484
-        functionName: heavydetect
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -1310,38 +694,33 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: "\xA6\xBD\xA6\xA62014(Clone)"
+    - name: sakuranim(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: -0.08158124, y: -0.63434625, z: 0.12398349, w: 0.7586682}
       scale: {x: 1, y: 1, z: 1}
     - name: 3DCH_2036
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 1, y: -0, z: 0, w: 0.000000021855694}
       scale: {x: 1, y: 1, z: 1}
     - name: "??\xD7y\xD7?"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-    - name: Box001
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
-      position: {x: 78.07663, y: 0, z: 13.459911}
-      rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-      scale: {x: 1, y: 1, z: 1}
     - name: Camera001
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 0.9741109, y: 1.6494442, z: 3.4867299}
       rotation: {x: 0.099600434, y: -0.5648622, z: -0.14224431, w: 0.80670756}
       scale: {x: 1, y: 1, z: 1}
     - name: Camera001.Target
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 0.17591302, y: 2.4988666, z: 1.2937057}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Dummy002
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: -1.54626, y: 1.9362602, z: 0.00036528707}
       rotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
@@ -1352,13 +731,13 @@ ModelImporter:
       scale: {x: 1.0000001, y: 1.0000001, z: 1}
     - name: Bip01 Footsteps
       parentName: Bip01
-      position: {x: -0.6047454, y: 0.014539927, z: -1.6003456}
+      position: {x: -0.688079, y: 0.016543508, z: -1.8208725}
       rotation: {x: -0.13475433, y: 0.11890577, z: -0.75304747, w: 0.6329473}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Plane290
       parentName: Bip01 Footsteps
       position: {x: 0.10244632, y: 0.22746694, z: 0.04222706}
-      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
       scale: {x: 1.377325, y: 1.377325, z: 1.377325}
     - name: Bip01 Prop1
       parentName: Bip01
@@ -1369,7 +748,7 @@ ModelImporter:
       parentName: Bip01 Prop1
       position: {x: -0.00000011920929, y: -0.00000047683716, z: 1.1570132}
       rotation: {x: 0.7071064, y: 0.7071072, z: 0.000000017817351, w: 0.000000017817332}
-      scale: {x: 1.117174, y: 1.478435, z: 1.203175}
+      scale: {x: 1.1171741, y: 1.4784347, z: 1.2031748}
     - name: Bip01 Prop2
       parentName: Bip01
       position: {x: -2.0678828, y: 0.4660273, z: 1.5273149}
@@ -1409,7 +788,7 @@ ModelImporter:
       parentName: Bip01 Head
       position: {x: -0.8706207, y: 0.00000023841858, z: 0.000000059604645}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
     - name: Bone017
       parentName: Bip01 Head
       position: {x: -0.30926895, y: -0.26075363, z: -0.00000047683716}
@@ -1429,7 +808,7 @@ ModelImporter:
       parentName: Bone019
       position: {x: -0.33000875, y: -0.0000011920929, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 0.9999998, y: 1.0000002, z: 1.0000002}
+      scale: {x: 0.99999976, y: 1.0000002, z: 1.0000002}
     - name: Bone021
       parentName: Bone020
       position: {x: -0.34361923, y: 0, z: -0.000000029802322}
@@ -1464,7 +843,7 @@ ModelImporter:
       parentName: Bip01 L Finger0
       position: {x: -0.063868284, y: 0, z: -0.000000059604645}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
     - name: Bip01 R Clavicle
       parentName: Bip01 Neck
       position: {x: 0.12055743, y: -0.029637575, z: -0.011110783}
@@ -1544,12 +923,12 @@ ModelImporter:
       parentName: Bip01 R Toe0
       position: {x: -0.030656725, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
     - name: Bone022
       parentName: Bip01 Pelvis
       position: {x: -0.34719253, y: 0.27305317, z: 0.07794163}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 0.9999995, y: 0.9999992, z: 0.99999934}
+      scale: {x: 0.9999995, y: 0.9999992, z: 0.9999996}
     - name: Bone023
       parentName: Bone022
       position: {x: -0.35395885, y: -0.00000011920929, z: -0.00000008940697}
@@ -1559,199 +938,49 @@ ModelImporter:
       parentName: Bone023
       position: {x: -0.49919665, y: -0.00000047683716, z: -0.000000029802322}
       rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Dummy003
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 32.535233, y: 1.3946748, z: -0.68859863}
       rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
-    - name: Bip002
-      parentName: Dummy003
-      position: {x: -0, y: 0, z: 0.16581094}
-      rotation: {x: 0, y: 0, z: 0.7071063, w: 0.70710725}
-      scale: {x: 0.99999994, y: 0.99999994, z: 1}
-    - name: Bip002 Footsteps
-      parentName: Bip002
-      position: {x: -0, y: 0, z: -1.5357184}
-      rotation: {x: 0, y: -0, z: -0.7071063, w: 0.70710725}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Plane289
-      parentName: Bip002 Footsteps
-      position: {x: -0.05475539, y: -0.032497406, z: 0.0071065277}
-      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
-      scale: {x: 1.386138, y: 1.386138, z: 1.386138}
-    - name: Bip002 Pelvis
-      parentName: Bip002
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 Spine
-      parentName: Bip002 Pelvis
-      position: {x: -0.23368573, y: -0.0008506775, z: 0.00000035762787}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L Thigh
-      parentName: Bip002 Spine
-      position: {x: 0.23368502, y: 0.0010375977, z: 0.22567499}
-      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L Calf
-      parentName: Bip002 L Thigh
-      position: {x: -0.81848514, y: 0, z: -0.000000059604645}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L Foot
-      parentName: Bip002 L Calf
-      position: {x: -0.5726316, y: -0.0000038146973, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L Toe0
-      parentName: Bip002 L Foot
-      position: {x: -0.14996636, y: 0.18104935, z: 0.00000023841858}
-      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L Toe0Nub
-      parentName: Bip002 L Toe0
-      position: {x: -0.030479431, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: -1, y: -1, z: -1}
-    - name: Bip002 Neck
-      parentName: Bip002 Spine
-      position: {x: -1.0703973, y: -0.00012207031, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 Head
-      parentName: Bip002 Neck
-      position: {x: -0.1524036, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 HeadNub
-      parentName: Bip002 Head
-      position: {x: -1.0920062, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L Clavicle
-      parentName: Bip002 Neck
-      position: {x: -0, y: 0.00012207031, z: 0.07112163}
-      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L UpperArm
-      parentName: Bip002 L Clavicle
-      position: {x: -0.30330962, y: 0, z: -0.00000023841858}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L Forearm
-      parentName: Bip002 L UpperArm
-      position: {x: -0.69561195, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L Hand
-      parentName: Bip002 L Forearm
-      position: {x: -1.0594382, y: -0.0000076293945, z: 0}
-      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L Finger0
-      parentName: Bip002 L Hand
-      position: {x: -0.2540058, y: 0, z: 0}
-      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 L Finger0Nub
-      parentName: Bip002 L Finger0
-      position: {x: -0.06350136, y: 0, z: 0.0000038146973}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 R Clavicle
-      parentName: Bip002 Neck
-      position: {x: -0, y: 0.00012207031, z: -0.07112157}
-      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 R UpperArm
-      parentName: Bip002 R Clavicle
-      position: {x: -0.30330968, y: 0, z: 0.00000023841858}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 R Forearm
-      parentName: Bip002 R UpperArm
-      position: {x: -0.6956121, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 R Hand
-      parentName: Bip002 R Forearm
-      position: {x: -1.059438, y: -0.0000038146973, z: 0}
-      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 R Finger0
-      parentName: Bip002 R Hand
-      position: {x: -0.25400585, y: 0, z: 0}
-      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 R Finger0Nub
-      parentName: Bip002 R Finger0
-      position: {x: -0.06350142, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: -1, y: -1, z: -1}
-    - name: Bip002 R Thigh
-      parentName: Bip002 Spine
-      position: {x: 0.23368502, y: 0.0010375977, z: -0.22567493}
-      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 R Calf
-      parentName: Bip002 R Thigh
-      position: {x: -0.81848526, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 R Foot
-      parentName: Bip002 R Calf
-      position: {x: -0.57263166, y: -0.0000038146973, z: 0.000000059604645}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 R Toe0
-      parentName: Bip002 R Foot
-      position: {x: -0.14996634, y: 0.18104935, z: -0.000000029802322}
-      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip002 R Toe0Nub
-      parentName: Bip002 R Toe0
-      position: {x: -0.030483246, y: 0, z: 0.000000029802322}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: Plane011
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 38.674534, y: 2.7882617, z: 0.0000001218788}
       rotation: {x: 0.00000006657903, y: -0, z: -0, w: 1}
       scale: {x: 0.000006544864, y: 0.42719916, z: 1.0436519}
     - name: Plane033
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 40.025078, y: 0.0022425652, z: 9.804069e-11}
       rotation: {x: 0.00000006657903, y: -0, z: -0, w: 1}
       scale: {x: 0.84616154, y: 0.0001, z: 0.6445479}
-    - name: Plane288
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
-      position: {x: 77.38986, y: 42.81686, z: -43.03953}
-      rotation: {x: 0.34202015, y: 0.000000056010045, z: -0.00000002038599, w: 0.9396926}
-      scale: {x: 0.899068, y: 1.493262, z: 1}
+    - name: Plane289
+      parentName: sakuranim(Clone)
+      position: {x: 44.24781, y: 0.03187394, z: -0.74335384}
+      rotation: {x: -0.7071068, y: 0.00000004214685, z: 0.00000004214685, w: 0.7071068}
+      scale: {x: 1.386138, y: 1.386138, z: 1.386138}
     - name: Plane291
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: -166.76001, y: 42.81686, z: -43.03953}
       rotation: {x: 0.34202015, y: 0.000000056010045, z: -0.00000002038599, w: 0.9396926}
-      scale: {x: 0.899068, y: 1.493262, z: 1}
+      scale: {x: 0.8990683, y: 1.493262, z: 1}
     - name: Tube001
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 0, y: 0, z: 0}
     - name: Tube002
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 0, y: 0, z: 0}
     - name: "\xD7t\xD7\xFC"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: "\u7EC4001"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 29.795872, y: 2.948073, z: -1.8322535}
       rotation: {x: -0.64278764, y: 0, z: -0, w: 0.76604444}
       scale: {x: 1, y: 1, z: 1}
@@ -1759,44 +988,44 @@ ModelImporter:
       parentName: "\u7EC4001"
       position: {x: 0.8323288, y: -1.1790726, z: -0.14648414}
       rotation: {x: -0.000000006987884, y: -0.07064949, z: 0.9975012, w: 0.0000000986621}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane002
       parentName: "\u7EC4001"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: 0.000000005793316, y: -0.07064949, z: 0.9975012, w: 0.0000001647315}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4002"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 28.586678, y: 3.3789139, z: -0.038876176}
       rotation: {x: 0.90285903, y: -0.084185936, z: 0.022557585, w: 0.42101008}
-      scale: {x: 1, y: 0.828909, z: 1}
+      scale: {x: 1.0000001, y: 0.82890904, z: 1}
     - name: Line002
       parentName: "\u7EC4002"
       position: {x: 0.8323288, y: -1.1790733, z: -0.1464839}
       rotation: {x: -0.000000011225932, y: -0.070649534, z: 0.9975012, w: 0.000000094457484}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane003
       parentName: "\u7EC4002"
       position: {x: 0.8323288, y: -1.1790729, z: -0.14648438}
       rotation: {x: 0.0000000029729346, y: -0.07064953, z: 0.9975012, w: 0.00000014898863}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4003"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 30.28947, y: 1.893605, z: -1.8322535}
       rotation: {x: -0.70441604, y: 0.06162842, z: -0.06162842, w: 0.70441604}
-      scale: {x: 0.891507, y: 1, z: 1}
+      scale: {x: 0.8915073, y: 1, z: 0.99999994}
     - name: Line003
       parentName: "\u7EC4003"
       position: {x: 0.8323288, y: -1.1790729, z: -0.14648438}
       rotation: {x: -0.000000016014285, y: -0.0706495, z: 0.9975012, w: 0.0000000980228}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane004
       parentName: "\u7EC4003"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: -0.000000002608355, y: -0.07064951, z: 0.9975012, w: 0.00000016413642}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4004"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 30.289473, y: 2.6251116, z: -1.8322535}
       rotation: {x: -0.6755902, y: 0, z: -0, w: 0.7372773}
       scale: {x: 1.120374, y: 1, z: 1}
@@ -1804,29 +1033,29 @@ ModelImporter:
       parentName: "\u7EC4004"
       position: {x: 0.8323288, y: -1.179073, z: -0.14648438}
       rotation: {x: -0.0000000069878867, y: -0.07064949, z: 0.9975012, w: 0.00000009866214}
-      scale: {x: 1.646718, y: 2.099855, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane005
       parentName: "\u7EC4004"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: 0.000000005793315, y: -0.07064951, z: 0.9975012, w: 0.00000016473152}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4005"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 30.289473, y: 3.4639177, z: -1.8322535}
       rotation: {x: -0.6035534, y: -0.08818224, z: 0.09623402, w: 0.78656614}
-      scale: {x: 1.010517, y: 0.716508, z: 0.903811}
+      scale: {x: 1.0105172, y: 0.7165085, z: 0.9038114}
     - name: Line005
       parentName: "\u7EC4005"
       position: {x: 0.8323288, y: -1.1790732, z: -0.14648438}
       rotation: {x: 0.000000002313661, y: -0.07064952, z: 0.9975012, w: 0.00000009541644}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane006
       parentName: "\u7EC4005"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: 0.0000000068234134, y: -0.07064952, z: 0.9975012, w: 0.00000015827818}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4006"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 35.51333, y: 2.8132918, z: -1.8258657}
       rotation: {x: -0.70441604, y: 0.061628416, z: -0.061628416, w: 0.70441604}
       scale: {x: 1.2037264, y: 1, z: 1.0000002}
@@ -1834,14 +1063,14 @@ ModelImporter:
       parentName: "\u7EC4006"
       position: {x: -0.8178787, y: -0.2592287, z: -0.90709877}
       rotation: {x: 0.000000008547378, y: 0.76678234, z: -0.64190716, w: -0.00000012629229}
-      scale: {x: 1.468061, y: 2.099854, z: 1.115698}
+      scale: {x: 1.4680612, y: 2.157353, z: 0.9999994}
     - name: Plane007
       parentName: "\u7EC4006"
       position: {x: -0.77470016, y: 0.5954056, z: -1.8538041}
       rotation: {x: -0.000000034359427, y: 0.76678234, z: -0.6419072, w: -0.00000018175524}
       scale: {x: 0.36924672, y: 2.1573534, z: 0.9999994}
     - name: "\u7EC4007"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 36.191452, y: 7.0180345, z: -1.8258657}
       rotation: {x: -0.70441604, y: 0.061628416, z: -0.061628416, w: 0.70441604}
       scale: {x: 0.9617885, y: 0.7990092, z: 0.79900944}
@@ -1849,14 +1078,14 @@ ModelImporter:
       parentName: "\u7EC4007"
       position: {x: -0.8178787, y: -0.2592287, z: -0.90709877}
       rotation: {x: 0.000000008547382, y: 0.76678234, z: -0.64190716, w: -0.0000001262923}
-      scale: {x: 1.468061, y: 2.099854, z: 1.115698}
+      scale: {x: 1.4680612, y: 2.157353, z: 0.9999994}
     - name: Plane008
       parentName: "\u7EC4007"
       position: {x: -0.77470016, y: 0.5954056, z: -1.8538041}
       rotation: {x: -0.00000004083556, y: 0.76678234, z: -0.6419072, w: -0.00000018949123}
       scale: {x: 0.36924672, y: 2.1573534, z: 0.9999994}
     - name: "\u7EC4008"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 37.118385, y: 8.922026, z: -1.8258657}
       rotation: {x: -0.70441604, y: 0.061628416, z: -0.061628416, w: 0.70441604}
       scale: {x: 0.9617885, y: 0.7990092, z: 0.79900944}
@@ -1864,14 +1093,14 @@ ModelImporter:
       parentName: "\u7EC4008"
       position: {x: -0.8178749, y: -0.2592287, z: -0.90709686}
       rotation: {x: 0.000000008547382, y: 0.76678234, z: -0.64190716, w: -0.0000001262923}
-      scale: {x: 1.468061, y: 2.099854, z: 1.115698}
+      scale: {x: 1.4680612, y: 2.157353, z: 0.9999994}
     - name: Plane009
       parentName: "\u7EC4008"
       position: {x: -0.77470016, y: 0.5954056, z: -1.8538041}
       rotation: {x: -0.00000004083556, y: 0.76678234, z: -0.6419072, w: -0.00000018949123}
       scale: {x: 0.36924672, y: 2.1573534, z: 0.9999994}
     - name: "\u7EC4010"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 38.176384, y: 7.0008993, z: -0.6348392}
       rotation: {x: -0.70441604, y: 0.061628416, z: -0.061628416, w: 0.70441604}
       scale: {x: 1.2249998, y: 1, z: 1.067492}
@@ -1879,19 +1108,19 @@ ModelImporter:
       parentName: "\u7EC4010"
       position: {x: -1.5458851, y: -0.5964103, z: 0.9746194}
       rotation: {x: -0.79293585, y: 0.15991354, z: 0.20239487, w: 0.55201155}
-      scale: {x: 1, y: 0.828909, z: 1}
+      scale: {x: 1.0000002, y: 0.82890904, z: 1}
     - name: Line009
       parentName: "\u7EC4009"
       position: {x: 0.8323307, y: -1.1790714, z: -0.14648342}
       rotation: {x: 7.608698e-11, y: -0.07064949, z: 0.9975012, w: 0.00000012700883}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane010
       parentName: "\u7EC4009"
       position: {x: 0.8323288, y: -1.1790729, z: -0.14648438}
       rotation: {x: -0.0000000011952672, y: -0.070649534, z: 0.9975012, w: 0.00000014418498}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4011"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 44.44733, y: 2.2124546, z: 0.00000017037843}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
@@ -1926,10 +1155,10 @@ ModelImporter:
       rotation: {x: 0.56098557, y: -0.43045935, z: 0.43045935, w: 0.56098557}
       scale: {x: 0.00022296855, y: 1.4349738, z: 1}
     - name: "\u7EC4012"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 44.62457, y: 2.2124546, z: 0.00000017037843}
       rotation: {x: -0.000000053385083, y: 0.7071068, z: -0.7071068, w: 0.000000053385083}
-      scale: {x: 2.138703, y: 1, z: 0.731648}
+      scale: {x: 2.1387029, y: 1, z: 0.73164827}
     - name: Plane018
       parentName: "\u7EC4012"
       position: {x: -0.12207413, y: 0.000000048453117, z: 0.5145805}
@@ -1961,22 +1190,22 @@ ModelImporter:
       rotation: {x: 0.50000006, y: -0.49999994, z: 0.50000006, w: 0.49999994}
       scale: {x: 0, y: 0, z: 0}
     - name: "\u7EC4013"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 42.89318, y: 1.3598998, z: -1.8322535}
       rotation: {x: -0.70441604, y: 0.06162842, z: -0.06162842, w: 0.70441604}
-      scale: {x: 0.891507, y: 1, z: 1}
+      scale: {x: 0.8915073, y: 1, z: 0.99999994}
     - name: Line010
       parentName: "\u7EC4013"
       position: {x: 0.8323288, y: -1.1790729, z: -0.14648438}
       rotation: {x: -0.000000016014285, y: -0.0706495, z: 0.9975012, w: 0.0000000980228}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane024
       parentName: "\u7EC4013"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: -0.000000002608355, y: -0.07064951, z: 0.9975012, w: 0.00000016413642}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4014"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 42.893185, y: 2.0914063, z: -1.8322535}
       rotation: {x: -0.6755902, y: 0, z: -0, w: 0.7372773}
       scale: {x: 1.120374, y: 1, z: 1}
@@ -1984,44 +1213,44 @@ ModelImporter:
       parentName: "\u7EC4014"
       position: {x: 0.8323288, y: -1.1790731, z: -0.14648438}
       rotation: {x: -0.0000000069878867, y: -0.07064949, z: 0.9975012, w: 0.00000009866214}
-      scale: {x: 1.646718, y: 2.099855, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane025
       parentName: "\u7EC4014"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: 0.000000005793315, y: -0.07064951, z: 0.9975012, w: 0.00000016473152}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4015"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 42.893185, y: 2.9302125, z: -1.8322535}
       rotation: {x: -0.6035534, y: -0.08818224, z: 0.09623402, w: 0.78656614}
-      scale: {x: 1.010517, y: 0.716508, z: 0.903811}
+      scale: {x: 1.0105172, y: 0.7165085, z: 0.9038114}
     - name: Line012
       parentName: "\u7EC4015"
       position: {x: 0.8323288, y: -1.1790731, z: -0.14648342}
       rotation: {x: 0.000000002313661, y: -0.07064952, z: 0.9975012, w: 0.00000009541644}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane026
       parentName: "\u7EC4015"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: 0.0000000068234134, y: -0.07064952, z: 0.9975012, w: 0.00000015827818}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4016"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 42.891247, y: 1.3598998, z: -1.8322535}
       rotation: {x: -0.70441604, y: 0.06162842, z: -0.06162842, w: 0.70441604}
-      scale: {x: 0.891507, y: 1, z: 1}
+      scale: {x: 0.8915073, y: 1, z: 0.99999994}
     - name: Line013
       parentName: "\u7EC4016"
       position: {x: 0.8323288, y: -1.1790729, z: -0.14648438}
       rotation: {x: -0.000000016014285, y: -0.0706495, z: 0.9975012, w: 0.0000000980228}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane027
       parentName: "\u7EC4016"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: -0.000000002608355, y: -0.07064951, z: 0.9975012, w: 0.00000016413642}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4017"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 42.89125, y: 2.0914063, z: -1.8322535}
       rotation: {x: -0.6755902, y: 0, z: -0, w: 0.7372773}
       scale: {x: 1.120374, y: 1, z: 1}
@@ -2029,44 +1258,44 @@ ModelImporter:
       parentName: "\u7EC4017"
       position: {x: 0.832325, y: -1.1790731, z: -0.14648438}
       rotation: {x: -0.0000000069878867, y: -0.07064949, z: 0.9975012, w: 0.00000009866214}
-      scale: {x: 1.646718, y: 2.099855, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane028
       parentName: "\u7EC4017"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: 0.000000005793315, y: -0.07064951, z: 0.9975012, w: 0.00000016473152}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4018"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 42.891556, y: 2.9302125, z: -1.8322535}
       rotation: {x: -0.6035534, y: -0.08818224, z: 0.09623402, w: 0.78656614}
-      scale: {x: 1.010517, y: 0.716508, z: 0.903811}
+      scale: {x: 1.0105172, y: 0.7165085, z: 0.9038114}
     - name: Line015
       parentName: "\u7EC4018"
       position: {x: 0.8323288, y: -1.1790729, z: -0.14648342}
       rotation: {x: 0.000000002313661, y: -0.07064952, z: 0.9975012, w: 0.00000009541644}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane029
       parentName: "\u7EC4018"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: 0.0000000068234134, y: -0.07064952, z: 0.9975012, w: 0.00000015827818}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4019"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 42.88962, y: 1.3598998, z: -1.8322535}
       rotation: {x: -0.70441604, y: 0.06162842, z: -0.06162842, w: 0.70441604}
-      scale: {x: 0.891507, y: 1, z: 1}
+      scale: {x: 0.8915073, y: 1, z: 0.99999994}
     - name: Line016
       parentName: "\u7EC4019"
       position: {x: 0.8323288, y: -1.1790729, z: -0.14648438}
       rotation: {x: -0.000000016014285, y: -0.0706495, z: 0.9975012, w: 0.0000000980228}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane030
       parentName: "\u7EC4019"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: -0.000000002608355, y: -0.07064951, z: 0.9975012, w: 0.00000016413642}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4020"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 42.88962, y: 2.0914063, z: -1.8322535}
       rotation: {x: -0.6755902, y: 0, z: -0, w: 0.7372773}
       scale: {x: 1.120374, y: 1, z: 1}
@@ -2074,22 +1303,22 @@ ModelImporter:
       parentName: "\u7EC4020"
       position: {x: 0.8323288, y: -1.1790731, z: -0.14648438}
       rotation: {x: -0.0000000069878867, y: -0.07064949, z: 0.9975012, w: 0.00000009866214}
-      scale: {x: 1.646718, y: 2.099855, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane031
       parentName: "\u7EC4020"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}
       rotation: {x: 0.000000005793315, y: -0.07064951, z: 0.9975012, w: 0.00000016473152}
       scale: {x: 0.41418248, y: 2.157353, z: 0.9999996}
     - name: "\u7EC4021"
-      parentName: "\xA6\xBD\xA6\xA62014(Clone)"
+      parentName: sakuranim(Clone)
       position: {x: 42.889927, y: 2.9302125, z: -1.8322535}
       rotation: {x: -0.6035534, y: -0.08818224, z: 0.09623402, w: 0.78656614}
-      scale: {x: 1.010517, y: 0.716508, z: 0.903811}
+      scale: {x: 1.0105172, y: 0.7165085, z: 0.9038114}
     - name: Line018
       parentName: "\u7EC4021"
       position: {x: 0.8323288, y: -1.1790731, z: -0.14648342}
       rotation: {x: 0.000000002313661, y: -0.07064952, z: 0.9975012, w: 0.00000009541644}
-      scale: {x: 1.646718, y: 2.099854, z: 1.115698}
+      scale: {x: 1.646718, y: 2.157353, z: 0.99999964}
     - name: Plane032
       parentName: "\u7EC4021"
       position: {x: 0.8323288, y: -1.1790724, z: -0.1464845}

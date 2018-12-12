@@ -39,7 +39,7 @@ public class chattack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+     
         if (!ReInput.isReady)
             return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
         if (!initialized)
@@ -115,7 +115,7 @@ public class chattack : MonoBehaviour
             if (enemy != null)
             {
 
-                transform.LookAt(enemy.transform);
+                //transform.LookAt(enemy.transform);
             }
 
             if (this.name == "himeko") HAttack();
@@ -210,7 +210,7 @@ public class chattack : MonoBehaviour
     }
     void HAttack()
     {
-        weapondisplay();
+        //weapondisplay();
         //speedback ();
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
         if (!state.IsTag("normalattack"))
@@ -236,13 +236,13 @@ public class chattack : MonoBehaviour
     }
     void SAttack()
     {
-        weapondisplay();
+        //weapondisplay();
         //speedback ();
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
         if (!state.IsTag("normalattack"))
         {
-            animecontrol.SetBool("normalattack", true);
-            animecontrol.SetInteger("attacktime", 1);
+           animecontrol.SetBool("normalattack", true);
+           animecontrol.SetInteger("attacktime", 1);
             slashnum = 0;
         }
         else if (state.IsName("Base.groundattack.normalattack.attack1"))
@@ -262,8 +262,8 @@ public class chattack : MonoBehaviour
         }
         else if (state.IsName("Base.groundattack.normalattack.attack2"))
         {
-           // if (animecontrol.GetBool("normalattack"))
-           // {
+           if (animecontrol.GetBool("normalattack"))
+            {
                 if (state.normalizedTime > 0.5f)
                 {
                     animecontrol.SetInteger("attacktime", 3);
@@ -273,12 +273,12 @@ public class chattack : MonoBehaviour
                 {
                     resetmove();
                 }
-           // }
+            }
         }
         else if (state.IsName("Base.groundattack.normalattack.attack3"))
         {
-            //if (animecontrol.GetBool("normalattack"))
-            //{
+            if (animecontrol.GetBool("normalattack"))
+            {
                 if (state.normalizedTime > 0.6f)
                 {
 
@@ -289,7 +289,7 @@ public class chattack : MonoBehaviour
                 {
                     resetmove();
                 }
-           // }
+           }
         }
     }
     void HeavySkill()
@@ -300,7 +300,8 @@ public class chattack : MonoBehaviour
     {
         stingeffect = false;
         animecontrol.SetBool("normalskill", true);
-        animecontrol.Play("stingbefore");
+        if(!state.IsTag("normalskill")&&!state.IsTag("skillstart"))
+        animecontrol.Play("normalskillstart");
     }
     void DashSkill()
     {
@@ -312,8 +313,6 @@ public class chattack : MonoBehaviour
     }
     public void backweapon()
     {
-        if (state.IsTag("holster"))
-        {
             if (katana.activeSelf)
             {
                 katana.SetActive(false);
@@ -324,9 +323,9 @@ public class chattack : MonoBehaviour
                 backkatana.SetActive(true);
             }
             //Instantiate(backeffect, katana.transform.position, Quaternion.identity);
-        }
+
     }
-    void weapondisplay()
+   public void weapondisplay()
     {
         if (!katana.activeSelf)
         {

@@ -230,7 +230,7 @@ ModelImporter:
     - serializedVersion: 16
       name: holster
       takeName: Take 001
-      firstFrame: 65
+      firstFrame: 70
       lastFrame: 100
       wrapMode: 0
       orientationOffsetY: 0

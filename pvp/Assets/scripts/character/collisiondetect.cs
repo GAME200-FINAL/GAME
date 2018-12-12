@@ -38,7 +38,7 @@ public class collisiondetect : MonoBehaviour {
             float angle = Vector3.Angle(transform.forward, diff);
             //Debug.Log(distance);
            // Debug.Log(angle);
-            if (distance < attackdistance && angle <= 90)
+            if (distance < attackdistance && angle <= 120)
             {
                 pausetime(0.1f);
                 enemy.GetComponent<chgethit>().getattacknormal();
@@ -107,10 +107,11 @@ public class collisiondetect : MonoBehaviour {
     }
     void blockdetect()
     {
+        enemy.GetComponent<Animator>().speed = 1;
         float distance = Vector3.Distance(transform.position, enemy.transform.position);
         Vector3 diff = enemy.transform.position - transform.position;
         float angle = Vector3.Angle(transform.forward, diff);
-        if (distance < attackdistance && angle <= 180)
+        if (distance < attackdistance)
         {
             // Debug.Log("heavy3");
             pausetime(0.1f);

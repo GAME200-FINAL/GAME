@@ -70,7 +70,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ILMTex:
-        m_Texture: {fileID: 2800000, guid: 1154335235a35fc42a3ee779b7e4e0a8, type: 3}
+        m_Texture: {fileID: 2800000, guid: ec602469c3f05b94282fd50cddc4dc72, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:

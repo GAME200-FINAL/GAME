@@ -322,11 +322,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.2
+  m_TransitionDuration: 0.1
   m_TransitionOffset: 0
   m_ExitTime: 1
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -1283,7 +1283,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: block
-  m_Speed: 0.5
+  m_Speed: 0.7
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101764712237460264}
@@ -1362,7 +1362,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: attack2
-  m_Speed: 2.5
+  m_Speed: 2.2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101439651080737310}
@@ -1469,7 +1469,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: attack1
-  m_Speed: 2.5
+  m_Speed: 2.2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101954374188077958}
@@ -1660,7 +1660,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: attack3
-  m_Speed: 2.5
+  m_Speed: 2.2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101338153415688964}
@@ -1715,7 +1715,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: stingbefore
+  m_Name: normalskillstart
   m_Speed: -0.4
   m_CycleOffset: 0
   m_Transitions:
@@ -1730,7 +1730,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400002, guid: 6922c391e36651c46841f29328dca78b, type: 3}
-  m_Tag: stingbefore
+  m_Tag: normalskillstart
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -1797,7 +1797,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: gethitback
-  m_Speed: 0.9
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101086160227594484}
@@ -1920,10 +1920,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102684618630588062}
-    m_Position: {x: 0, y: 0, z: 0}
+    m_Position: {x: 120, y: 216, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102123738656740370}
-    m_Position: {x: 0, y: 0, z: 0}
+    m_Position: {x: 144, y: -96, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

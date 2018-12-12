@@ -184,22 +184,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 02 - Default
-    second: {fileID: 2100000, guid: 12afea6974d1c0245a72248746d3c551, type: 2}
+    second: {fileID: 2100000, guid: a0cbc25fc04e2f24e95eacbbba7a3ecd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 03 - Default
-    second: {fileID: 2100000, guid: 9cbc9eb63c4dff64bb5da5dbe00cc48a, type: 2}
+    second: {fileID: 2100000, guid: 1914a2c64fb313f42b7bd704bc74ad86, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 08 - Default
-    second: {fileID: 2100000, guid: 0d940d0eb27bdcc46a3d28e64f9583e7, type: 2}
+    second: {fileID: 2100000, guid: 5d41da6a1a127d340b79379d1366e0b5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 09 - Default
-    second: {fileID: 2100000, guid: 0d940d0eb27bdcc46a3d28e64f9583e7, type: 2}
+    second: {fileID: 2100000, guid: 5d41da6a1a127d340b79379d1366e0b5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -231,15 +231,15 @@ ModelImporter:
       name: slash1
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 60
+      lastFrame: 70
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 0

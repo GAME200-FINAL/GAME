@@ -73,6 +73,7 @@ public class chgethit : MonoBehaviour {
         if (chstate.IsTag("block") && chstate.normalizedTime < 0.5f)
         {
             animecontrol.SetBool("block", true);
+            enemy.GetComponent<Animator>().speed = 0;
             GetComponent<collisiondetect>().pausetime(0.2f);
         }
         else if(!chstate.IsTag("blocksuccess"))
