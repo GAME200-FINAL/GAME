@@ -7,8 +7,15 @@ public class collisiondetect : MonoBehaviour {
     public float attackdistance;
     bool stoptime;
     float reststoptime;
-	// Use this for initialization
-	void Start () {
+    public Transform effectposhorizontal;
+    public Transform effectposvertical;
+    public GameObject baseeffect;
+    public GameObject heavyeffect;
+    public GameObject bloodprefab;
+    Vector3 insbloodpos;
+    public Transform bloodpos;
+    // Use this for initialization
+    void Start () {
         stoptime = false;
         if (this.tag == "p1")
             enemy=GameObject.FindWithTag("p2");
@@ -40,7 +47,7 @@ public class collisiondetect : MonoBehaviour {
            // Debug.Log(angle);
             if (distance < attackdistance && angle <= 120)
             {
-                pausetime(0.1f);
+                pausetime(0.13f);
                 enemy.GetComponent<chgethit>().getattacknormal();
             }
 
@@ -61,8 +68,9 @@ public class collisiondetect : MonoBehaviour {
             if (distance < attackdistance && angle <= 120)
             {
               // Debug.Log("heavy3");
-                pausetime(0.1f);
+                pausetime(0.15f);
                 enemy.GetComponent<chgethit>().getattackheavy();
+                Instantiate(heavyeffect, effectposvertical.position, effectposvertical.rotation);
             }
 
         }
@@ -80,8 +88,9 @@ public class collisiondetect : MonoBehaviour {
             if (distance < attackdistance && angle <= 180)
             {
                 // Debug.Log("heavy3");
-                pausetime(0.1f);
+                pausetime(0.15f);
                 enemy.GetComponent<chgethit>().getattackheavy();
+                Instantiate(heavyeffect, effectposhorizontal.position, effectposhorizontal.rotation);
             }
 
         }
@@ -99,8 +108,9 @@ public class collisiondetect : MonoBehaviour {
             if (distance < attackdistance && angle <= 180)
             {
                 // Debug.Log("heavy3");
-                pausetime(0.1f);
+                pausetime(0.15f);
                 enemy.GetComponent<chgethit>().getattacknormal();
+                Instantiate(heavyeffect, effectposhorizontal.position, effectposhorizontal.rotation);
             }
 
         }
@@ -114,8 +124,9 @@ public class collisiondetect : MonoBehaviour {
         if (distance < attackdistance)
         {
             // Debug.Log("heavy3");
-            pausetime(0.1f);
+            pausetime(0.15f);
             enemy.GetComponent<chgethit>().getblock();
+            Instantiate(heavyeffect, effectposhorizontal.position, effectposhorizontal.rotation);
         }
     }
     public void pausetime(float t)
@@ -134,6 +145,15 @@ public class collisiondetect : MonoBehaviour {
             stoptime = true;
             Time.timeScale = 0;
             //reststoptime = 0.2f;
+        }
+    }
+    void bloodeffect()
+    {
+        RaycastHit bloodhit;
+        if (Physics.Raycast(bloodpos.position, bloodpos.forward, out bloodhit, 3f))
+        {
+            insbloodpos = bloodhit.point;
+            Instantiate(bloodprefab, insbloodpos, bloodprefab.transform.rotation);
         }
     }
 }

@@ -16,6 +16,7 @@ public class chattack : MonoBehaviour
     bool initialized = false;
     bool stingeffect;
     public GameObject backkatana;
+   
     private void Awake()
     {
         animecontrol = GetComponent<Animator>();
@@ -300,7 +301,7 @@ public class chattack : MonoBehaviour
     {
         stingeffect = false;
         animecontrol.SetBool("normalskill", true);
-        if(!state.IsTag("normalskill")&&!state.IsTag("skillstart"))
+        if(!state.IsTag("normalskill")&&!state.IsTag("normalskillstart"))
         animecontrol.Play("normalskillstart");
     }
     void DashSkill()

@@ -10,6 +10,8 @@ public class chgethit : MonoBehaviour {
     float hp;
     float brave;
     bool die;
+    public GameObject bloodprefab;
+    public Transform bloodpos;
     // Use this for initialization
     private void Awake()
     {
@@ -51,7 +53,8 @@ public class chgethit : MonoBehaviour {
                GetComponent<chattack>().backweapon();
                 if (hp > 0)
                 {
-                  if (!chstate.IsTag("mgethit"))
+                    Instantiate(bloodprefab, bloodpos.position, bloodprefab.transform.rotation);
+                    if (!chstate.IsTag("mgethit"))
                        animecontrol.Play("mgethit");
                    else
                        animecontrol.Play("mgethit1");
@@ -119,4 +122,5 @@ public class chgethit : MonoBehaviour {
     {
 
     }
+    
 }

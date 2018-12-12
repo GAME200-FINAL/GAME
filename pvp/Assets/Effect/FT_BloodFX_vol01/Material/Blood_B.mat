@@ -4,10 +4,10 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Blood_B
-  m_Shader: {fileID: 4800000, guid: 95e9ae706ea202e4190e6b9ef83d360b, type: 3}
+  m_Shader: {fileID: 4800000, guid: 3c69acc9d142e7344b912ea628cf29db, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
