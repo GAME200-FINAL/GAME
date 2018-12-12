@@ -21,8 +21,7 @@ public class chgethit : MonoBehaviour {
     void Start () {
         hp = 100;
         animecontrol = GetComponent<Animator>();
-        
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -34,9 +33,11 @@ public class chgethit : MonoBehaviour {
                 enemy = GameObject.FindWithTag("p1");
         }
         chstate = animecontrol.GetCurrentAnimatorStateInfo(0);
-	}
+        
+    }
     public void getattacknormal()
     {
+        transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
         if (!(chstate.IsTag("dodge")&&chstate.normalizedTime<0.5f)&&!chstate.IsTag("guard")&&!chstate.IsTag("blocksuccuss"))
         {
             if (chstate.IsTag("block")&&chstate.normalizedTime<0.5f)
@@ -46,15 +47,14 @@ public class chgethit : MonoBehaviour {
             }
             else
             {
-                transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
-                GetComponent<chattack>().resetmove();
-                GetComponent<chattack>().backweapon();
+               GetComponent<chattack>().resetmove();
+               GetComponent<chattack>().backweapon();
                 if (hp > 0)
                 {
-                    if (!chstate.IsTag("mgethit"))
-                        animecontrol.Play("mgethit");
-                    else
-                        animecontrol.Play("mgethit1");
+                  if (!chstate.IsTag("mgethit"))
+                       animecontrol.Play("mgethit");
+                   else
+                       animecontrol.Play("mgethit1");
 
                 }
                 else

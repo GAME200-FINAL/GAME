@@ -167,7 +167,7 @@ public class chattack : MonoBehaviour
                         transform.LookAt(enemy.transform);
                     }
                     weapondisplay();
-                    animecontrol.Play("guard");
+                    //animecontrol.Play("guard");
                     animecontrol.SetBool("guard", true);
                 }
             }

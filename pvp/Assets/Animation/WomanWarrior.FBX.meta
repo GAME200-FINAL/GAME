@@ -123,12 +123,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 06 - Default
-    second: {fileID: 2100000, guid: b0a18c83b50d86c4580536c45629bd94, type: 2}
+    second: {fileID: 2100000, guid: c17daecdddce2f7428a0fc92df4c3d45, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: shangyi
-    second: {fileID: 2100000, guid: 70b6a47b0fd44d74795fb47b090fd1a4, type: 2}
+    second: {fileID: 2100000, guid: a2f213bc3e7e27b4c971149ec3524f73, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -1627,8 +1627,8 @@ ModelImporter:
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
-      keepOriginalOrientation: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
