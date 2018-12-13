@@ -1798,7 +1798,7 @@ Prefab:
     - target: {fileID: 114606373925931698, guid: 0013ec0f6abd6124c9fb35c2a9c8a496,
         type: 2}
       propertyPath: playerID
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23976055690314364, guid: 0013ec0f6abd6124c9fb35c2a9c8a496,
         type: 2}
@@ -1812,7 +1812,7 @@ Prefab:
     - target: {fileID: 114599801993203574, guid: 0013ec0f6abd6124c9fb35c2a9c8a496,
         type: 2}
       propertyPath: playerID
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 95027553651059530, guid: 0013ec0f6abd6124c9fb35c2a9c8a496,
         type: 2}
@@ -2067,6 +2067,7 @@ GameObject:
   - component: {fileID: 758823358}
   - component: {fileID: 758823357}
   - component: {fileID: 758823367}
+  - component: {fileID: 758823368}
   m_Layer: 0
   m_Name: himeko
   m_TagString: p1
@@ -2240,9 +2241,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   katana: {fileID: 2109744413}
-  playerID: 0
+  playerID: 1
   backkatana: {fileID: 782089332}
   collide: 0
+  pulseeffect: {fileID: 1149937583020318, guid: c33f226300dd1c841b0aa336714595c8,
+    type: 2}
 --- !u!114 &758823362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2257,8 +2260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runsound: {fileID: 0}
   footaudio: {fileID: 0}
-  jumpeffect: {fileID: 0}
-  playerID: 0
+  playerID: 1
 --- !u!65 &758823363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2429,6 +2431,24 @@ MonoBehaviour:
   subdivisions: 4
   _base: {fileID: 1758058861}
   _tip: {fileID: 1188498188}
+--- !u!114 &758823368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 758823356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8396266625d24b6448b8a7631e735e3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wangge: []
+  chaizhi: []
+  buzheng: {x: 0, y: 0, z: 0}
+  cposition: {x: 0, y: 0, z: 0}
+  xiaosanshij: 0.3
+  shichang: 1
+  jiange: 0.02
 --- !u!1 &777687539
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class chattack : MonoBehaviour
     bool stingeffect;
     public GameObject backkatana;
     public bool collide = false;
+    public GameObject pulseeffect;
    
     private void Awake()
     {
@@ -212,6 +213,11 @@ public class chattack : MonoBehaviour
         animecontrol.SetBool("heavyattack", false);
         animecontrol.SetInteger("attacktime", 0);
     }
+    void insstingeffect()
+    {
+        Vector3 waveposition = transform.position + new Vector3(0, 1, 0) - transform.forward * 0.5f;
+        Instantiate(pulseeffect, waveposition, transform.rotation);
+    }
     void HAttack()
     {
         //weapondisplay();
@@ -268,7 +274,7 @@ public class chattack : MonoBehaviour
         {
            if (animecontrol.GetBool("normalattack"))
             {
-                if (state.normalizedTime > 0.5f)
+                if (state.normalizedTime >=0.7f)
                 {
                     animecontrol.SetInteger("attacktime", 3);
                     slashnum = 2;
