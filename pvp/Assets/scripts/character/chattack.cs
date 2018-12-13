@@ -178,7 +178,7 @@ public class chattack : MonoBehaviour
             }
             else
             {
-                if (!state.IsTag("block") && !state.IsTag("blocksuccess") && !state.IsTag("holster") && !(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
+                if (!state.IsTag("mgethit")&&!state.IsTag("block") && !state.IsTag("blocksuccess") && !state.IsTag("holster") && !(state.IsTag("normalattack") && state.normalizedTime < 0.8f) && !(state.IsTag("heavyattack") && state.normalizedTime < 0.8f))
                 {
                     if (enemy != null)
                     {
