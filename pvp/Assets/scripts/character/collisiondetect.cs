@@ -50,7 +50,7 @@ public class collisiondetect : MonoBehaviour {
             {
                 GetComponent<chattack>().collide = true;
                 enemy.GetComponent<chgethit>().getattacknormal();
-                pausetime(0.13f);
+               // pausetime(0.13f);
 
             }
 
@@ -116,7 +116,7 @@ public class collisiondetect : MonoBehaviour {
                 GetComponent<chattack>().collide = true;
                 enemy.GetComponent<chgethit>().getattacknormal();
                 Instantiate(heavyeffect, effectposhorizontal.position, effectposhorizontal.rotation);
-                pausetime(0.15f);
+               // pausetime(0.15f);
             }
 
         }
