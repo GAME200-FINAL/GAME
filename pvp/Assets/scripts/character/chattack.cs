@@ -283,7 +283,7 @@ public class chattack : MonoBehaviour
                 {
                     resetmove();
                 }
-           // }
+            }
         }
         else if (state.IsName("Base.groundattack.normalattack.attack3"))
         {
@@ -299,9 +299,10 @@ public class chattack : MonoBehaviour
                 {
                     resetmove();
                 }
-           }
+            }
         }
     }
+    
     void HeavySkill()
     {
         animecontrol.SetBool("heavyskill", true);
