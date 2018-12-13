@@ -21,20 +21,15 @@ public class chmove : MonoBehaviour
       //float jumptime;
 	  int movestate;
 	  float lastmovetime;
-	  float lastkeycode=0;
 	public  AudioSource footaudio;
 	 CharacterController controller;
 	 float baseheight;
-	 int clothnum;
-	float fallspeed;
-	Scene currentscene;
 	float currentspeed;
 	float refcurrentspeed;
 	float targetspeed;
 	float falltime;
 	RaycastHit hitguai;
 	Vector3 updirection;
-	public GameObject jumpeffect;
     float tofall;
     GameObject direction;
     public int playerID;
@@ -74,10 +69,7 @@ public class chmove : MonoBehaviour
         controller = GetComponent<CharacterController>();
         maincontrol = GetComponent<Animator>();
        // state = maincontrol.GetCurrentAnimatorStateInfo(0);
-		lastkeycode = 0;
 		controller = this.GetComponent<CharacterController> ();
-		if(controller!=null)baseheight = controller.height;
-		currentscene = SceneManager.GetActiveScene ();
 		currentspeed = 0;
 		targetspeed = 1;
 	}
