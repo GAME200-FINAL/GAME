@@ -531,7 +531,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 191752946}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22c03c4240246984d86e09c3d1007b66, type: 3}
   m_Name: 
@@ -1769,15 +1769,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4664022272924810, guid: 0013ec0f6abd6124c9fb35c2a9c8a496, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4664022272924810, guid: 0013ec0f6abd6124c9fb35c2a9c8a496, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4664022272924810, guid: 0013ec0f6abd6124c9fb35c2a9c8a496, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4664022272924810, guid: 0013ec0f6abd6124c9fb35c2a9c8a496, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1891,6 +1891,38 @@ Prefab:
       propertyPath: bloodpos
       value: 
       objectReference: {fileID: 1001450982}
+    - target: {fileID: 114606373925931698, guid: 0013ec0f6abd6124c9fb35c2a9c8a496,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114599801993203574, guid: 0013ec0f6abd6124c9fb35c2a9c8a496,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114975265648404752, guid: 0013ec0f6abd6124c9fb35c2a9c8a496,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664022272924810, guid: 0013ec0f6abd6124c9fb35c2a9c8a496, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.010000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664022272924810, guid: 0013ec0f6abd6124c9fb35c2a9c8a496, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664022272924810, guid: 0013ec0f6abd6124c9fb35c2a9c8a496, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.010000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 114533122874888760, guid: 0013ec0f6abd6124c9fb35c2a9c8a496,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0013ec0f6abd6124c9fb35c2a9c8a496, type: 2}
   m_IsPrefabAsset: 0
@@ -2180,8 +2212,6 @@ MonoBehaviour:
   baseeffect: {fileID: 1464430593940450, guid: 68624f19452902844966d3ae1f4eec4f, type: 2}
   heavyeffect: {fileID: 1105815621626536, guid: 38d32994f770716418ffbe52d5465b14,
     type: 2}
-  bloodprefab: {fileID: 0}
-  bloodpos: {fileID: 0}
 --- !u!114 &758823360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2212,6 +2242,7 @@ MonoBehaviour:
   katana: {fileID: 2109744413}
   playerID: 0
   backkatana: {fileID: 782089332}
+  collide: 0
 --- !u!114 &758823362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3402,7 +3433,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1038954539}
   m_LocalRotation: {x: -0.00000008940696, y: -0, z: 0.70710677, w: 0.7071069}
-  m_LocalPosition: {x: -0.0084, y: 0.0609, z: 0.1213}
+  m_LocalPosition: {x: -0.0084, y: 0.0609, z: 0.1367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 668034831}

@@ -251,18 +251,18 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.27012575
-        functionName: normalattackdetect
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
       - time: 0
         functionName: weapondisplay
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: a5095973686db4449a0f4de0dd7bc51f,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.20424837
+        functionName: normalattackdetect
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
           type: 3}
         floatParameter: 0
         intParameter: 0

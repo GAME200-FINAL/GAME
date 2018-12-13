@@ -90,8 +90,6 @@ public class chmove : MonoBehaviour
         if (!initialized)
             Initialize(); // Reinitialize after a recompile in the editor
         //Debug.Log (isGrounded ());
-        if (state.IsTag("idle"))
-            transform.rotation = Quaternion.FromToRotation(Vector3.up, updirection) * transform.rotation;
         if (isGrounded())
             jumpcount = 0;
         //Debug.Log (movestate);
@@ -100,6 +98,10 @@ public class chmove : MonoBehaviour
         {
             if (this.name == "sakura")
                 GetComponent<chattack>().weapondisplay();
+            else
+            {
+                GetComponent<chattack>().backweapon();
+            }
             //transform.Translate (Vector3.forward * 10 * Time.deltaTime);
             controller.Move(transform.forward * currentspeed*4 * Time.deltaTime);
         }
@@ -108,7 +110,6 @@ public class chmove : MonoBehaviour
             targetspeed = 2;
             if (!state.IsTag("attack") && !state.IsTag("normalattack") && !state.IsTag("airattack"))
             {
-                if (this.name == "himeko") GetComponent<chattack>().backweapon();
                 maincontrol.SetBool("running", true);
                 // currentspeed = Mathf.SmoothDamp(currentspeed, targetspeed, ref refcurrentspeed, 0.15f);
                 currentspeed = targetspeed;
@@ -124,8 +125,6 @@ public class chmove : MonoBehaviour
             targetDirection = forward * player.GetAxis("Move Vertical") + right * player.GetAxis("Move Horizontal");
             targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
             if(!state.IsTag("normalskill")&&!state.IsTag("heavyattack")) transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 0.5f);
-            if (state.IsTag("idle") || state.IsTag("fall"))
-                transform.rotation = Quaternion.FromToRotation(Vector3.up, updirection) * transform.rotation;
             if (state.IsTag("jump"))
             {
                 controller.Move(targetDirection * runspeed * Time.deltaTime);

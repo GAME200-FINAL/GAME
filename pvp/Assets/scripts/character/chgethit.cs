@@ -39,7 +39,7 @@ public class chgethit : MonoBehaviour {
     }
     public void getattacknormal()
     {
-        transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
+       // transform.LookAt(enemy.transform);
         if (!(chstate.IsTag("dodge")&&chstate.normalizedTime<0.5f)&&!chstate.IsTag("guard")&&!chstate.IsTag("blocksuccuss"))
         {
             if (chstate.IsTag("block")&&chstate.normalizedTime<0.5f)
@@ -81,7 +81,6 @@ public class chgethit : MonoBehaviour {
         }
         else if(!chstate.IsTag("blocksuccess"))
         {
-            transform.LookAt(new Vector3(enemy.transform.position.x, transform.position.y, enemy.transform.position.z));
             chstate = this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
             GetComponent<chattack>().resetmove();
             GetComponent<chattack>().backweapon();

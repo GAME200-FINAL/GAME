@@ -16,6 +16,7 @@ public class chattack : MonoBehaviour
     bool initialized = false;
     bool stingeffect;
     public GameObject backkatana;
+    public bool collide = false;
    
     private void Awake()
     {
@@ -40,7 +41,15 @@ public class chattack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
+        if(state.IsTag("guard"))
+        {
+            weapondisplay();
+        }
+        if(collide)
+        {
+            enemy.transform.LookAt(this.transform);
+            collide = false;
+        }
         if (!ReInput.isReady)
             return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
         if (!initialized)
@@ -55,15 +64,12 @@ public class chattack : MonoBehaviour
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
         if (state.IsTag("normalattack"))
         {
-           // GetComponent<MeleeWeaponTrail>()._emit = true;
             if (state.normalizedTime >= 1)
-            {
+            { 
                 animecontrol.SetBool("normalattack", false);
                 animecontrol.SetInteger("attacktime", 0);
             }
         }
-        else
-          //  GetComponent<MeleeWeaponTrail>()._emit = false;
         if (state.IsTag("heavyattack"))
         {
             if (animecontrol.GetBool("heavyattack"))
@@ -91,14 +97,11 @@ public class chattack : MonoBehaviour
                     float distance = Vector3.Distance(transform.position, enemy.transform.position);
                     Vector3 diff = enemy.transform.position - transform.position;
                     float angle = Vector3.Angle(transform.forward, diff);
-                    //Debug.Log(distance);
-                    // Debug.Log(angle);
                     if (distance < 2 && angle <= 90)
                     {
                         if (!stingeffect)
                         {
                             stingeffect = true;
-                            //GetComponent<collisiondetect>().pausetime(0.1f);
                             StartCoroutine(stinghit());
 
                         }
@@ -116,7 +119,7 @@ public class chattack : MonoBehaviour
             if (enemy != null)
             {
 
-                //transform.LookAt(enemy.transform);
+                transform.LookAt(enemy.transform);
             }
 
             if (this.name == "himeko") HAttack();
