@@ -266,9 +266,9 @@ public class chattack : MonoBehaviour
         }
         else if (state.IsName("Base.groundattack.normalattack.attack2"))
         {
-           if (animecontrol.GetBool("normalattack"))
-            {
-                if (state.normalizedTime > 0.5f)
+           //if (animecontrol.GetBool("normalattack"))
+           // {
+                if (state.normalizedTime > 0.8f)
                 {
                     animecontrol.SetInteger("attacktime", 3);
                     slashnum = 2;
@@ -277,7 +277,7 @@ public class chattack : MonoBehaviour
                 {
                     resetmove();
                 }
-            }
+           // }
         }
         else if (state.IsName("Base.groundattack.normalattack.attack3"))
         {

@@ -85,6 +85,7 @@ public class chmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (!ReInput.isReady)
             return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
         if (!initialized)
