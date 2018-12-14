@@ -47,7 +47,7 @@ public class BattleManager : MonoBehaviour
             brvbreak=true;
             if (!breakpause)
             {
-                GetComponent<collisiondetect>().pausetime(0.5f);
+                GetComponent<collisiondetect>().pausetime(0.3f);
                 breakpause = true;
             }
             breakEffect.GetComponent<Animator>().Play("break");
@@ -154,7 +154,7 @@ public class BattleManager : MonoBehaviour
 	public void MPDropTime ()
 	{
 		if (mp>0) {
-            mp -= mpExpense*Time.deltaTime*0.1f;
+            mp -= mpExpense*Time.deltaTime*0.2f;
 			mpStrip.value = mp;
 		}
 

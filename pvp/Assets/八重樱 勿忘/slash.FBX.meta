@@ -343,6 +343,46 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.20970897
+        functionName: PlaySound_heavyAtk
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.34767345
+        functionName: PlaySound_heavyAtk
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5280113
+        functionName: PlaySound_heavyAtk
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.7467174
+        functionName: PlaySound_heavyAtk
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.19207557
+        functionName: PlaySound_voice2
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

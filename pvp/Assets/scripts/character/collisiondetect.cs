@@ -11,9 +11,11 @@ public class collisiondetect : MonoBehaviour {
     public Transform effectposvertical;
     public GameObject baseeffect;
     public GameObject heavyeffect;
+    SoundManager soundManager;
     // Use this for initialization
     void Start () {
         stoptime = false;
+        soundManager=GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 	
 	// Update is called once per frame
@@ -50,6 +52,10 @@ public class collisiondetect : MonoBehaviour {
             {
                 GetComponent<chattack>().collide = true;
                 enemy.GetComponent<chgethit>().getattacknormal();
+                if(this.name=="himeko")
+                    StartCoroutine(soundManager.LoadAudio("blade_hit.wav",1,1,1,0,false));
+                if(this.name=="sakura")
+                    StartCoroutine(soundManager.LoadAudio("katana_hit.wav",1,1,1,0,false));
                // pausetime(0.13f);
 
             }
@@ -73,6 +79,10 @@ public class collisiondetect : MonoBehaviour {
                 // Debug.Log("heavy3");
                 GetComponent<chattack>().collide = true;
                 enemy.GetComponent<chgethit>().getattackheavy();
+                if(this.name=="himeko")
+                    StartCoroutine(soundManager.LoadAudio("blade_hit.wav",1,1,1,0,false));
+                if(this.name=="sakura")
+                    StartCoroutine(soundManager.LoadAudio("katana_hit.wav",1,1,1,0,false));
                 Instantiate(heavyeffect, effectposvertical.position, effectposvertical.rotation);
                 pausetime(0.15f);
             }
@@ -94,6 +104,10 @@ public class collisiondetect : MonoBehaviour {
                 // Debug.Log("heavy3")
                 GetComponent<chattack>().collide = true;
                 enemy.GetComponent<chgethit>().getattackheavy();
+                if(this.name=="himeko")
+                    StartCoroutine(soundManager.LoadAudio("blade_hit.wav",1,1,1,0,false));
+                if(this.name=="sakura")
+                    StartCoroutine(soundManager.LoadAudio("katana_hit.wav",1,1,1,0,false));
                 Instantiate(heavyeffect, effectposhorizontal.position, effectposhorizontal.rotation);
                 pausetime(0.15f);
             }
@@ -115,6 +129,10 @@ public class collisiondetect : MonoBehaviour {
                 // Debug.Log("heavy3");
                 GetComponent<chattack>().collide = true;
                 enemy.GetComponent<chgethit>().getattacknormal();
+                if(this.name=="himeko")
+                    StartCoroutine(soundManager.LoadAudio("blade_hit.wav",1,1,1,0,false));
+                if(this.name=="sakura")
+                    StartCoroutine(soundManager.LoadAudio("katana_hit.wav",1,1,1,0,false));
                 Instantiate(heavyeffect, effectposhorizontal.position, effectposhorizontal.rotation);
                // pausetime(0.15f);
             }
@@ -135,6 +153,10 @@ public class collisiondetect : MonoBehaviour {
             {
                 // Debug.Log("heavy3");
                 GetComponent<chattack>().collide = true;
+                if(this.name=="himeko")
+                    StartCoroutine(soundManager.LoadAudio("blade_hit.wav",1,1,1,0,false));
+                if(this.name=="sakura")
+                    StartCoroutine(soundManager.LoadAudio("katana_hit.wav",1,1,1,0,false));
                 enemy.GetComponent<chgethit>().getattackheavynormal();
                 Instantiate(heavyeffect, effectposhorizontal.position, effectposhorizontal.rotation);
                 // pausetime(0.15f);
@@ -154,6 +176,10 @@ public class collisiondetect : MonoBehaviour {
             // Debug.Log("heavy3");
             GetComponent<chattack>().collide = true;
             enemy.GetComponent<chgethit>().getblock();
+            if(this.name=="himeko")
+                StartCoroutine(soundManager.LoadAudio("blade_hit.wav",1,1,1,0,false));
+            if(this.name=="sakura")
+                StartCoroutine(soundManager.LoadAudio("katana_hit.wav",1,1,1,0,false));
             Instantiate(heavyeffect, effectposhorizontal.position, effectposhorizontal.rotation);
             pausetime(0.15f);
         }

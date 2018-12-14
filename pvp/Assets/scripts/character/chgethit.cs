@@ -14,10 +14,12 @@ public class chgethit : MonoBehaviour {
     public Transform bloodpos;
     BattleManager self;
     public Text result;
+    SoundManager soundManager;
     // Use this for initialization
     private void Awake()
     {
         self = GetComponent<BattleManager>();
+        soundManager=GameObject.Find("SoundManager").GetComponent<SoundManager>();
         if (p == 1)
             this.tag = "p1";
         else
@@ -58,6 +60,7 @@ public class chgethit : MonoBehaviour {
                 if (self.hp > 0)
                 {
                     Instantiate(bloodprefab, bloodpos.position, bloodprefab.transform.rotation);
+
                     if (!chstate.IsName("Base.gethit.mgethit"))
                        animecontrol.Play("mgethit");
                    else
@@ -101,6 +104,11 @@ public class chgethit : MonoBehaviour {
                 {
                     Instantiate(bloodprefab, bloodpos.position, bloodprefab.transform.rotation);
                     animecontrol.Play("gethitback");
+                    if(this.name=="sakura")
+                        StartCoroutine(soundManager.LoadAudio("sakura_gethit3.wav",1,1,1,0,false));
+                    if(this.name=="himeko")
+                        StartCoroutine(soundManager.LoadAudio("himeko_gethit2.wav",1,1,1,0,false));
+
                     self.BRVDecrease(1);
                     if (enemy.GetComponent<chattack>().hpattack)
                     {
@@ -137,6 +145,11 @@ public class chgethit : MonoBehaviour {
             GetComponent<chattack>().backweapon();
                 if (self.hp > 0)
                 {
+                    if(this.name=="sakura")
+                        StartCoroutine(soundManager.LoadAudio("sakura_gethit3.wav",1,1,1,0,false));
+                    if(this.name=="himeko")
+                        StartCoroutine(soundManager.LoadAudio("himeko_gethit2.wav",1,1,1,0,false));
+
                 if (enemy.GetComponent<chattack>().hpattack)
                 {
                     self.HealthDmg();
@@ -173,6 +186,12 @@ public class chgethit : MonoBehaviour {
     }
     public void getblock()
     {
+        if(this.name=="himeko")
+            StartCoroutine(soundManager.LoadAudio("katana_long.wav",1,1,1,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("wave_blade.wav",1,1,1,0,false));
+
+
          if (self.hp > 0)
             {
 

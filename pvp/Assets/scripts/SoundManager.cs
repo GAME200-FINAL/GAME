@@ -6,7 +6,7 @@ public class SoundManager : MonoBehaviour
 {
 	public IEnumerator LoadAudio (string name, float Volume, float Pitch, float time, float delay, bool isloop)
 	{
-		string url = @"C:\Users\Public\Desktop\SFX\" + name;
+		string url = @"D:\SFX\" + name;
 		WWW www = new WWW ("file://" + url);
 		yield return www;
 		AudioClip clip = www.GetAudioClip ();
