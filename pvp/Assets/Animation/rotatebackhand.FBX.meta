@@ -152,7 +152,7 @@ ModelImporter:
       name: slash4
       takeName: Take 001
       firstFrame: 360
-      lastFrame: 385
+      lastFrame: 390
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -173,7 +173,7 @@ ModelImporter:
       curves: []
       events:
       - time: 0.58381486
-        functionName: normalattackdetect
+        functionName: normalheavydetect
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
           type: 3}

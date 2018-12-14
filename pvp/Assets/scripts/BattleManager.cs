@@ -5,26 +5,46 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-    public BattleManager enemy;
+    GameObject enemycharacter;
+    BattleManager enemy;
     public float hp;
     public Slider hpStrip;
     public float brv;
     public Slider brvStrip;
-    public float timeScale;
+    public float attackvalue;
     
 	public float mp;
 	public Slider mpStrip;
 	public float mpExpense;
-	public float attackScale;
-	public float mpTimeScale;
-	public float recoverScale;
 
+    
     public int combo;
-
+    float damage = 10;
+    float slidebp;
+    float slidehp;
+    float slidemp;
+    
 
 	void Start(){
-		enemy=GetComponent<BattleManager>();
+    
+            if (this.tag == "p1")
+                enemycharacter= GameObject.FindWithTag("p2");
+            else
+                enemycharacter = GameObject.FindWithTag("p1");
+
+        enemy =enemycharacter.GetComponent<BattleManager>();
 	}
+    private void Update()
+    {
+        slidebp = Mathf.Lerp(slidebp, brv, 0.1f);
+        brvStrip.value = slidebp;
+        slidemp = Mathf.Lerp(slidemp, mp, 0.1f);
+        mpStrip.value = slidemp;
+        slidehp = Mathf.Lerp(slidehp, hp, 0.1f);
+        hpStrip.value = slidehp;
+        MPDropTime();
+
+    }
 
 
     /*public void HPDamage(float damage){
@@ -35,43 +55,43 @@ public class BattleManager : MonoBehaviour
     } */
 
 
-	bool HealthDmg ()
+    public void HealthDmg ()
 	{
 		if (hp > 0 && enemy.brv > brv) {
-			hp-=enemy.brv-brv;
+			hp-=(enemy.brv-brv);
 			hpStrip.value = hp;
-            return true;
+          
 		}
-        return false;
 	}
 
 
-    public void BRVDecrease(float damage, float baseAtk){
+    public void BRVDecrease(float baseAtk){
+        Debug.Log("gethit");
           if (brv > 0) {
 		    damage += damage * combo / 10;
-			brv -= damage * baseAtk;
-			hpStrip.value = brv;
+            brv -= damage * baseAtk*attackvalue;
 			//damage /= baseAtk;
 			damage -= damage * combo / 10;
 		}
     }
 
 
-    public void BRVIncrease(float damage, float baseAtk){
+    public void BRVIncrease(float baseAtk)
+    {
           if (brv < brvStrip.maxValue) {
 		    damage += damage * combo / 10;
-			brv += damage * baseAtk;
-			hpStrip.value = brv;
+            brv += damage * baseAtk*attackvalue;
+			brvStrip.value = brv;
 			//damage /= baseAtk;
 			damage -= damage * combo / 10;
 		}
     }
 
 
-	public void MPConseme ()
+	public void MPConsume ()
 	{
 		if (mp > 0) {
-		    mp -= mpExpense * Time.deltaTime * attackScale;
+            mp -= mpExpense*1.5f;
 			mpStrip.value = mp;
 		}
 	}
@@ -80,17 +100,17 @@ public class BattleManager : MonoBehaviour
 	public void MPDropTime ()
 	{
 		if (mp>0) {
-			mp -= mpExpense * Time.deltaTime * timeScale;
+            mp -= mpExpense*Time.deltaTime*0.5f;
 			mpStrip.value = mp;
 		}
 
 	}
 
 
-	public void MPRecover ()
+	public void MPRecover (float rscale)
 	{
 		if (mp <= mpStrip.maxValue) {
-			mp += mpExpense * Time.deltaTime * recoverScale;
+            mp += mpExpense*rscale;
 			mpStrip.value = mp;
 		}
 	}

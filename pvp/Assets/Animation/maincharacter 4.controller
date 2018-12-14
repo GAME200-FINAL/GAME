@@ -327,7 +327,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 1
   m_HasExitTime: 1
@@ -918,7 +918,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 1
   m_HasExitTime: 1
@@ -987,7 +987,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 1
   m_HasExitTime: 1
@@ -1641,7 +1641,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: abab26271968ea945b76809b696c4c81, type: 3}
-  m_Tag: mgethit1
+  m_Tag: mgethit
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -1829,7 +1829,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7e5f848ee4eb2af45b2d37d0904dbb8c, type: 3}
+  m_Motion: {fileID: 7400000, guid: 4777aee0d9d7f5d4bb946e33cadf7d39, type: 3}
   m_Tag: die
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1842,7 +1842,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: holster
-  m_Speed: 2
+  m_Speed: 2.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101959830608764440}
