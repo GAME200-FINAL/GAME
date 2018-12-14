@@ -121,6 +121,28 @@ public class collisiondetect : MonoBehaviour {
 
         }
     }
+    void normalheavydetect()
+    {
+        if (enemy != null)
+        {
+            // Debug.Log("heavy2");
+            float distance = Vector3.Distance(transform.position, enemy.transform.position);
+            Vector3 diff = enemy.transform.position - transform.position;
+            float angle = Vector3.Angle(transform.forward, diff);
+            //Debug.Log(distance);
+            // Debug.Log(angle);
+            if (distance < attackdistance && angle <= 120)
+            {
+                // Debug.Log("heavy3");
+                GetComponent<chattack>().collide = true;
+                enemy.GetComponent<chgethit>().getattackheavynormal();
+                Instantiate(heavyeffect, effectposhorizontal.position, effectposhorizontal.rotation);
+                // pausetime(0.15f);
+            }
+
+        }
+
+    }
     void blockdetect()
     {
         enemy.GetComponent<Animator>().speed = 1;

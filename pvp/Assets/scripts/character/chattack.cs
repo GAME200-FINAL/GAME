@@ -8,6 +8,7 @@ public class chattack : MonoBehaviour
     Animator animecontrol;
     AnimatorStateInfo state;
     AnimatorStateInfo prestate;
+    BattleManager self;
     int slashnum;
     GameObject enemy;
     public GameObject katana;
@@ -18,6 +19,8 @@ public class chattack : MonoBehaviour
     public GameObject backkatana;
     public bool collide = false;
     public GameObject pulseeffect;
+    public bool hpattack;
+    Vector3 targetposition;
    
     private void Awake()
     {
@@ -28,6 +31,7 @@ public class chattack : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        self = GetComponent<BattleManager>();
         stingeffect = false;
         katana.SetActive(false);
     }
@@ -42,13 +46,22 @@ public class chattack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(state.IsTag("guard"))
+
+        if(this.name=="sakura")
+        {
+            if (state.IsTag("normalattack"))
+            {
+                transform.position = Vector3.Lerp(transform.position, targetposition,0.5f);
+            }
+        }
+
+        if (state.IsTag("guard"))
         {
             weapondisplay();
         }
         if(collide)
         {
-            enemy.transform.LookAt(this.transform);
+            enemy.transform.LookAt(new Vector3(this.gameObject.transform.position.x,enemy.transform.position.y, this.gameObject.transform.position.z));
             collide = false;
         }
         if (!ReInput.isReady)
@@ -126,6 +139,13 @@ public class chattack : MonoBehaviour
             if (this.name == "himeko") HAttack();
             else SAttack();
         }
+        if (player.GetButton("Burning"))
+        {
+            hpattack = true;
+        }
+        else
+            hpattack = false;
+
         if (player.GetButtonDown("Fire") && !state.IsTag("mgethit") && player.GetButton("Skill"))
         {
             if (enemy != null)
@@ -133,8 +153,11 @@ public class chattack : MonoBehaviour
 
                 transform.LookAt(enemy.transform);
             }
-
-            NormalSkill();
+            if (self.mp > self.mpExpense)
+            {
+                self.MPConsume();
+                NormalSkill();
+            }
         }
         if (player.GetButtonDown("Fire2") && !player.GetButton("Skill"))
         {
@@ -156,8 +179,12 @@ public class chattack : MonoBehaviour
 
                 transform.LookAt(enemy.transform);
             }
-
-            HeavySkill();
+            if (self.mp > self.mpExpense)
+            {
+                self.MPConsume();
+                HeavySkill();
+            }
+          
         }
 
         if (player.GetButtonDown("Block"))
@@ -193,9 +220,12 @@ public class chattack : MonoBehaviour
 
         if (player.GetButtonDown("Dash"))
         {
-            backweapon();
-            resetmove();
-            animecontrol.Play("dash");
+            if (!state.IsTag("mgethit")&&!state.IsTag("normalattack")&&!state.IsTag("holster"))
+            {
+                backweapon();
+                resetmove();
+                animecontrol.Play("dash");
+            }
         }
         if (!player.GetButton("Block") && state.IsTag("guard"))
         {
@@ -251,9 +281,11 @@ public class chattack : MonoBehaviour
         state = animecontrol.GetCurrentAnimatorStateInfo(0);
         if (!state.IsTag("normalattack"))
         {
-           animecontrol.SetBool("normalattack", true);
-           animecontrol.SetInteger("attacktime", 1);
+            animecontrol.SetBool("normalattack", true);
+            animecontrol.SetInteger("attacktime", 1);
             slashnum = 0;
+            targetposition = transform.position;
+            GetComponent<BattleManager>().combo = 1;
         }
         else if (state.IsName("Base.groundattack.normalattack.attack1"))
         {
@@ -263,6 +295,7 @@ public class chattack : MonoBehaviour
                 {
                     animecontrol.SetInteger("attacktime", 2);
                     slashnum = 1;
+                    GetComponent<BattleManager>().combo = 2;
                 }
                 else
                 {
@@ -278,7 +311,8 @@ public class chattack : MonoBehaviour
                 {
                     animecontrol.SetInteger("attacktime", 3);
                     slashnum = 2;
-               }
+                    GetComponent<BattleManager>().combo = 3;
+                }
                 else
                 {
                     resetmove();
@@ -294,15 +328,30 @@ public class chattack : MonoBehaviour
 
                     animecontrol.SetInteger("attacktime", 4);
                     slashnum = 3;
+                    GetComponent<BattleManager>().combo = 4;
                 }
                 else
                 {
                     resetmove();
                 }
-            }
+           }
         }
     }
-    
+    void attackdash()
+    {
+        float dis = Vector3.Distance(transform.position,enemy.transform.position);
+        if(dis<GetComponent<collisiondetect>().attackdistance+3)
+        {
+            if(dis< GetComponent<collisiondetect>().attackdistance)
+            {
+                targetposition = transform.position;
+            }
+             else
+            targetposition = transform.position + transform.forward * (dis-GetComponent<collisiondetect>().attackdistance+1f);
+        }
+        else
+        targetposition = transform.position + transform.forward * 3;
+    }
     void HeavySkill()
     {
         animecontrol.SetBool("heavyskill", true);

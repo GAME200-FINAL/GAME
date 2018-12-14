@@ -77,7 +77,9 @@ public class chmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (state.IsTag("idle") || state.IsTag("fall"))
+            transform.rotation = Quaternion.FromToRotation(Vector3.up, updirection) * transform.rotation;
         if (!ReInput.isReady)
             return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
         if (!initialized)
@@ -117,7 +119,7 @@ public class chmove : MonoBehaviour
             right.y = 0;
             targetDirection = forward * player.GetAxis("Move Vertical") + right * player.GetAxis("Move Horizontal");
             targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
-            if(!state.IsTag("normalskill")&&!state.IsTag("heavyattack")) transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 0.5f);
+            if(!state.IsTag("normalskill")&&!state.IsTag("heavyattack")&&!state.IsTag("mgethit")) transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 0.5f);
             if (state.IsTag("jump"))
             {
                 controller.Move(targetDirection * runspeed * Time.deltaTime);

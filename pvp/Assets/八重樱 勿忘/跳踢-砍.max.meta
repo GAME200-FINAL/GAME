@@ -496,7 +496,7 @@ ModelImporter:
       curves: []
       events:
       - time: 0.37500003
-        functionName: heavydetect
+        functionName: rounddetect
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
           type: 3}
