@@ -35,11 +35,11 @@ public class iktest2 : MonoBehaviour
             rpos = rightfoot.position;
             if (Physics.Raycast(lpos, -Vector3.up, out hitleft, 3f, 1 << 8))
             {
-                lfpos = hitleft.point;
+                lfpos = hitleft.point+new Vector3(0,0.2f,0);
             }
             if (Physics.Raycast(rpos, -Vector3.up, out hitright, 3f, 1 << 8))
             {
-                rfpos = hitright.point;
+                rfpos = hitright.point+new Vector3(0,0.2f,0);
             }
             if (info.IsName("Base.groundattack.normalattack.attack4"))
             {

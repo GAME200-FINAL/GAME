@@ -46,7 +46,7 @@ public class chgethit : MonoBehaviour {
        // transform.LookAt(enemy.transform);
         if (!(chstate.IsTag("dodge")&&chstate.normalizedTime<0.5f)&&!chstate.IsTag("guard")&&!chstate.IsTag("blocksuccuss"))
         {
-            if (chstate.IsTag("block")&&chstate.normalizedTime<0.5f)
+            if (chstate.IsTag("block")&&chstate.normalizedTime<0.7f)
             {
                 animecontrol.SetBool("block", true);
                 GetComponent<collisiondetect>().pausetime(0.2f);
@@ -88,7 +88,7 @@ public class chgethit : MonoBehaviour {
         // transform.LookAt(enemy.transform);
         if (!(chstate.IsTag("dodge") && chstate.normalizedTime < 0.5f) && !chstate.IsTag("guard") && !chstate.IsTag("blocksuccuss"))
         {
-            if (chstate.IsTag("block") && chstate.normalizedTime < 0.5f)
+            if (chstate.IsTag("block") && chstate.normalizedTime < 0.7f)
             {
                 animecontrol.SetBool("block", true);
                 GetComponent<collisiondetect>().pausetime(0.2f);
@@ -124,7 +124,7 @@ public class chgethit : MonoBehaviour {
     }
     public void getattackheavy()
     {
-        if (chstate.IsTag("block") && chstate.normalizedTime < 0.5f)
+        if (chstate.IsTag("block") && chstate.normalizedTime < 0.7f)
         {
             animecontrol.SetBool("block", true);
             enemy.GetComponent<Animator>().speed = 0;

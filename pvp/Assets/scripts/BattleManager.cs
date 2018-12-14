@@ -15,7 +15,9 @@ public class BattleManager : MonoBehaviour
     
 	public float mp;
 	public Slider mpStrip;
+    public Image fill;
 	public float mpExpense;
+    public GameObject breakEffect;
 
     
     public int combo;
@@ -23,6 +25,8 @@ public class BattleManager : MonoBehaviour
     float slidebp;
     float slidehp;
     float slidemp;
+    bool brvbreak=false;
+    Color clr;
     
 
 	void Start(){
@@ -36,6 +40,28 @@ public class BattleManager : MonoBehaviour
 	}
     private void Update()
     {
+        if(brv<=0)
+        {
+            if(!brvbreak)
+            brvbreak=true;
+        }
+        if(brvbreak)
+          {
+              if(brv<100)
+              {
+                 brv += 10*Time.deltaTime;
+                 breakEffect.SetActive(true);
+                 clr.a=100;
+                 fill.color=clr;
+              }
+              else {
+                  brvbreak=false;
+                  breakEffect.SetActive(false);
+                  clr.a=255;
+                  fill.color=clr;
+              }
+			brvStrip.value = brv;
+          }
         slidebp = Mathf.Lerp(slidebp, brv, 0.1f);
         brvStrip.value = slidebp;
         slidemp = Mathf.Lerp(slidemp, mp, 0.1f);
@@ -58,8 +84,13 @@ public class BattleManager : MonoBehaviour
     public void HealthDmg ()
 	{
 		if (hp > 0 && enemy.brv > brv) {
-			hp-=(enemy.brv-brv);
-			hpStrip.value = hp;
+            if (enemy.GetComponent<BattleManager>().mp > 10)
+            {
+                enemy.GetComponent<BattleManager>().mp -= 10;
+                if (brvbreak) hp -= enemy.brv;
+                else hp -= (enemy.brv - brv);
+                hpStrip.value = hp;
+            }
           
 		}
 	}
@@ -69,7 +100,7 @@ public class BattleManager : MonoBehaviour
         Debug.Log("gethit");
           if (brv > 0) {
 		    damage += damage * combo / 10;
-            brv -= damage * baseAtk*attackvalue;
+           if(!brvbreak) brv -= damage * baseAtk*attackvalue;
 			//damage /= baseAtk;
 			damage -= damage * combo / 10;
 		}
@@ -87,6 +118,21 @@ public class BattleManager : MonoBehaviour
 		}
     }
 
+    void BRVRecover()
+    {
+          if(brvbreak)
+          {
+              if(brv<100)
+              {
+                 brv += 20*Time.deltaTime;
+              }
+              else 
+              brvbreak=false;
+			brvStrip.value = brv;
+          }
+			//damage /= baseAtk;
+    }
+
 
 	public void MPConsume ()
 	{
@@ -100,7 +146,7 @@ public class BattleManager : MonoBehaviour
 	public void MPDropTime ()
 	{
 		if (mp>0) {
-            mp -= mpExpense*Time.deltaTime*0.5f;
+            mp -= mpExpense*Time.deltaTime*0.1f;
 			mpStrip.value = mp;
 		}
 
