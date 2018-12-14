@@ -220,10 +220,19 @@ public class chattack : MonoBehaviour
 
         if (player.GetButtonDown("Dash"))
         {
-            if (!state.IsTag("mgethit")&&!state.IsTag("normalattack")&&!state.IsTag("holster"))
+            if (!state.IsTag("mgethit")&&!(state.IsTag("normalattack")&&state.normalizedTime>0.6f)&&!state.IsTag("holster"))
             {
                 backweapon();
                 resetmove();
+                if(state.IsTag("normalattack"))
+                {
+                    if(self.mp>=15)
+                    {
+                        self.mp -= 15;
+                        animecontrol.Play("dash");
+                    }
+                }
+                 else
                 animecontrol.Play("dash");
             }
         }
@@ -248,6 +257,7 @@ public class chattack : MonoBehaviour
         Vector3 waveposition = transform.position + new Vector3(0, 1, 0) - transform.forward * 0.5f;
         Instantiate(pulseeffect, waveposition, transform.rotation);
     }
+
     void HAttack()
     {
         //weapondisplay();
@@ -265,11 +275,13 @@ public class chattack : MonoBehaviour
         }
         else if (state.IsName("Base.groundattack.normalattack.attack2"))
         {
+            GetComponent<CharacterController>().Move(transform.forward*0.5f);
             animecontrol.SetInteger("attacktime", 3);
             slashnum = 2;
         }
         else if (state.IsName("Base.groundattack.normalattack.attack3"))
         {
+            GetComponent<CharacterController>().Move(transform.forward*0.5f);
             animecontrol.SetInteger("attacktime", 4);
             slashnum = 3;
         }
@@ -307,7 +319,7 @@ public class chattack : MonoBehaviour
         {
            if (animecontrol.GetBool("normalattack"))
             {
-                if (state.normalizedTime >=0.7f)
+                if (state.normalizedTime >=0.5f)
                 {
                     animecontrol.SetInteger("attacktime", 3);
                     slashnum = 2;
@@ -340,17 +352,17 @@ public class chattack : MonoBehaviour
     void attackdash()
     {
         float dis = Vector3.Distance(transform.position,enemy.transform.position);
-        if(dis<GetComponent<collisiondetect>().attackdistance+3)
+        if(dis<GetComponent<collisiondetect>().attackdistance+4)
         {
-            if(dis< GetComponent<collisiondetect>().attackdistance)
+            if(dis< GetComponent<collisiondetect>().attackdistance-1)
             {
                 targetposition = transform.position;
             }
              else
-            targetposition = transform.position + transform.forward * (dis-GetComponent<collisiondetect>().attackdistance+1f);
+            targetposition = transform.position + transform.forward * (dis-GetComponent<collisiondetect>().attackdistance+2f);
         }
         else
-        targetposition = transform.position + transform.forward * 3;
+        targetposition = transform.position + transform.forward * 4;
     }
     void HeavySkill()
     {
