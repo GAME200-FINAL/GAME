@@ -27,6 +27,7 @@ public class BattleManager : MonoBehaviour
     float slidemp;
     bool brvbreak=false;
     Color clr;
+    bool breakpause = false;
     
 
 	void Start(){
@@ -44,21 +45,28 @@ public class BattleManager : MonoBehaviour
         {
             if(!brvbreak)
             brvbreak=true;
+            if (!breakpause)
+            {
+                GetComponent<collisiondetect>().pausetime(0.5f);
+                breakpause = true;
+            }
+            breakEffect.GetComponent<Animator>().Play("break");
         }
         if(brvbreak)
           {
               if(brv<100)
               {
-                 brv += 10*Time.deltaTime;
+                 brv += 20*Time.deltaTime;
                  breakEffect.SetActive(true);
-                 clr.a=100;
-                 fill.color=clr;
+                 //clr.a=100;
+                 //fill.color=clr;
               }
               else {
+                  breakpause = false;
                   brvbreak=false;
                   breakEffect.SetActive(false);
-                  clr.a=255;
-                  fill.color=clr;
+                 // clr.a=255;
+                 // fill.color=clr;
               }
 			brvStrip.value = brv;
           }
@@ -97,7 +105,7 @@ public class BattleManager : MonoBehaviour
 
 
     public void BRVDecrease(float baseAtk){
-        Debug.Log("gethit");
+       // Debug.Log("gethit");
           if (brv > 0) {
 		    damage += damage * combo / 10;
            if(!brvbreak) brv -= damage * baseAtk*attackvalue;

@@ -220,20 +220,25 @@ public class chattack : MonoBehaviour
 
         if (player.GetButtonDown("Dash"))
         {
-            if (!state.IsTag("mgethit")&&!(state.IsTag("normalattack")&&state.normalizedTime>0.6f)&&!state.IsTag("holster"))
+            if (!state.IsTag("mgethit")&&!state.IsTag("holster"))
             {
-                backweapon();
-                resetmove();
-                if(state.IsTag("normalattack"))
+
+                if (state.IsTag("normalattack"))
                 {
-                    if(self.mp>=15)
+                    if (self.mp >= 15)
                     {
                         self.mp -= 15;
+                        backweapon();
+                        resetmove();
                         animecontrol.Play("dash");
                     }
                 }
-                 else
-                animecontrol.Play("dash");
+                else
+                {
+                    backweapon();
+                    resetmove();
+                    animecontrol.Play("dash");
+                }
             }
         }
         if (!player.GetButton("Block") && state.IsTag("guard"))
