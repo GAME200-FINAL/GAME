@@ -65,12 +65,14 @@ public class chgethit : MonoBehaviour {
                        animecontrol.Play("mgethit");
                    else
                        animecontrol.Play("mgethit1");
-                       self.BRVDecrease(1);
+                       
                     if (enemy.GetComponent<chattack>().hpattack)
                     {
                         self.HealthDmg();
                     }
+                    else
                     {
+                        self.BRVDecrease(1);
                         enemy.GetComponent<BattleManager>().BRVIncrease(1);
                         enemy.GetComponent<BattleManager>().MPRecover(1);
                     }
@@ -109,12 +111,14 @@ public class chgethit : MonoBehaviour {
                     if(this.name=="himeko")
                         StartCoroutine(soundManager.LoadAudio("himeko_gethit2.wav",1,1,1,0,false));
 
-                    self.BRVDecrease(1);
+                    
                     if (enemy.GetComponent<chattack>().hpattack)
                     {
                         self.HealthDmg();
                     }
+                    else
                     {
+                        self.BRVDecrease(1);
                         enemy.GetComponent<BattleManager>().BRVIncrease(1);
                         enemy.GetComponent<BattleManager>().MPRecover(1);
                     }
@@ -153,6 +157,7 @@ public class chgethit : MonoBehaviour {
                 if (enemy.GetComponent<chattack>().hpattack)
                 {
                     self.HealthDmg();
+                    animecontrol.Play("gethitback");
                 }
                 else
                 {
@@ -194,7 +199,8 @@ public class chgethit : MonoBehaviour {
 
          if (self.hp > 0)
             {
-
+                GetComponent<chattack>().resetmove();
+                GetComponent<chattack>().backweapon();
                 animecontrol.Play("gethitback");
                 self.BRVDecrease(1.5f);
                 enemy.GetComponent<BattleManager>().BRVIncrease(1.5f);

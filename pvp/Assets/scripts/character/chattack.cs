@@ -22,6 +22,8 @@ public class chattack : MonoBehaviour
     public bool hpattack;
     Vector3 targetposition;
     SoundManager soundManager;
+
+    public GameObject heffect;
    
     private void Awake()
     {
@@ -143,10 +145,17 @@ public class chattack : MonoBehaviour
         }
         if (player.GetButton("Burning"))
         {
-            hpattack = true;
+            if(self.mp>=10)
+            {
+              hpattack = true;
+              heffect.GetComponent<ParticleSystem>().Play();
+            }
         }
         else
+        {
             hpattack = false;
+            heffect.GetComponent<ParticleSystem>().Stop();
+        }
 
         if (player.GetButtonDown("Fire") && !state.IsTag("mgethit") && player.GetButton("Skill"))
         {
