@@ -36,6 +36,7 @@ public class chmove : MonoBehaviour
     public Player player;
     bool initialized = false;
 
+     BattleManager self;
     //public GameObject ground;
     private void Initialize()
     {
@@ -53,7 +54,8 @@ public class chmove : MonoBehaviour
     // Use this for initialization
     private void Awake()
     {
-        player = ReInput.players.GetPlayer(playerID);
+        self=GetComponent<BattleManager>();
+       // player = ReInput.players.GetPlayer(playerID);
     }
     void Start () 
     {
@@ -98,7 +100,10 @@ public class chmove : MonoBehaviour
                 GetComponent<chattack>().backweapon();
             }
             //transform.Translate (Vector3.forward * 10 * Time.deltaTime);
+            if(!self.brvbreak)
             controller.Move(transform.forward * currentspeed*4 * Time.deltaTime);
+           else
+           controller.Move(transform.forward * currentspeed*2.5f * Time.deltaTime);
         }
         if (player.GetAxis("Move Horizontal")!=0||player.GetAxis("Move Vertical")!=0)
         {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class chgethit : MonoBehaviour {
     Animator animecontrol;
     GameObject enemy;
@@ -13,7 +14,8 @@ public class chgethit : MonoBehaviour {
     public GameObject bloodprefab;
     public Transform bloodpos;
     BattleManager self;
-    public Text result;
+    public GameObject himekoWin;
+    public GameObject sakuraWin;
     SoundManager soundManager;
     // Use this for initialization
     private void Awake()
@@ -41,6 +43,10 @@ public class chgethit : MonoBehaviour {
 	void Update () {
       
         chstate = animecontrol.GetCurrentAnimatorStateInfo(0);
+        if(Input.GetKey(KeyCode.Escape))
+	      {
+		     SceneManager.LoadScene("rolepick");
+	      }
         
     }
     public void getattacknormal()
@@ -222,14 +228,21 @@ public class chgethit : MonoBehaviour {
         GetComponent<chattack>().enabled = false;
         Time.timeScale = 0.2f;
         animecontrol.Play("die");
+        Invoke("loadback",1.5f);
         if(this.name=="himeko")
         {
-            result.text = " Sakura Win ";
+            sakuraWin.SetActive(true);
+            himekoWin.SetActive(false);
         }
         else
         {
-            result.text = " Himeko Win";
+            himekoWin.SetActive(true);
+            sakuraWin.SetActive(false);
         }
+    }
+    void loadback()
+    {
+       SceneManager.LoadScene("rolepick");
     }
     
 }

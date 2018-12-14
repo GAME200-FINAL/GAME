@@ -28,7 +28,7 @@ public class chattack : MonoBehaviour
     private void Awake()
     {
         animecontrol = GetComponent<Animator>();
-        player = ReInput.players.GetPlayer(playerID);
+      //  player = ReInput.players.GetPlayer(playerID);
         soundManager=GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
     }
@@ -51,6 +51,10 @@ public class chattack : MonoBehaviour
     void Update()
     {
 
+       if (!ReInput.isReady)
+            return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if (!initialized)
+            Initialize(); // Reinitialize after a recompile in the editor
         if(this.name=="sakura")
         {
             if (state.IsTag("normalattack"))
@@ -68,10 +72,7 @@ public class chattack : MonoBehaviour
             enemy.transform.LookAt(new Vector3(this.gameObject.transform.position.x,enemy.transform.position.y, this.gameObject.transform.position.z));
             collide = false;
         }
-        if (!ReInput.isReady)
-            return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
-        if (!initialized)
-            Initialize(); // Reinitialize after a recompile in the editor
+       
         if (enemy == null)
         {
             if (this.tag == "p1")
@@ -233,23 +234,9 @@ public class chattack : MonoBehaviour
         {
             if (!state.IsTag("mgethit")&&!state.IsTag("holster")&&!(state.IsTag("normalattack")&&state.normalizedTime>0.3f))
             {
-
-                if (state.IsTag("normalattack"))
-                {
-                    if (self.mp >= 15)
-                    {
-                        self.mp -= 15;
-                        backweapon();
-                        resetmove();
-                        animecontrol.Play("dash");
-                    }
-                }
-                else
-                {
                     backweapon();
                     resetmove();
                     animecontrol.Play("dash");
-                }
             }
         }
         if (!player.GetButton("Block") && state.IsTag("guard"))
