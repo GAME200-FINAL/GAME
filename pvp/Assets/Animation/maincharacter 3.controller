@@ -1358,7 +1358,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: mgethit
-  m_Speed: 0.7
+  m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101702390056168536}
@@ -1602,7 +1602,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: mgethit1
-  m_Speed: 0.7
+  m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101789143483559648}
@@ -2066,7 +2066,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102521173335421008}
-    m_Position: {x: 492, y: 444, z: 0}
+    m_Position: {x: 492, y: 456, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102651404869367998}
     m_Position: {x: 168, y: 456, z: 0}
@@ -2099,7 +2099,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102580043182309830}
-    m_Position: {x: 96, y: 468, z: 0}
+    m_Position: {x: 96, y: 420, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102396864635856122}
     m_Position: {x: 108, y: 132, z: 0}

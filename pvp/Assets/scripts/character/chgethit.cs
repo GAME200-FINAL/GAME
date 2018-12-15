@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class chgethit : MonoBehaviour {
     Animator animecontrol;
     GameObject enemy;
@@ -13,11 +14,14 @@ public class chgethit : MonoBehaviour {
     public GameObject bloodprefab;
     public Transform bloodpos;
     BattleManager self;
-    public Text result;
+    public GameObject himekoWin;
+    public GameObject sakuraWin;
+    SoundManager soundManager;
     // Use this for initialization
     private void Awake()
     {
         self = GetComponent<BattleManager>();
+        soundManager=GameObject.Find("SoundManager").GetComponent<SoundManager>();
         if (p == 1)
             this.tag = "p1";
         else
@@ -39,6 +43,10 @@ public class chgethit : MonoBehaviour {
 	void Update () {
       
         chstate = animecontrol.GetCurrentAnimatorStateInfo(0);
+        if(Input.GetKey(KeyCode.Escape))
+	      {
+		     SceneManager.LoadScene("rolepick");
+	      }
         
     }
     public void getattacknormal()
@@ -58,16 +66,19 @@ public class chgethit : MonoBehaviour {
                 if (self.hp > 0)
                 {
                     Instantiate(bloodprefab, bloodpos.position, bloodprefab.transform.rotation);
+
                     if (!chstate.IsName("Base.gethit.mgethit"))
                        animecontrol.Play("mgethit");
                    else
                        animecontrol.Play("mgethit1");
-                       self.BRVDecrease(1);
+                       
                     if (enemy.GetComponent<chattack>().hpattack)
                     {
                         self.HealthDmg();
                     }
+                    else
                     {
+                        self.BRVDecrease(1);
                         enemy.GetComponent<BattleManager>().BRVIncrease(1);
                         enemy.GetComponent<BattleManager>().MPRecover(1);
                     }
@@ -101,12 +112,19 @@ public class chgethit : MonoBehaviour {
                 {
                     Instantiate(bloodprefab, bloodpos.position, bloodprefab.transform.rotation);
                     animecontrol.Play("gethitback");
-                    self.BRVDecrease(1);
+                    if(this.name=="sakura")
+                        StartCoroutine(soundManager.LoadAudio("sakura_gethit3.wav",1,1,1,0,false));
+                    if(this.name=="himeko")
+                        StartCoroutine(soundManager.LoadAudio("himeko_gethit2.wav",1,1,1,0,false));
+
+                    
                     if (enemy.GetComponent<chattack>().hpattack)
                     {
                         self.HealthDmg();
                     }
+                    else
                     {
+                        self.BRVDecrease(1);
                         enemy.GetComponent<BattleManager>().BRVIncrease(1);
                         enemy.GetComponent<BattleManager>().MPRecover(1);
                     }
@@ -137,9 +155,15 @@ public class chgethit : MonoBehaviour {
             GetComponent<chattack>().backweapon();
                 if (self.hp > 0)
                 {
+                    if(this.name=="sakura")
+                        StartCoroutine(soundManager.LoadAudio("sakura_gethit3.wav",1,1,1,0,false));
+                    if(this.name=="himeko")
+                        StartCoroutine(soundManager.LoadAudio("himeko_gethit2.wav",1,1,1,0,false));
+
                 if (enemy.GetComponent<chattack>().hpattack)
                 {
                     self.HealthDmg();
+                    animecontrol.Play("gethitback");
                 }
                 else
                 {
@@ -173,9 +197,16 @@ public class chgethit : MonoBehaviour {
     }
     public void getblock()
     {
+        if(this.name=="himeko")
+            StartCoroutine(soundManager.LoadAudio("katana_long.wav",1,1,1,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("wave_blade.wav",1,1,1,0,false));
+
+
          if (self.hp > 0)
             {
-
+                GetComponent<chattack>().resetmove();
+                GetComponent<chattack>().backweapon();
                 animecontrol.Play("gethitback");
                 self.BRVDecrease(1.5f);
                 enemy.GetComponent<BattleManager>().BRVIncrease(1.5f);
@@ -197,14 +228,21 @@ public class chgethit : MonoBehaviour {
         GetComponent<chattack>().enabled = false;
         Time.timeScale = 0.2f;
         animecontrol.Play("die");
+        Invoke("loadback",1.5f);
         if(this.name=="himeko")
         {
-            result.text = " Sakura Win ";
+            sakuraWin.SetActive(true);
+            himekoWin.SetActive(false);
         }
         else
         {
-            result.text = " Himeko Win";
+            himekoWin.SetActive(true);
+            sakuraWin.SetActive(false);
         }
+    }
+    void loadback()
+    {
+       SceneManager.LoadScene("rolepick");
     }
     
 }

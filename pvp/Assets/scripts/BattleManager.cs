@@ -25,19 +25,20 @@ public class BattleManager : MonoBehaviour
     float slidebp;
     float slidehp;
     float slidemp;
-    bool brvbreak=false;
+    public bool brvbreak=false;
     Color clr;
     bool breakpause = false;
-    
+    SoundManager soundManager;
 
 	void Start(){
-    
+            combo=1;
             if (this.tag == "p1")
                 enemycharacter= GameObject.FindWithTag("p2");
             else
                 enemycharacter = GameObject.FindWithTag("p1");
 
         enemy =enemycharacter.GetComponent<BattleManager>();
+        soundManager=GameObject.Find("SoundManager").GetComponent<SoundManager>();
 	}
     private void Update()
     {
@@ -47,7 +48,8 @@ public class BattleManager : MonoBehaviour
             brvbreak=true;
             if (!breakpause)
             {
-                GetComponent<collisiondetect>().pausetime(0.5f);
+                StartCoroutine(soundManager.LoadAudio("break.wav",1,0.5f,1,0,false));
+                GetComponent<collisiondetect>().pausetime(0.3f);
                 breakpause = true;
             }
             breakEffect.GetComponent<Animator>().Play("break");
@@ -56,7 +58,7 @@ public class BattleManager : MonoBehaviour
           {
               if(brv<100)
               {
-                 brv += 20*Time.deltaTime;
+                 brv += 10*Time.deltaTime;
                  breakEffect.SetActive(true);
                  //clr.a=100;
                  //fill.color=clr;
@@ -91,13 +93,18 @@ public class BattleManager : MonoBehaviour
 
     public void HealthDmg ()
 	{
-		if (hp > 0 && enemy.brv > brv) {
+		if (hp > 0 ) {
             if (enemy.GetComponent<BattleManager>().mp > 10)
             {
-                enemy.GetComponent<BattleManager>().mp -= 10;
-                if (brvbreak) hp -= enemy.brv;
-                else hp -= (enemy.brv - brv);
-                hpStrip.value = hp;
+            enemy.GetComponent<BattleManager>().mp -= 10;
+            if(enemy.brv > brv)
+            {
+                if (brvbreak) hp -= enemy.brv*1.4f+20;
+                else hp -= (enemy.brv - brv)*1.2f+20;
+            }
+            else
+                hp -=20;
+            hpStrip.value = hp;
             }
           
 		}
@@ -108,7 +115,7 @@ public class BattleManager : MonoBehaviour
        // Debug.Log("gethit");
           if (brv > 0) {
 		    damage += damage * combo / 10;
-           if(!brvbreak) brv -= damage * baseAtk*attackvalue;
+           if(!brvbreak) brv -= damage * baseAtk*enemy.GetComponent<BattleManager>().attackvalue;
 			//damage /= baseAtk;
 			damage -= damage * combo / 10;
 		}
@@ -118,27 +125,15 @@ public class BattleManager : MonoBehaviour
     public void BRVIncrease(float baseAtk)
     {
           if (brv < brvStrip.maxValue) {
-		    damage += damage * combo / 10;
-            brv += damage * baseAtk*attackvalue;
-			brvStrip.value = brv;
-			//damage /= baseAtk;
-			damage -= damage * combo / 10;
-		}
-    }
-
-    void BRVRecover()
-    {
-          if(brvbreak)
-          {
-              if(brv<100)
+              if(!brvbreak)
               {
-                 brv += 20*Time.deltaTime;
-              }
-              else 
-              brvbreak=false;
-			brvStrip.value = brv;
-          }
+		      damage += damage * combo / 10;
+              brv += damage * baseAtk*attackvalue;
+			  brvStrip.value = brv;
 			//damage /= baseAtk;
+			  damage -= damage * combo / 10;
+              }
+		}
     }
 
 

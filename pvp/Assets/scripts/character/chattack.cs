@@ -21,11 +21,15 @@ public class chattack : MonoBehaviour
     public GameObject pulseeffect;
     public bool hpattack;
     Vector3 targetposition;
+    SoundManager soundManager;
+
+    public GameObject heffect;
    
     private void Awake()
     {
         animecontrol = GetComponent<Animator>();
-        player = ReInput.players.GetPlayer(playerID);
+      //  player = ReInput.players.GetPlayer(playerID);
+        soundManager=GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
     }
     // Use this for initialization
@@ -47,6 +51,10 @@ public class chattack : MonoBehaviour
     void Update()
     {
 
+       if (!ReInput.isReady)
+            return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if (!initialized)
+            Initialize(); // Reinitialize after a recompile in the editor
         if(this.name=="sakura")
         {
             if (state.IsTag("normalattack"))
@@ -64,10 +72,7 @@ public class chattack : MonoBehaviour
             enemy.transform.LookAt(new Vector3(this.gameObject.transform.position.x,enemy.transform.position.y, this.gameObject.transform.position.z));
             collide = false;
         }
-        if (!ReInput.isReady)
-            return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
-        if (!initialized)
-            Initialize(); // Reinitialize after a recompile in the editor
+       
         if (enemy == null)
         {
             if (this.tag == "p1")
@@ -141,10 +146,17 @@ public class chattack : MonoBehaviour
         }
         if (player.GetButton("Burning"))
         {
-            hpattack = true;
+            if(self.mp>=10)
+            {
+              hpattack = true;
+              heffect.GetComponent<ParticleSystem>().Play();
+            }
         }
         else
+        {
             hpattack = false;
+            heffect.GetComponent<ParticleSystem>().Stop();
+        }
 
         if (player.GetButtonDown("Fire") && !state.IsTag("mgethit") && player.GetButton("Skill"))
         {
@@ -220,25 +232,11 @@ public class chattack : MonoBehaviour
 
         if (player.GetButtonDown("Dash"))
         {
-            if (!state.IsTag("mgethit")&&!state.IsTag("holster")&&!(state.IsTag("normalattack")&&state.normalizedTime>0.3f))
+            if (!state.IsTag("mgethit")&&!state.IsTag("holster")&&!(state.IsTag("normalattack")&&state.normalizedTime>0.3f)&&!state.IsTag("block")&&!state.IsTag("blocksuccess"))
             {
-
-                if (state.IsTag("normalattack"))
-                {
-                    if (self.mp >= 15)
-                    {
-                        self.mp -= 15;
-                        backweapon();
-                        resetmove();
-                        animecontrol.Play("dash");
-                    }
-                }
-                else
-                {
                     backweapon();
                     resetmove();
                     animecontrol.Play("dash");
-                }
             }
         }
         if (!player.GetButton("Block") && state.IsTag("guard"))
@@ -262,6 +260,85 @@ public class chattack : MonoBehaviour
         Vector3 waveposition = transform.position + new Vector3(0, 1, 0) - transform.forward * 0.5f;
         Instantiate(pulseeffect, waveposition, transform.rotation);
     }
+
+
+
+//call on event to play sound
+    public void PlaySound_normalAtk(){
+        if(this.name=="himeko")
+            StartCoroutine(soundManager.LoadAudio("wave_blade2.wav",1,1,1,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("katana_normal.wav",1,1,1,0,false));
+    }
+
+    public void PlaySound_normalAtkOver(){
+        if(this.name=="himeko")
+            StartCoroutine(soundManager.LoadAudio("wave_blade.wav",1,1,0.1f,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("katana_long.wav",1,1,1,0,false));
+    }
+    public void PlaySound_normalAtkOver2(){
+        if(this.name=="himeko")
+            StartCoroutine(soundManager.LoadAudio("wave_blade.wav",1,1,1,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("katana_doublehit.wav",1,1,1,0,false));
+    }
+    public void PlaySound_heavyAtk(){
+        if(this.name=="himeko")
+            StartCoroutine(soundManager.LoadAudio("smash_ground.wav",1,1,1,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("katana_yae.wav",1,1,1,0,false));
+    }
+    public void PlaySound_roundAtk(){
+        if(this.name=="himeko")
+            StartCoroutine(soundManager.LoadAudio("round_attack.wav",1,1,1,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("katana_doublehit.wav",1,1,1,0,false));
+    }
+    public void PlaySound_combo3(){
+        StartCoroutine(soundManager.LoadAudio("katana_combo3.wav",1,1,1,0,false));
+    }
+    public void PlaySound_sheathe(){
+        StartCoroutine(soundManager.LoadAudio("katana_sheathe.wav",1,1,1,0,false));
+    }
+    public void PlaySound_voice1(){
+         if(this.name=="himeko")
+        StartCoroutine(soundManager.LoadAudio("himeko_ha.wav",1,1,1,0,false));
+         if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("sakura_hei.wav",1,1,1,0,false));
+    }
+    public void PlaySound_voice2(){
+         if(this.name=="himeko")
+        StartCoroutine(soundManager.LoadAudio("himeko_hea.wav",1,1,1,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("sakura_hia.wav",1,1,1,0,false));
+    }
+    public void PlaySound_voice3(){
+         if(this.name=="himeko")
+        StartCoroutine(soundManager.LoadAudio("himeko_he.wav",1,1,1,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("sakura_he.wav",1,1,1,0,false));
+    }
+    public void PlaySound_voice4(){
+         if(this.name=="himeko")
+        StartCoroutine(soundManager.LoadAudio("himeko_charge.wav",1,1,0.5f,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("sakura_hia.wav",1,1,1,0,false));
+    }
+    public void PlaySound_voice5(){
+         if(this.name=="himeko")
+        StartCoroutine(soundManager.LoadAudio("himeko_roundattack.wav",1,1,1,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("sakura_ya.wav",1,1,1,0,false));
+    }
+    public void PlaySound_voice6(){
+         if(this.name=="himeko")
+        StartCoroutine(soundManager.LoadAudio("himeko_counter.wav",1,1,1,0,false));
+        if(this.name=="sakura")
+            StartCoroutine(soundManager.LoadAudio("sakura_counter.wav",1,1,1,0,false));
+    }
+
+
 
     void HAttack()
     {
@@ -375,11 +452,11 @@ public class chattack : MonoBehaviour
     }
     void NormalSkill()
     {
-        if (!state.IsTag("normalskill") && !state.IsTag("normalskillstart")&&!state.IsTag("holster")&&!state.IsTag("heavyskill")&&!state.IsTag("heavyattack"))
+        if(!state.IsTag("normalskill")&&!state.IsTag("normalskillstart")&&!state.IsTag("holster"))
         {
             stingeffect = false;
-            animecontrol.Play("normalskillstart");
             animecontrol.SetBool("normalskill", true);
+            animecontrol.Play("normalskillstart");
         }
     }
     void DashSkill()
@@ -424,9 +501,11 @@ public class chattack : MonoBehaviour
     IEnumerator stinghit()
     {
         animecontrol.speed = 0;
-        for(int i=0;i<3;i++)
+
+        for(int i=0;i<2;i++)
         {
             yield return new WaitForSeconds(0.15f);
+            StartCoroutine(soundManager.LoadAudio("blade_hit.wav",1,1,1,0,false));
             enemy.GetComponent<chgethit>().getattacknormal();
         }
         animecontrol.speed = 1;
