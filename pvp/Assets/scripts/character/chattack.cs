@@ -220,7 +220,7 @@ public class chattack : MonoBehaviour
 
         if (player.GetButtonDown("Dash"))
         {
-            if (!state.IsTag("mgethit")&&!state.IsTag("holster"))
+            if (!state.IsTag("mgethit")&&!state.IsTag("holster")&&!(state.IsTag("normalattack")&&state.normalizedTime>0.3f))
             {
 
                 if (state.IsTag("normalattack"))
@@ -375,10 +375,12 @@ public class chattack : MonoBehaviour
     }
     void NormalSkill()
     {
-        stingeffect = false;
-        animecontrol.SetBool("normalskill", true);
-        if(!state.IsTag("normalskill")&&!state.IsTag("normalskillstart"))
-        animecontrol.Play("normalskillstart");
+        if (!state.IsTag("normalskill") && !state.IsTag("normalskillstart")&&!state.IsTag("holster")&&!state.IsTag("heavyskill")&&!state.IsTag("heavyattack"))
+        {
+            stingeffect = false;
+            animecontrol.Play("normalskillstart");
+            animecontrol.SetBool("normalskill", true);
+        }
     }
     void DashSkill()
     {

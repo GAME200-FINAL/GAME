@@ -21,8 +21,8 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
-  m_AmbientEquatorColor: {r: 0.2172047, g: 0.0069419593, b: 0.49056602, a: 1}
-  m_AmbientGroundColor: {r: 0.049466323, g: 0.049394805, b: 0.2830189, a: 1}
+  m_AmbientEquatorColor: {r: 0.04019608, g: 0.013235294, b: 0.0019607844, a: 1}
+  m_AmbientGroundColor: {r: 0.13725491, g: 0.03529412, b: 0.009803922, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
@@ -702,8 +702,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.8679245, g: 0.7328231, b: 0.5444998, a: 1}
-  m_Intensity: 0.1
+  m_Color: {r: 0.6792453, g: 0.5754343, b: 0.4517622, a: 1}
+  m_Intensity: 4.76
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -736,13 +736,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 81739113}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.6830127, y: -0.18301266, z: 0.18301266, w: 0.6830127}
   m_LocalPosition: {x: -18.9, y: 34.8, z: 32.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: -30, z: 0}
 --- !u!1 &86265192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,7 +1155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   katana: {fileID: 192369416}
-  playerID: 0
+  playerID: 1
   backkatana: {fileID: 1062673781}
   collide: 0
   pulseeffect: {fileID: 0}
@@ -1190,7 +1190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runsound: {fileID: 0}
   footaudio: {fileID: 0}
-  playerID: 0
+  playerID: 1
 --- !u!114 &191752950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4957,7 +4957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   katana: {fileID: 2109744413}
-  playerID: 1
+  playerID: 0
   backkatana: {fileID: 782089332}
   collide: 0
   pulseeffect: {fileID: 1149937583020318, guid: c33f226300dd1c841b0aa336714595c8,
@@ -4977,7 +4977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runsound: {fileID: 0}
   footaudio: {fileID: 0}
-  playerID: 1
+  playerID: 0
 --- !u!65 &758823363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14566,6 +14566,7 @@ GameObject:
   - component: {fileID: 1514925015}
   - component: {fileID: 1514925017}
   - component: {fileID: 1514925016}
+  - component: {fileID: 1514925018}
   m_Layer: 5
   m_Name: RawImage (1)
   m_TagString: Untagged
@@ -14624,6 +14625,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1514925014}
   m_CullTransparentMesh: 0
+--- !u!95 &1514925018
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1514925014}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69d01759804671143b6c934246172aac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1530134879
 GameObject:
   m_ObjectHideFlags: 0
@@ -18627,7 +18646,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: cde4cd590f884b04f801e3377189472a, type: 2}
+  - {fileID: 2100000, guid: 1331917f943c58847ba6f6315e7fcc96, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
