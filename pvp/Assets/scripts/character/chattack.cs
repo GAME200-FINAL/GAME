@@ -149,12 +149,14 @@ public class chattack : MonoBehaviour
             if(self.mp>=10)
             {
               hpattack = true;
+              heffect.SetActive(true);
               heffect.GetComponent<ParticleSystem>().Play();
             }
         }
         else
         {
             hpattack = false;
+            heffect.SetActive(false);
             heffect.GetComponent<ParticleSystem>().Stop();
         }
 

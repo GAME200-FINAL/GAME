@@ -151,7 +151,7 @@ ModelImporter:
     - serializedVersion: 16
       name: slash4
       takeName: Take 001
-      firstFrame: 360
+      firstFrame: 370
       lastFrame: 390
       wrapMode: 0
       orientationOffsetY: 0
@@ -172,6 +172,14 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0.25295258
+        functionName: PlaySound_voice2
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.2813711
         functionName: PlaySound_normalAtkOver
         data: 
@@ -180,24 +188,8 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.34257427
-        functionName: PlaySound_normalAtkOver2
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: a5095973686db4449a0f4de0dd7bc51f,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.58381486
+      - time: 0.2847212
         functionName: normalheavydetect
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.25295258
-        functionName: PlaySound_voice2
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 536938de3b449db44b4ad203416159e1,
           type: 3}

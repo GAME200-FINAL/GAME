@@ -149,7 +149,7 @@ public class BattleManager : MonoBehaviour
 	public void MPDropTime ()
 	{
 		if (mp>0) {
-            mp -= mpExpense*Time.deltaTime*0.2f;
+            mp -= mpExpense*Time.deltaTime*0.1f;
 			mpStrip.value = mp;
 		}
 
